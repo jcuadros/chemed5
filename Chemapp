@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css"/>
+<link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+
+<title>Módulos de Química de Bachiller</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="span12">
+				<ul class="breadcrumb">
+				  <li><a href="#">Inicio</a> <span class="divider">/</span></li>
+				  <li><a href="#">Bachiller</a> <span class="divider">/</span></li>
+				  <li class="active">Disoluciones</li>
+				</ul>
+			</div>
+		<p>&nbsp;</p>
+		<div class="row-fluid">
+			<div class="span5">
+			La siguiente imagen representa una disolución de NaCl en agua. 
+			Observad la presencia de iones Cl- (esferas verdes) y iones Na+ (esferas amarillas) junto con moléculas de agua.
+			</div>
+			
+			<!-- animación de la pregunta -->
+			
+			<div class="span6">
+			<img src="imatges/disol/D1.jpg"/>
+			</div>
+		</div>
+		<p>&nbsp;</p>
+		<div class="row-fluid">
+			<div class="span5">
+				Las siguientes figuras representan diversas disoluciones de NaCl en agua. 
+				Pulsa sobre la figura que representa una disolución más concentrada que la mostrada arriba.
+				<p>&nbsp;</p>
+				<div class="btn-toolbar">
+					<div class="btn-group">
+						<button class="btn" type="button"><i class="icon-eye-open"></i> Opción A</button>
+						<button class="btn btn-info" type="button" data-toggle="buttons-radio">Marcar</button>
+					</div>
+				</div>
+				<div class="btn-toolbar">
+					<div class="btn-group">
+						<button class="btn" type="button"><i class="icon-eye-open"></i> Opción B</button>
+						<button class="btn btn-info" type="button">Marcar</button>
+					</div>
+				</div>
+				<div class="btn-toolbar">
+					<div class="btn-group">
+						<button class="btn" type="button"><i class="icon-eye-open"></i> Opción C</button>
+						<button class="btn btn-info" type="button">Marcar</button>
+					</div>
+				</div>
+				<div class="btn-toolbar">
+					<div class="btn-group">
+						<button class="btn" type="button"><i class="icon-eye-open"></i> Opción D</button>
+						<button class="btn btn-info" type="button">Marcar</button>
+					</div>
+				</div>
+						<!--====================Ayuda de la pregunta====================-->
+				<div>
+					<button data-target="#Ayuda" class="btn btn-link" data-toggle="modal">
+						<i class="icon-question-sign"></i> Ayuda</button>
+
+					<div id="Ayuda" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-show="false">
+						  <div class="modal-header">
+							    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+							    <h3 id="myModalLabel">Ayuda</h3>
+						  </div>
+						  <div class="modal-body">
+						  		<p>Texto de la ayuda</p>
+						  </div>
+						  <div class="modal-footer">
+						    	<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+						  </div>
+					</div>	
+				</div>
+			</div>
+			
+			<div class="span6">
+			
+			animacions resposta
+			
+			</div>
+		</div>
+		
+			
+	</div>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+<script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./jscript/jscript.js"></script>
+</body>
+
+</html>
