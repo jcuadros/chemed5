@@ -1,0 +1,5 @@
+$(document).ready(function(){
+	$("#Ayuda").modal(function(){
+		$("#Ayuda").click("toggle");
+	});
+});
