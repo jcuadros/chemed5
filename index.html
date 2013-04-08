@@ -47,36 +47,30 @@
 	                            <div class="span5" data-toggle="buttons-radio">
 	                                <div class="btn-toolbar">
 	                                        <div class="btn-group">
-	                                                <button class="btn" type="button" onclick="showHideA()"><i class="icon-eye-open"></i> Opción A</button>
-	                                                <button class="btn btn-info" type="button">Marcar</button>
+	                                                <a href="imatges/disol/D1-A.jpg" target="anim"><button class="btn opcion" type="button"><i class="icon-eye-open"></i> Opción A</button></a>
+	                                                <a href="solucion1.html" target="feedback"><button class="btn btn-info" type="button">Marcar</button></a>
 	                                        </div>
 	                                </div>
 	                                <div class="btn-toolbar">
 	                                        <div class="btn-group">
-	                                                <button class="btn" type="button" onclick="showHideB()"><i class="icon-eye-open"></i> Opción B</button>
-	                                                <button class="btn btn-info" type="button">Marcar</button>
+	                                                <a href="imatges/disol/D1-B.jpg" target="anim"><button class="btn" type="button"><i class="icon-eye-open"></i> Opción B</button></a>
+	                                                <a href="solucion2.html" target="feedback"><button class="btn btn-info" type="button">Marcar</button></a>
 	                                        </div>
 	                                </div>
 	                                <div class="btn-toolbar">
 	                                        <div class="btn-group">
-	                                                <button class="btn" type="button" onclick="showHideC()"><i class="icon-eye-open"></i> Opción C</button>
-	                                                <button class="btn btn-info" type="button">Marcar</button>
+	                                                <a href="imatges/disol/D1-C.jpg" target="anim"><button class="btn" type="button"><i class="icon-eye-open"></i> Opción C</button></a>
+	                                                <a href="solucion3.html" target="feedback"><button class="btn btn-info" type="button">Marcar</button></a>
 	                                        </div>
 	                                </div>
 	                                <div class="btn-toolbar">
 	                                        <div class="btn-group">
-	                                                <button class="btn" type="button" onclick="showHideD()"><i class="icon-eye-open"></i> Opción D</button>
-	                                                <button class="btn btn-info" type="button">Marcar</button>
+	                                                <a href="imatges/disol/D1-D.jpg" target="anim"><button class="btn" type="button"><i class="icon-eye-open"></i> Opción D</button></a>
+	                                                <a href="solucion4.html" target="feedback"><button class="btn btn-info" type="button">Marcar</button></a>
 	                                        </div>
 	                                </div>
-	                            </div>
-	                            			<!--===============Feedback======================-->
-	                            <div id="feedback" class="span6">
-	                            	feedback
-	                            </div>    
-                          	</div> 
-                                          	<!--====================Ayuda de la pregunta====================-->
-                                <div>
+	                                <div>
+	                                	<!--====================Ayuda de la pregunta====================-->
                                         <button type="button" class="btn btn-link" data-toggle="modal" data-target="#Ayuda">
                                                 <i class="icon-question-sign"></i> Ayuda</button>
 
@@ -92,24 +86,18 @@
                                                         <button class="btn" data-dismiss="modal">Close</button>
                                                   </div>
                                         </div>  
-                                </div>
+                                	</div>
+	                            </div>
+	                            			<!--===============Feedback======================-->
+	                            <div id="feedback" class="span6">
+	                            	<iframe class="span12" name="feedback" frameborder="NO" scrolling="no"></iframe>
+	                            </div>    
+                          	</div>                   	
                         </div>
                       
                         					<!--=============Animacions/Imatges=============-->
                         <div class="span6">
-                        
-	                        <div id="img1div" style="display:none;">
-	                        	<img src="imatges/disol/D1-A.jpg"/>
-	                        </div>
-                        	<div id="img2div" style="display:none;">
-	                        	<img src="imatges/disol/D1-B.jpg"/>
-	                        </div>
-	                        <div id="img3div" style="display:none;">
-	                        	<img src="imatges/disol/D1-C.jpg"/>
-	                        </div>
-	                        <div id="img4div" style="display:none;">
-	                        	<img src="imatges/disol/D1-D.jpg"/>
-	                        </div>
+                        	<iframe class="span12" name="anim" frameborder="NO" scrolling="no" style="height:220px"></iframe>
                         </div>
                 </div>
                 <p>&nbsp;</p>
@@ -124,9 +112,11 @@
 
 
 
+
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="./jscript/page_context.js"></script>
 <script type="text/javascript" src="./jscript/mainjs.js"></script>
 </body>
 

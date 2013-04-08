@@ -1,8 +1,4 @@
-$(document).ready(function(){
-	$("#Ayuda").modal(function(){
-		$("#Ayuda").click("toggle");
-	});
-});
+
 
 function showHideA(){
 	var ImageDiv=document.getElementById('img1div');
