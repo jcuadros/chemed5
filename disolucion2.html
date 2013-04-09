@@ -5,10 +5,18 @@
 <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
 <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css"/>
 <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
-
+<script type="text/javascript">
+	var scr0 = 'zap; set echo warn 50% 50%; set echo warn center; echo "loading..."; refresh;';
+	function cargaScript(x) { 
+		if (x.length==0) {
+			jmolScript('zap;');
+		} else {
+			jmolScript(scr0 + 'script '+x);
+		}
+	}
+</script>
 <title>Módulos de Química de Bachiller</title>
 </head>
-
 <body>
         <div class="container-fluid">
                 <div class="row-fluid">
@@ -16,8 +24,8 @@
                                 <ul class="breadcrumb">
                                   <li><a href="#">Inicio</a>></li>
                                   <li><a href="#">Bachiller</a>></li>
-                                  <li class="active">Disoluciones</li>
-                                  <li class="active">Disolución 1</li>
+                                  <li><a href="#">Disoluciones</a>></li>
+                                  <li class="active">Disolución 2</li>
                                 </ul>
                         </div>
                         <div class="span11">
@@ -28,46 +36,46 @@
                 <p>&nbsp;</p>
                 <div class="row-fluid">
                         <div class="span5">
-                        La siguiente imagen representa una disolución de NaCl en agua. 
-                        Observad la presencia de iones Cl- (esferas verdes) y iones Na+ (esferas amarillas) junto con moléculas de agua.
+                        The following figure represents a solute (red) dissolved in a solvent.
                         </div>
                         
-                        <!-- animación de la pregunta -->
+                        <!--=================Animación/Imagen de la pregunta========================-->
                         
                         <div class="span6">
-                        <img src="imatges/disol/D1.jpg"/>
+                        <img src="imatges/disol/D2.jpg" />
                         </div>
                 </div>
                 <p>&nbsp;</p>
                 <div class="row-fluid">
                         <div class="span5">
-                                Las siguientes figuras representan diversas disoluciones de NaCl en agua. 
-                                Pulsa sobre la figura que representa una disolución más concentrada que la mostrada arriba.
+                                Clicking on the following pictures will display four possible dynamics of this system. 
+                                Watch them and think which one best represents a saturated solution.
+                                After you have examined the four animations, choose the best answer:
                                 <p>&nbsp;</p>
                             <div class="row-fluid">
 	                            <div class="span5" data-toggle="buttons-radio">
 	                                <div class="btn-toolbar">
 	                                        <div class="btn-group">
-	                                                <a href="imatges/disol/D1-A.jpg" target="anim"><button class="btn" type="button">Ver Opción A</button></a>
-	                                                <a href="solucion1.html" target="feedback"><button class="btn btn-info" type="button">Marcar</button></a>
+	                                                <a href="#" onClick="cargaScript('D2solucion1.txt'); return false;" target="#panelJmol"><button class="btn" type="button">Ver Opción A</button></a>
+	                                                <a href="D2solucion1.html" target="feedback"><button class="btn btn-info" type="button">Marcar</button></a>
 	                                        </div>
 	                                </div>
 	                                <div class="btn-toolbar">
 	                                        <div class="btn-group">
-	                                                <a href="imatges/disol/D1-B.jpg" target="anim"><button class="btn" type="button">Ver Opción B</button></a>
-	                                                <a href="solucion2.html" target="feedback"><button class="btn btn-info" type="button">Marcar</button></a>
+	                                                <a href="#" onClick="cargaScript('D2solucion2.txt'); return false;" target="#panelJmol"><button class="btn" type="button">Ver Opción B</button></a>
+	                                                <a href="D2solucion2.html" target="feedback"><button class="btn btn-info" type="button">Marcar</button></a>
 	                                        </div>
 	                                </div>
 	                                <div class="btn-toolbar">
 	                                        <div class="btn-group">
-	                                                <a href="imatges/disol/D1-C.jpg" target="anim"><button class="btn" type="button">Ver Opción C</button></a>
-	                                                <a href="solucion3.html" target="feedback"><button class="btn btn-info" type="button">Marcar</button></a>
+	                                                <a href="#" onClick="cargaScript('D2solucion3.txt'); return false;" target="#panelJmol"><button class="btn" type="button">Ver Opción C</button></a>
+	                                                <a href="D2solucion3.html" target="feedback"><button class="btn btn-info" type="button">Marcar</button></a>
 	                                        </div>
 	                                </div>
 	                                <div class="btn-toolbar">
 	                                        <div class="btn-group">
-	                                                <a href="imatges/disol/D1-D.jpg" target="anim"><button class="btn" type="button">Ver Opción D</button></a>
-	                                                <a href="solucion4.html" target="feedback"><button class="btn btn-info" type="button">Marcar</button></a>
+	                                                <a href="#" onClick="cargaScript('D2solucion4.txt'); return false;" target="#panelJmol"><button class="btn" type="button">Ver Opción D</button></a>
+	                                                <a href="D2solucion4.html" target="feedback"><button class="btn btn-info" type="button">Marcar</button></a>
 	                                        </div>
 	                                </div>
 	                                <div>
@@ -97,9 +105,39 @@
                         </div>
                       
                         					<!--=============Animacions/Imatges=============-->
-                        <div class="span6">
-                        	<iframe class="span12" name="anim" frameborder="NO" scrolling="no" style="height:220px"></iframe>
-                        </div>
+                        <div id="panelJmol" class="span6">
+							<script type="text/javascript">
+								jmolInitialize("..",true);;
+								jmolSetCallback("UseCommandThread","true");
+								jmolApplet(320);
+							</script>
+							<applet name="jmolApplet0" id="jmolApplet0" code="JmolApplet" archive="JmolAppletSigned0.jar" codebase=".." width="320" height="320" mayscript="true">
+							  <param name="syncId" value="688451643101871">
+							  <param name="progressbar" value="true">
+							  <param name="progresscolor" value="blue">
+							  <param name="boxbgcolor" value="black">
+							  <param name="boxfgcolor" value="white">
+							  <param name="boxmessage" value="Downloading JmolApplet ...">
+							  <param name="UseCommandThread" value="true">
+							  <param name="script" value="select *">
+								<table bgcolor="yellow"><tbody><tr><td align="center" valign="middle" width="320" height="320"><font color="black">
+								You do not have the<br>
+								Java Runtime Environment<br>
+								installed for applet support.<br>
+								Visit <a href="http://www.java.com">www.java.com</a></font></td></tr></tbody></table>
+							</applet>
+							<table id="animCtrls">
+							<tbody><tr>
+							<td>Animation:</td>
+							<td>
+							<button onclick="jmolScript('animation pause')" title="pause"><img src="imatges/mano-stop.gif" alt="pause"></button>
+							<button onclick="jmolScript('animation fps 3;animation play')" title="slow"><img src="imatges/tortuga.gif" alt="slow"></button>
+							<button onclick="jmolScript('animation fps 15;animation play')" title="fast"><img src="imatges/liebre.gif" alt="fast"></button>
+							<button onclick="jmolScript('animation rewind;animation play')" title="repeat"><img src="imatges/repetir.gif" alt="repeat"></button>
+							</td>
+							</tr>
+							</tbody></table>
+						</div>
                 </div>
                 <p>&nbsp;</p>
 	            <div class="row-fluid">
@@ -111,11 +149,13 @@
                         
         </div>
 
+
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
-<script type="text/javascript" src="./jscript/page_context.js"></script>
 <script type="text/javascript" src="./jscript/mainjs.js"></script>
+<script type="text/javascript" src="./jscript/Jmol.js"></script>
+<script type="text/javascript" src="./jscript/page_context.js"></script>
+<script type="text/javascript" src="./jscript/util.js"></script>
 </body>
-
 </html>
