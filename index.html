@@ -13,39 +13,55 @@
         <div class="container-fluid">
                 <div class="row-fluid">
                         <div class="span12">
-                                <ul class="breadcrumb">
-                                  <li><a href="#">Inicio</a>></li>
-                                  <li><a href="#">Bachiller</a>></li>
-                                  <li class="active">Disoluciones</li>
-                                  <li class="active">Disolución 1</li>
-                                </ul>
-                        </div>
-                        <div class="span11">
-                        	<a href="#"><img style="float:left;" src="imatges/atras.jpeg" width="45" height="20" border="0"/></a>
-                        	<a href="#"><img style="float:right;" src="imatges/adelante.jpeg" width="45" height="20" border="0"/></a>
-                        </div>
+                             <ul class="breadcrumb">
+                               <li><a href="#">Inicio</a>></li>
+                               <li><a href="#">Bachiller</a>></li>
+                               <li><a href="#">Disoluciones</a>></li>
+                               <li class="active">Disolución 1</li>
+                               	<div style="float:right;" class="span2">
+                             		<a href="#"><img style="float:left;" src="imatges/atras.jpeg" width="45" height="20" border="0"/></a>
+                        			<a href="#"><img style="float:right;" src="imatges/adelante.jpeg" width="45" height="20" border="0"/></a>
+                             	</div> 
+                             </ul>
+                               
                 </div>
                 <p>&nbsp;</p>
                 <div class="row-fluid">
-                        <div class="span5">
-                        La siguiente imagen representa una disolución de NaCl en agua. 
+                        <div class="span7">
+                        <p>La siguiente imagen representa una disolución de NaCl en agua. 
                         Observad la presencia de iones Cl- (esferas verdes) y iones Na+ (esferas amarillas) junto con moléculas de agua.
+                        Las siguientes figuras representan diversas disoluciones de NaCl en agua.</p> 
+                        <p>Pulsa sobre la figura que representa una disolución más concentrada que la mostrada arriba.</p>
+                       				 <!--====================Ayuda de la pregunta====================-->
+	                      <div>
+	                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#Ayuda">
+	                                    <i class="icon-question-sign"></i> Ayuda</button>
+	
+	                            <div id="Ayuda" class="modal hide fade" tabindex="-1" style="display:none;" data-show="false">
+	                                      <div class="modal-header">
+	                                                <button type="button" class="close" data-dismiss="modal">×</button>
+	                                                <h3 id="myModalLabel">Ayuda</h3>
+	                                      </div>
+	                                      <div class="modal-body">
+	                                                    <p>Texto de la ayuda</p>
+	                                      </div>
+	                                      <div class="modal-footer">
+	                                            <button class="btn" data-dismiss="modal">Close</button>
+	                                      </div>
+	                            </div>  
+	                      </div>
                         </div>
                         
-                        <!-- animación de la pregunta -->
+                        <!--========================== animación de la pregunta ========================-->
                         
-                        <div class="span6">
+                        <div class="span5">
                         <img src="imatges/disol/D1.jpg"/>
                         </div>
                 </div>
                 <p>&nbsp;</p>
-                <div class="row-fluid">
-                        <div class="span5">
-                                Las siguientes figuras representan diversas disoluciones de NaCl en agua. 
-                                Pulsa sobre la figura que representa una disolución más concentrada que la mostrada arriba.
-                                <p>&nbsp;</p>
+                <div class="row-fluid">        
                             <div class="row-fluid">
-	                            <div class="span5" data-toggle="buttons-radio">
+	                            <div class="span7" data-toggle="buttons-radio">
 	                                <div class="btn-toolbar">
 	                                        <div class="btn-group">
 	                                                <a href="imatges/disol/D1-A.jpg" target="anim"><button class="btn" type="button">Ver Opción A</button></a>
@@ -70,43 +86,24 @@
 	                                                <a href="solucion4.html" target="feedback"><button class="btn btn-info" type="button">Marcar</button></a>
 	                                        </div>
 	                                </div>
-	                                <div>
-	                                	<!--====================Ayuda de la pregunta====================-->
-                                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#Ayuda">
-                                                <i class="icon-question-sign"></i> Ayuda</button>
-
-                                        <div id="Ayuda" class="modal hide fade" tabindex="-1" style="display:none;" data-show="false">
-                                                  <div class="modal-header">
-                                                            <button type="button" class="close" data-dismiss="modal">×</button>
-                                                            <h3 id="myModalLabel">Ayuda</h3>
-                                                  </div>
-                                                  <div class="modal-body">
-                                                                <p>Texto de la ayuda</p>
-                                                  </div>
-                                                  <div class="modal-footer">
-                                                        <button class="btn" data-dismiss="modal">Close</button>
-                                                  </div>
-                                        </div>  
-                                	</div>
+	                                
 	                            </div>
-	                            			<!--===============Feedback======================-->
-	                            <div id="feedback" class="span6">
-	                            	<iframe class="span12" name="feedback" frameborder="NO" scrolling="no"></iframe>
-	                            </div>    
-                          	</div>                   	
-                        </div>
-                      
-                        					<!--=============Animacions/Imatges=============-->
-                        <div class="span6">
-                        	<iframe class="span12" name="anim" frameborder="NO" scrolling="no" style="height:220px"></iframe>
-                        </div>
+	                            					<!--=============Animacions/Imatges=============-->
+		                        <div class="span5">
+		                        	<iframe class="span12" name="anim" frameborder="NO" scrolling="no" style="height:220px"></iframe>
+		                        </div>    
+                          	</div> 
+                    <p>&nbsp;</p>                  	
+             			<!--===============Feedback======================-->
+                   <div id="feedback" class="span11">
+                   	<iframe class="span12" name="feedback" frameborder="NO" scrolling="no"></iframe>
+                   </div>
+                        
                 </div>
                 <p>&nbsp;</p>
-	            <div class="row-fluid">
-               		<div class="span11">
+	            <div class="row-fluid span2 offset4" style="float:right;">
 	                	<a href="#"><img style="float:left;" src="imatges/atras.jpeg" width="45" height="20" border="0"/></a>
 	                	<a href="#"><img style="float:right;" src="imatges/adelante.jpeg" width="45" height="20" border="0"/></a>
-                	</div>  
                	</div>
                         
         </div>
