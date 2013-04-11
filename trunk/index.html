@@ -19,8 +19,9 @@
                                <li><a href="#">Disoluciones</a>></li>
                                <li class="active">Disolución 1</li>
                                	<div style="float:right;" class="span2">
-                             		<a href="#"><img style="float:left;" src="imatges/atras.jpeg" width="45" height="20" border="0"/></a>
-                        			<a href="#"><img style="float:right;" src="imatges/adelante.jpeg" width="45" height="20" border="0"/></a>
+                             		<a href="#"><img src="imatges/atras.jpeg" width="45" height="20" border="0"/></a>
+                             		<a href="#"><img src="imatges/arriba.gif" width="15" height="25" border="0"/></a>
+                        			<a href="#"><img src="imatges/adelante.jpeg" width="45" height="20" border="0"/></a>
                              	</div> 
                              </ul>
                                
@@ -33,25 +34,23 @@
                         Las siguientes figuras representan diversas disoluciones de NaCl en agua.</p> 
                         <p>Pulsa sobre la figura que representa una disolución más concentrada que la mostrada arriba.</p>
                        				 <!--====================Ayuda de la pregunta====================-->
-	                      <div>
-	                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#Ayuda">
-	                                    <i class="icon-question-sign"></i> Ayuda</button>
-	
-	                            <div id="Ayuda" class="modal hide fade" tabindex="-1" style="display:none;" data-show="false">
-	                                      <div class="modal-header">
-	                                                <button type="button" class="close" data-dismiss="modal">×</button>
-	                                                <h3 id="myModalLabel">Ayuda</h3>
-	                                      </div>
-	                                      <div class="modal-body">
-	                                                    <p>Texto de la ayuda</p>
-	                                      </div>
-	                                      <div class="modal-footer">
-	                                            <button class="btn" data-dismiss="modal">Close</button>
-	                                      </div>
-	                            </div>  
-	                      </div>
+	                     	<div>
+	                            <a href="#" onclick="overlay()" role="button"><button type="button" class="btn btn-link">
+	                                    <i class="icon-question-sign"></i> Ayuda</button></a>
+									<div id="ayuda"class="modal fade in">
+									  <div class="modal-header" style="text-align:left;">
+									   	<button type="button" class="close" onclick="overlay()">&times;</button>
+									    <h3>Ayuda</h3>
+									  </div>
+									  <div class="modal-body">
+									    <p>Texto de la ayuda</p>
+									  </div>
+									  <div class="modal-footer">
+									    <a href="#" class="btn" onclick="overlay()">Cerrar</a>
+										</div>
+									</div>
+                     		</div>
                         </div>
-                        
                         <!--========================== animación de la pregunta ========================-->
                         
                         <div class="span5">
@@ -61,29 +60,29 @@
                 <p>&nbsp;</p>
                 <div class="row-fluid">        
                             <div class="row-fluid">
-	                            <div class="span7" data-toggle="buttons-radio">
+	                            <div id="resp" class="span7" data-toggle="buttons-radio">
 	                                <div class="btn-toolbar">
 	                                        <div class="btn-group">
-	                                                <a href="imatges/disol/D1-A.jpg" target="anim"><button class="btn" type="button">Ver Opción A</button></a>
-	                                                <a href="solucion1.html" target="feedback"><button class="btn btn-info" type="button">Marcar</button></a>
+	                                                <a href="imatges/disol/D1-A.jpg" target="anim"><button class="btn" type="button" id="op1">Ver Opción A</button></a>
+	                                                <a href="solucion1.html" target="feedback"><button id="r1" class="btn btn-info" type="button">Marcar</button></a>
 	                                        </div>
 	                                </div>
 	                                <div class="btn-toolbar">
 	                                        <div class="btn-group">
-	                                                <a href="imatges/disol/D1-B.jpg" target="anim"><button class="btn" type="button">Ver Opción B</button></a>
-	                                                <a href="solucion2.html" target="feedback"><button class="btn btn-info" type="button">Marcar</button></a>
+	                                                <a href="imatges/disol/D1-B.jpg" target="anim"><button class="btn" type="button" id="op2">Ver Opción B</button></a>
+	                                                <a href="solucion2.html" target="feedback"><button id="r2" class="btn btn-info" type="button">Marcar</button></a>
 	                                        </div>
 	                                </div>
 	                                <div class="btn-toolbar">
 	                                        <div class="btn-group">
-	                                                <a href="imatges/disol/D1-C.jpg" target="anim"><button class="btn" type="button">Ver Opción C</button></a>
-	                                                <a href="solucion3.html" target="feedback"><button class="btn btn-info" type="button">Marcar</button></a>
+	                                                <a href="imatges/disol/D1-C.jpg" target="anim"><button class="btn" type="button" id="op3">Ver Opción C</button></a>
+	                                                <a href="solucion3.html" target="feedback"><button id="r3" class="btn btn-info" type="button">Marcar</button></a>
 	                                        </div>
 	                                </div>
 	                                <div class="btn-toolbar">
 	                                        <div class="btn-group">
-	                                                <a href="imatges/disol/D1-D.jpg" target="anim"><button class="btn" type="button">Ver Opción D</button></a>
-	                                                <a href="solucion4.html" target="feedback"><button class="btn btn-info" type="button">Marcar</button></a>
+	                                                <a href="imatges/disol/D1-D.jpg" target="anim"><button class="btn" type="button" id="op4">Ver Opción D</button></a>
+	                                                <a href="solucion4.html" target="feedback"><button id="r4" class="btn btn-info" type="button">Marcar</button></a>
 	                                        </div>
 	                                </div>
 	                                
@@ -102,8 +101,9 @@
                 </div>
                 <p>&nbsp;</p>
 	            <div class="row-fluid span2 offset4" style="float:right;">
-	                	<a href="#"><img style="float:left;" src="imatges/atras.jpeg" width="45" height="20" border="0"/></a>
-	                	<a href="#"><img style="float:right;" src="imatges/adelante.jpeg" width="45" height="20" border="0"/></a>
+	                	<a href="#"><img src="imatges/atras.jpeg" width="45" height="20" border="0"/></a>
+	                	<a href="#"><img src="imatges/arriba.gif" width="15" height="25" border="0"/></a>
+	                	<a href="#"><img src="imatges/adelante.jpeg" width="45" height="20" border="0"/></a>
                	</div>
                         
         </div>

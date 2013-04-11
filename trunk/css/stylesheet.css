@@ -7,3 +7,26 @@ p {
 	text-align: center;
 }
 
+#ayuda {
+    visibility: hidden;
+    position: absolute;
+    text-align:center;
+   	opacity:1;
+    -webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+}
+
+#ayuda p{
+	text-align:center;
+}
+
+/*Per a que el modal funcioni be en IE */
+body {
+     height:100%;
+     margin:0;
+     padding:0;
+}
+.bold {
+	text-weight:bold;
+}
