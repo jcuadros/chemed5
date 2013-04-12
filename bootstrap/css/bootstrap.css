@@ -3511,6 +3511,7 @@ input[type="button"].btn-block {
 .btn-info:active,
 .btn-info.active {
   background-color: #24748c \9;
+  
 }
 
 .btn-inverse {
@@ -4938,7 +4939,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .breadcrumb {
-  padding: 8px 15px;
+  padding: 8px 0px;
   margin: 0 0 20px;
   list-style: none;
   background-color: #f5f5f5;
