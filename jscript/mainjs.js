@@ -5,17 +5,10 @@ function overlay() {
 	el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
 }
 
-/* text botons*/
+/* text botó ajuda*/
 
-document.getElementById("op1").innerHTML="Ver Opción A";
-document.getElementById("op2").innerHTML="Ver Opción B";
-document.getElementById("op3").innerHTML="Ver Opción C";
-document.getElementById("op4").innerHTML="Ver Opción D";
-document.getElementById("r1").innerHTML="Marcar";
-document.getElementById("r2").innerHTML="Marcar";
-document.getElementById("r3").innerHTML="Marcar";
-document.getElementById("r4").innerHTML="Marcar";
 document.getElementById("hint").innerHTML='<i class="icon-question-sign"></i> Ayuda';
+
 /* Deshabilitació dels botons de marcar per les opcions no visualitzades */
 
 document.getElementById("op1").onclick= function(){
@@ -23,6 +16,10 @@ document.getElementById("op1").onclick= function(){
 	document.getElementById("r2").disabled=true;
 	document.getElementById("r3").disabled=true;
 	document.getElementById("r4").disabled=true;
+	document.getElementById("im1").style.display="inline";
+	document.getElementById("im2").style.display="none";
+	document.getElementById("im3").style.display="none";
+	document.getElementById("im4").style.display="none";
 };
 
 document.getElementById("op2").onclick= function(){
@@ -30,6 +27,11 @@ document.getElementById("op2").onclick= function(){
 	document.getElementById("r2").disabled=false;
 	document.getElementById("r3").disabled=true;
 	document.getElementById("r4").disabled=true;
+	document.getElementById("im1").style.display="none";
+	document.getElementById("im2").style.display="inline";
+	document.getElementById("im3").style.display="none";
+	document.getElementById("im4").style.display="none";
+	
 };
 
 document.getElementById("op3").onclick= function(){
@@ -37,6 +39,10 @@ document.getElementById("op3").onclick= function(){
 	document.getElementById("r2").disabled=true;
 	document.getElementById("r3").disabled=false;
 	document.getElementById("r4").disabled=true;
+	document.getElementById("im1").style.display="none";
+	document.getElementById("im2").style.display="none";
+	document.getElementById("im3").style.display="inline";
+	document.getElementById("im4").style.display="none";
 };
 
 document.getElementById("op4").onclick= function(){
@@ -44,6 +50,10 @@ document.getElementById("op4").onclick= function(){
 	document.getElementById("r2").disabled=true;
 	document.getElementById("r3").disabled=true;
 	document.getElementById("r4").disabled=false;
+	document.getElementById("im1").style.display="none";
+	document.getElementById("im2").style.display="none";
+	document.getElementById("im3").style.display="none";
+	document.getElementById("im4").style.display="inline";
 };
 
 /* Deshabilitar tots els botons en escollir una resposta */
@@ -54,14 +64,8 @@ document.getElementById("r1").onclick= function(){
 	{
 	     nodes[i].disabled = true;
 	}
-};
-
-document.getElementById("r1").onclick= function(){
-	var nodes = document.getElementById("resp").getElementsByTagName('*');
-	for(var i = 0; i < nodes.length; i++)
-	{
-	     nodes[i].disabled = true;
-	}
+	
+	document.getElementById("fb1").style.display="inline";
 };
 
 document.getElementById("r2").onclick= function(){
@@ -70,6 +74,8 @@ document.getElementById("r2").onclick= function(){
 	{
 	     nodes[i].disabled = true;
 	}
+	
+	document.getElementById("fb2").style.display="inline";
 };
 
 document.getElementById("r3").onclick= function(){
@@ -78,6 +84,8 @@ document.getElementById("r3").onclick= function(){
 	{
 	     nodes[i].disabled = true;
 	}
+	
+	document.getElementById("fb3").style.display="inline";
 };
 
 document.getElementById("r4").onclick= function(){
@@ -86,6 +94,23 @@ document.getElementById("r4").onclick= function(){
 	{
 	     nodes[i].disabled = true;
 	}
+	
+	document.getElementById("fb4").style.display="inline";
 };
 
+/*Color vermell en clicar opció error*/
+function roig(){
+	document.getElementById("e1").style.background="#c71c1c";
+}
+function roig2(){
+	document.getElementById("e2").style.background="#c71c1c";
+}
+function roig3(){
+	document.getElementById("e3").style.background="#c71c1c";
+}
+function roig4(){
+	document.getElementById("e4").style.background="#c71c1c";
+}
+
+/* */
 
