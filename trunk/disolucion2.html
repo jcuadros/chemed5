@@ -18,96 +18,84 @@
 <title>Módulos de Química de Bachiller</title>
 </head>
 <body>
-        <div class="container-fluid">
-                <div class="row-fluid">
-                        <div class="span12">
-                                <ul class="breadcrumb">
-                                  <li><a href="#">Inicio</a>></li>
-                                  <li><a href="#">Bachiller</a>></li>
-                                  <li><a href="#">Disoluciones</a>></li>
-                                  <li class="active">Disolución 2</li>
-                                </ul>
-                        </div>
-                        <div class="span11">
-                        	<a href="index.html"><img style="float:left;" src="imatges/atras.png" class="backward" /></a>
-                        	<a href="#"><img src="imatges/arriba.gif" width="15" height="25" border="0"/></a>
-                        	<a href="#"><img style="float:right;" src="imatges/adelante.png" class="forward" /></a>
-                        </div>
+                <div class="row-fluid" id="navbar">
+                            <ul class="breadcrumb">
+                             	<li><a href="#">Inicio</a>></li>
+                              	<li><a href="#">Bachiller</a>></li>
+                              	<li><a href="#">Disoluciones</a>></li>
+                              	<li class="active">Disolución 2</li>
+                             	<li class="arrows">
+               						<a href="index.html"><i class="icon-backward backward"></i></a>
+               						<a href="#"><i class="icon-arrow-up"></i></a>
+          							<a href="#"><i class="icon-forward forward"></i></a>
+             	   				</li>
+                           </ul>    
                 </div>
+                <p>&nbsp;</p>
                 <p>&nbsp;</p>
                 <div class="row-fluid" id="context_question">
                         <div class="span7">
-                        <h4>Disolución 2:</h4>
-                        	The following figure represents a solute (red) dissolved in a solvent.
+                        	<h4>Disolución 2:</h4>
+                        	<p>The following figure represents a solute (red) dissolved in a solvent.
                         	Clicking on the following pictures will display four possible dynamics of this system. 
                             Watch them and think which one best represents a saturated solution.
-                            After you have examined the four animations, choose the best answer:
+                            After you have examined the four animations, choose the best answer:</p>
+                            <!--====================Ayuda de la pregunta====================-->
+                           	<div>
+	                        	<a href="#" onclick="overlay()"><button type="button" class="btn btn-link" id="hint"></button></a>
+								<div id="ayuda" class="modal fade in">
+							  		<div class="modal-header" style="text-align:left;">
+									   	<button type="button" class="close" onclick="overlay()">&times;</button>
+									    <h3>Ayuda</h3>
+								  	</div>
+								  	<div class="modal-body">
+								    	<p>Texto de la ayuda</p>
+									</div>
+								  	<div class="modal-footer">
+								    	<a href="#" class="btn" onclick="overlay()">Cerrar</a>
+									</div>
+								</div>
+	                		</div>
                         </div>
-                        
+
                         <!--=================Animación/Imagen de la pregunta========================-->
                         
-                        <div class="span6">
-                        <img src="imatges/disol/D2.jpg" />
+                        <div class="span5 image">
+                        	<img src="imatges/disol/D2.jpg" />
                         </div>
                 </div>
-                <p>&nbsp;</p>
-                <div class="row-fluid">
-                        <div class="span5">
-                                
-                            <div class="row-fluid">
-	                            <div class="span5" data-toggle="buttons-radio">
-	                                <div class="btn-toolbar">
-	                                        <div class="btn-group">
-	                                                <a href="#" onClick="cargaScript('D2solucion1.txt'); return false;" target="#panelJmol"><button class="btn" type="button">Ver Opción A</button></a>
-	                                                <a href="D2solucion1.html" target="feedback"><button class="btn btn-info" type="button">Marcar</button></a>
-	                                        </div>
+                <div class="row-fluid" id="context_answer">
+                        <div id="resp" class="span7" data-toggle="buttons-radio">        
+	                                <div class="btn-toolbar" style="display:block;">
+                                 		<a href="#" onClick="cargaScript('D2solucion1.txt'); return false;" target="#panelJmol"><button class="btn option" id="op1"><i class="icon-eye-open"></i></button></a>
+              							<a href="D2solucion1.html"><button class="btn check" id="r1"><i class="icon-ok"></i></button></a>
+              							<a><button class="btn error" id="e1" onclick="roig()"><i class="icon-remove"></i></button></a>   
 	                                </div>
-	                                <div class="btn-toolbar">
-	                                        <div class="btn-group">
-	                                                <a href="#" onClick="cargaScript('D2solucion2.txt'); return false;" target="#panelJmol"><button class="btn" type="button">Ver Opción B</button></a>
-	                                                <a href="D2solucion2.html" target="feedback"><button class="btn btn-info" type="button">Marcar</button></a>
-	                                        </div>
+	                                <div class="btn-toolbar" style="display:block;">
+	                                    <a href="#" onClick="cargaScript('D2solucion2.txt'); return false;" target="#panelJmol"><button class="btn option" id="op2"><i class="icon-eye-open"></i></button></a>
+              							<a><button class="btn check" id="r2"><i class="icon-ok"></i></button></a>
+              							<a><button class="btn error" id="e2" onclick="roig2()"><i class="icon-remove"></i></button></a>	    	                                     
 	                                </div>
-	                                <div class="btn-toolbar">
-	                                        <div class="btn-group">
-	                                                <a href="#" onClick="cargaScript('D2solucion3.txt'); return false;" target="#panelJmol"><button class="btn" type="button">Ver Opción C</button></a>
-	                                                <a href="D2solucion3.html" target="feedback"><button class="btn btn-info" type="button">Marcar</button></a>
-	                                        </div>
+	                                <div class="btn-toolbar" style="display:block;">
+	                                 	<a href="#" onClick="cargaScript('D2solucion3.txt'); return false;" target="#panelJmol"><button class="btn option" id="op3"><i class="icon-eye-open"></i></button></a>
+              							<a><button class="btn check" id="r3"><i class="icon-ok"></i></button></a>
+              							<a><button class="btn error" id="e3" onclick="roig3()"><i class="icon-remove"></i></button></a>	                
 	                                </div>
-	                                <div class="btn-toolbar">
-	                                        <div class="btn-group">
-	                                                <a href="#" onClick="cargaScript('D2solucion4.txt'); return false;" target="#panelJmol"><button class="btn" type="button">Ver Opción D</button></a>
-	                                                <a href="D2solucion4.html" target="feedback"><button class="btn btn-info" type="button">Marcar</button></a>
-	                                        </div>
+	                                <div class="btn-toolbar" style="display:block;">
+	                                  	<a href="#" onClick="cargaScript('D2solucion4.txt'); return false;" target="#panelJmol"><button class="btn option" id="op4"><i class="icon-eye-open"></i></button></a>
+              							<a href="D2solucion4.html"><button class="btn check" id="r4"><i class="icon-ok"></i></button></a>
+              							<a><button class="btn error" id="e4" onclick="roig4()"><i class="icon-remove"></i></button></a>	       
 	                                </div>
-	                                <div>
-	                                	<!--====================Ayuda de la pregunta====================-->
-                                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#Ayuda">
-                                                <i class="icon-question-sign"></i> Ayuda</button>
-
-                                        <div id="Ayuda" class="modal hide fade" tabindex="-1" data-show="false">
-                                                  <div class="modal-header">
-                                                            <button type="button" class="close" data-dismiss="modal">×</button>
-                                                            <h3 id="myModalLabel">Ayuda</h3>
-                                                  </div>
-                                                  <div class="modal-body">
-                                                                <p>Texto de la ayuda</p>
-                                                  </div>
-                                                  <div class="modal-footer">
-                                                        <button class="btn" data-dismiss="modal">Close</button>
-                                                  </div>
-                                        </div>  
-                                	</div>
-	                            </div>
+	                                		
 	                            			<!--===============Feedback======================-->
 	                            <div id="feedback" class="span6">
 	                            	<iframe class="span12" name="feedback" frameborder="NO" scrolling="no"></iframe>
 	                            </div>    
-                          	</div>                   	
+                                           	
                         </div>
                       
                         					<!--=============Animacions/Imatges=============-->
-                        <div id="panelJmol" class="span6">
+                        <div id="panelJmol" class="span5">
 							<script type="text/javascript">
 								jmolInitialize("..",true);;
 								jmolSetCallback("UseCommandThread","true");
@@ -140,18 +128,7 @@
 							</tr>
 							</tbody></table>
 						</div>
-                </div>
-                <p>&nbsp;</p>
-	            <div class="row-fluid">
-               		<div class="span11">
-	                	<a href="index.html"><img style="float:left;" src="imatges/atras.png" class="backward"/></a>
-	                	<a href="#"><img src="imatges/arriba.gif" width="15" height="25" border="0"/></a>
-	                	<a href="#"><img style="float:right;" src="imatges/adelante.png" class="forward"/></a>
-                	</div>  
-               	</div>
-                        
-        </div>
-
+                </div>               
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
