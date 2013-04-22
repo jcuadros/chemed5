@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0">
+<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css"/>
+<link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+
+<title>Disoluciones</title>
+</head>
+<body>
+			<div class="row-fluid" id="navbar"> 
+                 <ul class="breadcrumb">
+                   <li><a href="#">Inicio</a>></li>
+                   <li><a href="#">Bachiller</a>></li>
+                   <li><a href="#">Disoluciones</a>></li>
+                   <li class="active">Disolución 3</li>
+                   <li class="arrows">
+                		<a href="disolucion2.html"><i class="icon-backward backward"></i></a>
+                		<a href="#"><i class="icon-arrow-up"></i></a>
+           				<a href="#"><i class="icon-forward forward"></i></a>
+               	   </li>
+                 </ul>                           
+	        </div>
+	        <p>&nbsp;</p>
+	        <p>&nbsp;</p>
+		<div class="container-fluid">
+			<div class="row-fluid" id="context_question">
+                   <div class="span7">
+	                    <h4>Disolución 3:</h4>
+	                    <p>El siguiente dibujo representa una pequeña porción de 1 L de una disolución acuosa de azucar. 
+	                    Las moléculas de azucar se han representado como esferas blancas. Las moléculas de agua no se han representado.</p>
+	                    <p>¿Cual de los dibujos inferiores representa mejor el mismo volumen de la disolución anterior cuando se ha añadido 1 L de agua?</p>
+        			<!--========================Ayuda de la pregunta================================-->
+                 		<div>
+                        	<a href="#" onclick="overlay()"><button type="button" class="btn btn-link" id="hint"></button></a>
+							<div id="ayuda" class="modal fade in">
+						  		<div class="modal-header" style="text-align:left;">
+								   	<button type="button" class="close" onclick="overlay()">&times;</button>
+								    <h3>Ayuda</h3>
+							  	</div>
+							  	<div class="modal-body">
+							    	<p>Texto de la ayuda</p>
+								</div>
+							  	<div class="modal-footer">
+							    	<a href="#" class="btn" onclick="overlay()">Cerrar</a>
+								</div>
+							</div>
+                		</div>
+                   </div>
+                 <!--==========================Animación de la pregunta ========================--> 
+                  <div class="span5 image">
+                  	<img src="imatges/disol/D3/D3.jpg" />
+                  </div>     
+           </div>
+           <!--============================Espacio de la respuesta =========================-->
+           <div class="row-fluid" id="context_answer">
+           		<div id="resp" data-toggle="buttons-radio" style="text-align:center;">
+      				<div class="span3">
+      					<a><button class="btn check" id="r1"><i class="icon-ok"></i></button></a>
+  						<a><button class="btn error" id="e1" onclick="roig()"><i class="icon-remove"></i></button></a>
+  						<img src="imatges/disol/D3/D3-A.jpg"/>
+  					</div>
+  					<div class="span3">
+  						<a><button class="btn check" id="r2"><i class="icon-ok"></i></button></a>
+  						<a><button class="btn error" id="e2" onclick="roig2()"><i class="icon-remove"></i></button></a>
+  						<img src="imatges/disol/D3/D3-B.jpg"/>
+  					</div>
+  					<div class="span3">
+  						<a><button class="btn check" id="r3"><i class="icon-ok"></i></button></a>
+						<a><button class="btn error" id="e3" onclick="roig3()"><i class="icon-remove"></i></button></a>
+						<img src="imatges/disol/D3/D3-C.jpg"/>	
+  					</div>
+  					<div class="span3">
+  						<a><button class="btn check" id="r4"><i class="icon-ok"></i></button></a>
+						<a><button class="btn error" id="e4" onclick="roig4()"><i class="icon-remove"></i></button></a>
+						<img src="imatges/disol/D3/D3-D.jpg"/>	
+  					</div>	
+           		</div>
+           </div>
+			<!--============================Feedback=====================================-->
+				<div id="fb1" class="row-fluid" style="display:none;"><p class="wrong">Esta opción no es correcta. Hay el mismo nómero de moléculas de soluto por unidad de volumen que en la muestra inicial.</p></div>
+				<div id="fb2" class="row-fluid" style="display:none;"><p class="correct">Esta opción es correcta. Después de diluir, el número de moléculas de soluto por unidad de volumen debe ser la mitad que en la muestra inicial.</p></div>
+				<div id="fb3" class="row-fluid" style="display:none;"><p class="wrong">Esta opción no es correcta. Hay mas moléculas de soluto que en la disolución inicial.</p></div>
+				<div id="fb4" class="row-fluid" style="display:none;"><p class="wrong">Esta opción no es correcta. No hay moléculas de soluto en esta muestra y la dilución no produce ese efecto.</p></div>
+		</div>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="./jscript/mainjs.js"></script>
+<script type="text/javascript" src="./jscript/page_context.js"></script>
+</body>
+</html>
