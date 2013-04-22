@@ -15,24 +15,25 @@
 		}
 	}
 </script>
-<title>Módulos de Química de Bachiller</title>
+<title>Disoluciones</title>
 </head>
 <body>
-                <div class="row-fluid" id="navbar">
-                            <ul class="breadcrumb">
-                             	<li><a href="#">Inicio</a>></li>
-                              	<li><a href="#">Bachiller</a>></li>
-                              	<li><a href="#">Disoluciones</a>></li>
-                              	<li class="active">Disolución 2</li>
-                             	<li class="arrows">
-               						<a href="index.html"><i class="icon-backward backward"></i></a>
-               						<a href="#"><i class="icon-arrow-up"></i></a>
-          							<a href="#"><i class="icon-forward forward"></i></a>
-             	   				</li>
-                           </ul>    
-                </div>
+            <div class="row-fluid" id="navbar">
+               <ul class="breadcrumb">
+                 	<li><a href="#">Inicio</a>></li>
+                  	<li><a href="#">Bachiller</a>></li>
+                  	<li><a href="#">Disoluciones</a>></li>
+                  	<li class="active">Disolución 2</li>
+                 	<li class="arrows">
+   						<a href="index.html"><i class="icon-backward backward"></i></a>
+   						<a href="#"><i class="icon-arrow-up"></i></a>
+						<a href="disolucion3.html"><i class="icon-forward forward"></i></a>
+ 	   				</li>
+               </ul>    
+            </div>
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
+			<div class="container-fluid">
                 <div class="row-fluid" id="context_question">
                         <div class="span7">
                         	<h4>Disolución 2:</h4>
@@ -64,11 +65,12 @@
                         	<img src="imatges/disol/D2.jpg" />
                         </div>
                 </div>
+                <!--============================Espacio de la respuesta =========================-->
                 <div class="row-fluid" id="context_answer">
                         <div id="resp" class="span7" data-toggle="buttons-radio">        
 	                                <div class="btn-toolbar" style="display:block;">
                                  		<a href="#" onClick="cargaScript('D2solucion1.txt'); return false;" target="#panelJmol"><button class="btn option" id="op1"><i class="icon-eye-open"></i></button></a>
-              							<a href="D2solucion1.html"><button class="btn check" id="r1"><i class="icon-ok"></i></button></a>
+              							<a><button class="btn check" id="r1"><i class="icon-ok"></i></button></a>
               							<a><button class="btn error" id="e1" onclick="roig()"><i class="icon-remove"></i></button></a>   
 	                                </div>
 	                                <div class="btn-toolbar" style="display:block;">
@@ -83,18 +85,11 @@
 	                                </div>
 	                                <div class="btn-toolbar" style="display:block;">
 	                                  	<a href="#" onClick="cargaScript('D2solucion4.txt'); return false;" target="#panelJmol"><button class="btn option" id="op4"><i class="icon-eye-open"></i></button></a>
-              							<a href="D2solucion4.html"><button class="btn check" id="r4"><i class="icon-ok"></i></button></a>
+              							<a><button class="btn check" id="r4"><i class="icon-ok"></i></button></a>
               							<a><button class="btn error" id="e4" onclick="roig4()"><i class="icon-remove"></i></button></a>	       
-	                                </div>
-	                                		
-	                            			<!--===============Feedback======================-->
-	                            <div id="feedback" class="span6">
-	                            	<iframe class="span12" name="feedback" frameborder="NO" scrolling="no"></iframe>
-	                            </div>    
-                                           	
+	                                </div>  			                             	
                         </div>
-                      
-                        					<!--=============Animacions/Imatges=============-->
+                        <!--=============Animacions/Imatges=============-->
                         <div id="panelJmol" class="span5">
 							<script type="text/javascript">
 								jmolInitialize("..",true);;
@@ -128,7 +123,14 @@
 							</tr>
 							</tbody></table>
 						</div>
-                </div>               
+                </div>
+                <p>&nbsp;</p>
+                <!--===============Feedback======================-->
+                <div id="fb1" class="row-fluid" style="display:none;"><p class="wrong">Wrong. In this animation there is a net crystallization of solute molecules. The solution was oversaturated.</p></div>
+                <div id="fb2" class="row-fluid" style="display:none;"><p class="wrong">Wrong. In this animation there is a net solution of solute molecules. The solution was diluted.</p></div>    
+                <div id="fb3" class="row-fluid" style="display:none;"><p class="correct">Correct. This animation shows exchange of solute between solid and solution but the amount of solute in solution remains constant. This solution was saturated.</p></div>    
+                <div id="fb4" class="row-fluid" style="display:none;"><p class="wrong">Wrong. This animation does not show any exchange of solute molecules between the solid and the solution media. Ths situation is not real.</p></div>
+         </div>               
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
