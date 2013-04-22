@@ -57,37 +57,65 @@
                   </div>
             </div>
             <!--==================================Espacio de la respuesta =========================-->
-            <div class="row-fluid" id="context_answer">
-	              <div id="resp" class="span7 image" data-toggle="buttons-radio">	
-	              	<div class="btn-toolbar" style="display:block;">
+            
+            	<!--========= Per a mòbils i tablets amb resolució menor a 979px =====================-->
+            <div class="row-fluid hidden-desktop" id="context_answer">
+	              <div id="resp" data-toggle="buttons-radio" style="display:inline-block;">	
+	              	<div class="btn-toolbar">
               			<a><button class="btn option" id="op1"><i class="icon-eye-open"></i></button></a>
               			<a><button class="btn check" id="r1"><i class="icon-ok"></i></button></a>
               			<a><button class="btn error" id="e1" onclick="roig()"><i class="icon-remove"></i></button></a>	
 	              	</div>
-	              	<div class="btn-toolbar" style="display:block;">
+	              	<div class="btn-toolbar">
               			<a><button class="btn option" id="op2"><i class="icon-eye-open"></i></button></a>
               			<a><button class="btn check" id="r2"><i class="icon-ok"></i></button></a>
               			<a><button class="btn error" id="e2" onclick="roig2()"><i class="icon-remove"></i></button></a>	
 	              	</div>
-	              	<div class="btn-toolbar" style="display:block;">
+	              	<div class="btn-toolbar">
               			<a><button class="btn option" id="op3"><i class="icon-eye-open"></i></button></a>
               			<a><button class="btn check" id="r3"><i class="icon-ok"></i></button></a>
               			<a><button class="btn error" id="e3" onclick="roig3()"><i class="icon-remove"></i></button></a>	
 	              	</div>
-	              	<div class="btn-toolbar" style="display:block;">
+	              	<div class="btn-toolbar">
               			<a><button class="btn option" id="op4"><i class="icon-eye-open"></i></button></a>
               			<a><button class="btn check" id="r4"><i class="icon-ok"></i></button></a>
               			<a><button class="btn error" id="e4" onclick="roig4()"><i class="icon-remove"></i></button></a>	
 	              	</div>
 	              </div>    
              					<!--=============Animacions/Imatges=============-->
-	            <div id="anim" class="span5 image">
+	            <div id="anim" class="image" style="display:inline;">
 	           		<img id="im1" src="imatges/disol/D1/D1-A.jpg" style="display:none;"/>
 	           		<img id="im2" src="imatges/disol/D1/D1-B.jpg" style="display:none;"/>
 	           		<img id="im3" src="imatges/disol/D1/D1-C.jpg" style="display:none;"/>
 	           		<img id="im4" src="imatges/disol/D1/D1-D.jpg" style="display:none;"/>
 	            </div>    
           	</div>
+          	
+          		<!--======= Per a pantalles de PC i tablets amb resolució major de 979px ===========-->
+          	<div class="row-fluid visible-desktop" id="context_answer2">
+           		<div id="resp2" data-toggle="buttons-radio">
+      				<div class="span3 image" >
+      					<a><button class="btn check" id="ir1"><i class="icon-ok"></i></button></a>
+  						<a><button class="btn error" id="ie1" onclick="roigi()"><i class="icon-remove"></i></button></a>
+  						<img src="imatges/disol/D1/D1-A.jpg"/>
+  					</div>
+  					<div class="span3 image">
+  						<a><button class="btn check" id="ir2"><i class="icon-ok"></i></button></a>
+  						<a><button class="btn error" id="ie2" onclick="roigi2()"><i class="icon-remove"></i></button></a>
+  						<a href="#" id="ir2"><img src="imatges/disol/D1/D1-B.jpg"/></a>
+  					</div>
+  					<div class="span3 image">
+  						<a><button class="btn check" id="ir3"><i class="icon-ok"></i></button></a>
+  						<a><button class="btn error" id="ie3" onclick="roigi3()"><i class="icon-remove"></i></button></a>
+						<a href="#" id="ir3"><img src="imatges/disol/D1/D1-C.jpg"/></a>	
+  					</div>
+  					<div class="span3 image">
+  						<a><button class="btn check" id="ir4"><i class="icon-ok"></i></button></a>
+  						<a><button class="btn error" id="ie4" onclick="roigi4()"><i class="icon-remove"></i></button></a>
+						<a href="#" id="ir4"><img src="imatges/disol/D1/D1-D.jpg"/></a>	
+  					</div>	
+           		</div>
+           </div>
                  	
          			<!--===============Feedbacks======================-->
          	<div id="fb1" class="row-fluid" style="display:none;"><p class="correct">Esta opción es correcta.  La relación de soluto/disolvente, 5/10, es mayor que en la muestra modelo, 4/10.</p></div>	
