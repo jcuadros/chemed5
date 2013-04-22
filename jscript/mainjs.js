@@ -98,6 +98,47 @@ document.getElementById("r4").onclick= function(){
 	document.getElementById("fb4").style.display="inline";
 };
 
+/*dehabilitar botons. Pantalla gran*/
+document.getElementById("ir1").onclick= function(){
+	var nodes = document.getElementById("resp2").getElementsByTagName('*');
+	for(var i = 0; i < nodes.length; i++)
+	{
+	     nodes[i].disabled = true;
+	}
+	
+	document.getElementById("fb1").style.display="inline";
+};
+
+document.getElementById("ir2").onclick= function(){
+	var nodes = document.getElementById("resp2").getElementsByTagName('*');
+	for(var i = 0; i < nodes.length; i++)
+	{
+	     nodes[i].disabled = true;
+	}
+	
+	document.getElementById("fb2").style.display="inline";
+};
+
+document.getElementById("ir3").onclick= function(){
+	var nodes = document.getElementById("resp2").getElementsByTagName('*');
+	for(var i = 0; i < nodes.length; i++)
+	{
+	     nodes[i].disabled = true;
+	}
+	
+	document.getElementById("fb3").style.display="inline";
+};
+
+document.getElementById("ir4").onclick= function(){
+	var nodes = document.getElementById("resp2").getElementsByTagName('*');
+	for(var i = 0; i < nodes.length; i++)
+	{
+	     nodes[i].disabled = true;
+	}
+	
+	document.getElementById("fb4").style.display="inline";
+};
+
 /*Color vermell en clicar opció error*/
 function roig(){
 	document.getElementById("e1").style.background="#c71c1c";
@@ -111,6 +152,16 @@ function roig3(){
 function roig4(){
 	document.getElementById("e4").style.background="#c71c1c";
 }
-
-/* */
-
+/* Pantalles >979px */
+function roigi(){
+	document.getElementById("ie1").style.background="#c71c1c";
+}
+function roigi2(){
+	document.getElementById("ie2").style.background="#c71c1c";
+}
+function roigi3(){
+	document.getElementById("ie3").style.background="#c71c1c";
+}
+function roigi4(){
+	document.getElementById("ie4").style.background="#c71c1c";
+}
