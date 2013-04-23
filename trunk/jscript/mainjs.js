@@ -5,7 +5,7 @@ function overlay() {
 	el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
 }
 
-/* text botó ajuda*/
+/* text botó ajuda */
 
 document.getElementById("hint").innerHTML='<i class="icon-question-sign"></i> Ayuda';
 
@@ -139,7 +139,7 @@ document.getElementById("ir4").onclick= function(){
 	document.getElementById("fb4").style.display="inline";
 };
 
-/*Color vermell en clicar opció error*/
+/* Color vermell en clicar opció error */
 function roig(){
 	document.getElementById("e1").style.background="#c71c1c";
 }

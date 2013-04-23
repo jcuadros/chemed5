@@ -2,19 +2,20 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0">
+<meta charset="utf-8">
 <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
-<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css"/>
 <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
-
+<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css"/>
 <title>Disoluciones</title>
 </head>
+
 <body>
-			<div class="row-fluid" id="navbar"> 
+            <div class="row-fluid" id="navbar"> 
                  <ul class="breadcrumb">
                    <li><a href="#">Inicio</a>></li>
                    <li><a href="#">Bachiller</a>></li>
                    <li><a href="#">Disoluciones</a>></li>
-                   <li class="active">Disoluci髇 3</li>
+                   <li class="active">Disoluci贸n 3</li>
                    <li class="arrows">
                 		<a href="disolucion2.html"><i class="icon-backward backward"></i></a>
                 		<a href="#"><i class="icon-arrow-up"></i></a>
@@ -23,14 +24,15 @@
                  </ul>                           
 	        </div>
 	        <p>&nbsp;</p>
-	        <p>&nbsp;</p>
-		<div class="container-fluid">
-			<div class="row-fluid" id="context_question">
+	        <p>&nbsp;</p>  
+        <div class="container-fluid">
+            <div class="row-fluid" id="context_question">
                    <div class="span7">
-	                    <h4>Disoluci髇 3:</h4>
-	                    <p>El siguiente dibujo representa una peque馻 porci髇 de 1 L de una disoluci髇 acuosa de azucar. 
-	                    Las mol閏ulas de azucar se han representado como esferas blancas. Las mol閏ulas de agua no se han representado.</p>
-	                    <p>緾ual de los dibujos inferiores representa mejor el mismo volumen de la disoluci髇 anterior cuando se ha a馻dido 1 L de agua?</p>
+	                    <h4>Disoluci贸n 3: </h4>
+	                    <p>El siguiente dibujo representa una peque帽a porci贸n de 1 L de una disoluci贸n acuosa de azucar. 
+	                    Las mol茅culas de azucar se han representado como esferas blancas. Las mol茅culas de agua no se han representado.</p>
+	                    <p class="visible-desktop">驴Cual de los dibujos inferiores representa mejor el mismo volumen de la disoluci贸n anterior cuando se ha a帽adido 1 L de agua?</p>
+	                    <p class="hidden-desktop">驴Cual representa mejor el mismo volumen de la disoluci贸n anterior cuando se ha a帽adido 1 L de agua? Clica en los botones para ver las opciones.</p>
         			<!--========================Ayuda de la pregunta================================-->
                  		<div>
                         	<a href="#" onclick="overlay()"><button type="button" class="btn btn-link" id="hint"></button></a>
@@ -48,48 +50,89 @@
 							</div>
                 		</div>
                    </div>
-                 <!--==========================Animaci髇 de la pregunta ========================--> 
-                  <div class="span5 image">
+                    <!--==========================Animaci贸n de la pregunta ========================-->
+                    
+                  <div class="anim hidden-desktop">
                   	<img src="imatges/disol/D3/D3.jpg" />
-                  </div>     
-           </div>
-           <!--============================Espacio de la respuesta =========================-->
-           <div class="row-fluid" id="context_answer">
-           		<div id="resp" data-toggle="buttons-radio" style="text-align:center;">
-      				<div class="span3" style="display:inblock;">
-      					<a><button class="btn check" id="r1"><i class="icon-ok"></i></button></a>
-  						<a><button class="btn error" id="e1" onclick="roig()"><i class="icon-remove"></i></button></a>
+                  </div>
+                  <div class="visible-desktop span5 image">
+                  	<img src="imatges/disol/D3/D3.jpg"/>
+                  </div>
+            </div>
+            <!--==================================Espacio de la respuesta =========================-->
+            
+            	<!--========= Per a m貌bils i tablets amb resoluci贸 menor a 979px =====================-->
+            <div class="row-fluid hidden-desktop" id="context_answer">
+	              <div id="resp" data-toggle="buttons-radio" style="display:inline-block;">	
+	              	<div class="btn-toolbar">
+              			<a><button class="btn option" id="op1"><i class="icon-eye-open"></i></button></a>
+              			<a><button class="btn check" id="r1"><i class="icon-ok"></i></button></a>
+              			<a><button class="btn error" id="e1" onclick="roig()"><i class="icon-remove"></i></button></a>	
+	              	</div>
+	              	<div class="btn-toolbar">
+              			<a><button class="btn option" id="op2"><i class="icon-eye-open"></i></button></a>
+              			<a><button class="btn check" id="r2"><i class="icon-ok"></i></button></a>
+              			<a><button class="btn error" id="e2" onclick="roig2()"><i class="icon-remove"></i></button></a>	
+	              	</div>
+	              	<div class="btn-toolbar">
+              			<a><button class="btn option" id="op3"><i class="icon-eye-open"></i></button></a>
+              			<a><button class="btn check" id="r3"><i class="icon-ok"></i></button></a>
+              			<a><button class="btn error" id="e3" onclick="roig3()"><i class="icon-remove"></i></button></a>	
+	              	</div>
+	              	<div class="btn-toolbar">
+              			<a><button class="btn option" id="op4"><i class="icon-eye-open"></i></button></a>
+              			<a><button class="btn check" id="r4"><i class="icon-ok"></i></button></a>
+              			<a><button class="btn error" id="e4" onclick="roig4()"><i class="icon-remove"></i></button></a>	
+	              	</div>
+	              </div>    
+             					<!--=============Animacions/Imatges=============-->
+	            <div class="anim">
+	           		<img id="im1" src="imatges/disol/D3/D3-A.jpg" style="display:none;"/>
+	           		<img id="im2" src="imatges/disol/D3/D3-B.jpg" style="display:none;"/>
+	           		<img id="im3" src="imatges/disol/D3/D3-C.jpg" style="display:none;"/>
+	           		<img id="im4" src="imatges/disol/D3/D3-D.jpg" style="display:none;"/>
+	            </div>    
+          	</div>
+          	
+          		<!--======= Per a pantalles de PC i tablets amb resoluci贸 major de 979px ===========-->
+          	<div class="row-fluid visible-desktop" id="context_answer2">
+           		<div id="resp2" data-toggle="buttons-radio">
+      				<div class="span3 image" >
+      					<a><button class="btn check" id="ir1"><i class="icon-ok"></i></button></a>
+  						<a><button class="btn error" id="ie1" onclick="roigi()"><i class="icon-remove"></i></button></a>
   						<img src="imatges/disol/D3/D3-A.jpg"/>
   					</div>
-  					<div class="span3">
-  						<a><button class="btn check" id="r2"><i class="icon-ok"></i></button></a>
-  						<a><button class="btn error" id="e2" onclick="roig2()"><i class="icon-remove"></i></button></a>
+  					<div class="span3 image">
+  						<a><button class="btn check" id="ir2"><i class="icon-ok"></i></button></a>
+  						<a><button class="btn error" id="ie2" onclick="roigi2()"><i class="icon-remove"></i></button></a>
   						<img src="imatges/disol/D3/D3-B.jpg"/>
   					</div>
-  					<div class="span3">
-  						<a><button class="btn check" id="r3"><i class="icon-ok"></i></button></a>
-						<a><button class="btn error" id="e3" onclick="roig3()"><i class="icon-remove"></i></button></a>
+  					<div class="span3 image">
+  						<a><button class="btn check" id="ir3"><i class="icon-ok"></i></button></a>
+  						<a><button class="btn error" id="ie3" onclick="roigi3()"><i class="icon-remove"></i></button></a>
 						<img src="imatges/disol/D3/D3-C.jpg"/>	
   					</div>
-  					<div class="span3">
-  						<a><button class="btn check" id="r4"><i class="icon-ok"></i></button></a>
-						<a><button class="btn error" id="e4" onclick="roig4()"><i class="icon-remove"></i></button></a>
-						<img src="imatges/disol/D3/D3-D.jpg"/>	
+  					<div class="span3 image">
+  						<a><button class="btn check" id="ir4"><i class="icon-ok"></i></button></a>
+  						<a><button class="btn error" id="ie4" onclick="roigi4()"><i class="icon-remove"></i></button></a>
+						<img src="imatges/disol/D3/D3-D.jpg"/>
   					</div>	
            		</div>
            </div>
-			<!--============================Feedback=====================================-->
-				<div id="fb1" class="row-fluid" style="display:none;"><p class="wrong">Esta opci髇 no es correcta. Hay el mismo n髆ero de mol閏ulas de soluto por unidad de volumen que en la muestra inicial.</p></div>
-				<div id="fb2" class="row-fluid" style="display:none;"><p class="correct">Esta opci髇 es correcta. Despu閟 de diluir, el n鷐ero de mol閏ulas de soluto por unidad de volumen debe ser la mitad que en la muestra inicial.</p></div>
-				<div id="fb3" class="row-fluid" style="display:none;"><p class="wrong">Esta opci髇 no es correcta. Hay mas mol閏ulas de soluto que en la disoluci髇 inicial.</p></div>
-				<div id="fb4" class="row-fluid" style="display:none;"><p class="wrong">Esta opci髇 no es correcta. No hay mol閏ulas de soluto en esta muestra y la diluci髇 no produce ese efecto.</p></div>
-		</div>
-
+                 	
+         			<!--===============Feedbacks======================-->
+         	<div id="fb1" class="row-fluid" style="display:none;"><p class="correct">Esta opci贸n es correcta.  La relaci贸n de soluto/disolvente, 5/10, es mayor que en la muestra modelo, 4/10.</p></div>	
+           	<div id="fb2" class="row-fluid" style="display:none;"><p class="wrong">Esta opci贸n no es correcta.  La relaci贸n soluto/disolvente, 4/10, es igual a la de la muestra modelo.</p></div>
+           	<div id="fb3" class="row-fluid" style="display:none;"><p class="wrong">Esta opci贸n no es correcta.  La relaci贸n soluto/disolvente, 3/9, es menor que la de la muestra modelo, 4/10.</p></div>
+           	<div id="fb4" class="row-fluid" style="display:none;"><p class="wrong">Esta opci贸n no es correcta.  La relaci贸n soluto/disolvente, 5/13, es menor que la de la muestra modelo, 4/10.</p></div>
+            <p>&nbsp;</p>
+        </div>            
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
-<script type="text/javascript" src="./jscript/mainjs.js"></script>
 <script type="text/javascript" src="./jscript/page_context.js"></script>
+<script type="text/javascript" src="./jscript/mainjs.js"></script>
 </body>
+
 </html>
