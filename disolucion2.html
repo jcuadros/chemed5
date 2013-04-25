@@ -25,9 +25,9 @@
                   	<li><a href="#">Disoluciones</a>></li>
                   	<li class="active">Disolución 2</li>
                  	<li class="arrows">
-   						<a href="index.html"><i class="icon-backward backward"></i></a>
-   						<a href="#"><i class="icon-arrow-up"></i></a>
-						<a href="disolucion3.html"><i class="icon-forward forward"></i></a>
+   						<a href="index.html"><i class="icon-backward backward" title="backward"></i></a>
+   						<a href="#"><i class="icon-arrow-up" title="upper level"></i></a>
+						<a href="disolucion3.html"><i class="icon-forward forward" title="forward"></i></a>
  	   				</li>
                </ul>    
             </div>
@@ -70,27 +70,27 @@
                         <div id="resp" class="span7" data-toggle="buttons-radio">        
 	                                <div class="btn-toolbar" style="display:block;">
                                  		<a href="#" onClick="cargaScript('D2solucion1.txt'); return false;" target="#panelJmol"><button class="btn option" id="op1"><i class="icon-eye-open"></i></button></a>
-              							<a><button class="btn check" id="r1"><i class="icon-ok"></i></button></a>
-              							<a><button class="btn error" id="e1" onclick="roig()"><i class="icon-remove"></i></button></a>   
+              							<button class="btn check" id="r1"><i class="icon-ok"></i></button>
+              							<button class="btn error" id="e1" onclick="roig()"><i class="icon-remove"></i></button>
 	                                </div>
 	                                <div class="btn-toolbar" style="display:block;">
 	                                    <a href="#" onClick="cargaScript('D2solucion2.txt'); return false;" target="#panelJmol"><button class="btn option" id="op2"><i class="icon-eye-open"></i></button></a>
-              							<a><button class="btn check" id="r2"><i class="icon-ok"></i></button></a>
-              							<a><button class="btn error" id="e2" onclick="roig2()"><i class="icon-remove"></i></button></a>	    	                                     
+              							<button class="btn check" id="r2"><i class="icon-ok"></i></button>
+              							<button class="btn error" id="e2" onclick="roig2()"><i class="icon-remove"></i></button>  	                                     
 	                                </div>
 	                                <div class="btn-toolbar" style="display:block;">
 	                                 	<a href="#" onClick="cargaScript('D2solucion3.txt'); return false;" target="#panelJmol"><button class="btn option" id="op3"><i class="icon-eye-open"></i></button></a>
-              							<a><button class="btn check" id="r3"><i class="icon-ok"></i></button></a>
-              							<a><button class="btn error" id="e3" onclick="roig3()"><i class="icon-remove"></i></button></a>	                
+              							<button class="btn check" id="r3"><i class="icon-ok"></i></button>
+              							<button class="btn error" id="e3" onclick="roig3()"><i class="icon-remove"></i></button>             
 	                                </div>
 	                                <div class="btn-toolbar" style="display:block;">
 	                                  	<a href="#" onClick="cargaScript('D2solucion4.txt'); return false;" target="#panelJmol"><button class="btn option" id="op4"><i class="icon-eye-open"></i></button></a>
-              							<a><button class="btn check" id="r4"><i class="icon-ok"></i></button></a>
-              							<a><button class="btn error" id="e4" onclick="roig4()"><i class="icon-remove"></i></button></a>	       
+              							<button class="btn check" id="r4"><i class="icon-ok"></i></button>
+              							<button class="btn error" id="e4" onclick="roig4()"><i class="icon-remove"></i></button>      
 	                                </div>  			                             	
                         </div>
                         <!--=============Animacions/Imatges=============-->
-                        <div id="panelJmol" class="span5">
+                        <div id="panelJmol" class="span5 image">
 							<script type="text/javascript">
 								jmolInitialize("..",true);;
 								jmolSetCallback("UseCommandThread","true");
