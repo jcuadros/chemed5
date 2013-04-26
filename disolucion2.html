@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
 <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css"/>
 <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
-<script type="text/javascript">
-	var scr0 = 'zap; set echo warn 50% 50%; set echo warn center; echo "loading..."; refresh;';
-	function cargaScript(x) { 
-		if (x.length==0) {
-			jmolScript('zap;');
-		} else {
-			jmolScript(scr0 + 'script '+x);
-		}
-	}
-</script>
+<script src="Jmol/JSmol.min.js" type="text/javascript"></script>
+<script src="jscript/util.js" type="text/javascript"></script>
 <title>Disoluciones</title>
 </head>
 <body>
@@ -23,11 +16,11 @@
                  	<li><a href="#">Inicio</a>></li>
                   	<li><a href="#">Bachiller</a>></li>
                   	<li><a href="#">Disoluciones</a>></li>
-                  	<li class="active">Disolución 2</li>
+                  	<li class="active">DisoluciÃ³n 2</li>
                  	<li class="arrows">
-   						<a href="index.html"><i class="icon-backward backward" title="backward"></i></a>
-   						<a href="#"><i class="icon-arrow-up" title="upper level"></i></a>
-						<a href="disolucion3.html"><i class="icon-forward forward" title="forward"></i></a>
+   						<a href="index.html"><i class="icon-backward backward"></i></a>
+   						<a href="#"><i class="icon-arrow-up"></i></a>
+						<a href="disolucion3.html"><i class="icon-forward forward"></i></a>
  	   				</li>
                </ul>    
             </div>
@@ -36,7 +29,7 @@
 			<div class="container-fluid">
                 <div class="row-fluid" id="context_question">
                         <div class="span7">
-                        	<h4>Disolución 2:</h4>
+                        	<h4>DisoluciÃ³n 2:</h4>
                         	<p>The following figure represents a solute (red) dissolved in a solvent.
                         	Clicking on the following pictures will display four possible dynamics of this system. 
                             Watch them and think which one best represents a saturated solution.
@@ -59,7 +52,7 @@
 	                		</div>
                         </div>
 
-                        <!--=================Animación/Imagen de la pregunta========================-->
+                        <!--=================AnimaciÃ³n/Imagen de la pregunta========================-->
                         
                         <div class="span5 image">
                         	<img src="imatges/disol/D2.jpg" />
@@ -70,55 +63,38 @@
                         <div id="resp" class="span7" data-toggle="buttons-radio">        
 	                                <div class="btn-toolbar" style="display:block;">
                                  		<a href="#" onClick="cargaScript('D2solucion1.txt'); return false;" target="#panelJmol"><button class="btn option" id="op1"><i class="icon-eye-open"></i></button></a>
-              							<button class="btn check" id="r1"><i class="icon-ok"></i></button>
-              							<button class="btn error" id="e1" onclick="roig()"><i class="icon-remove"></i></button>
+              							<a><button class="btn check" id="r1"><i class="icon-ok"></i></button></a>
+              							<a><button class="btn error" id="e1" onclick="roig()"><i class="icon-remove"></i></button></a>   
 	                                </div>
 	                                <div class="btn-toolbar" style="display:block;">
 	                                    <a href="#" onClick="cargaScript('D2solucion2.txt'); return false;" target="#panelJmol"><button class="btn option" id="op2"><i class="icon-eye-open"></i></button></a>
-              							<button class="btn check" id="r2"><i class="icon-ok"></i></button>
-              							<button class="btn error" id="e2" onclick="roig2()"><i class="icon-remove"></i></button>  	                                     
+              							<a><button class="btn check" id="r2"><i class="icon-ok"></i></button></a>
+              							<a><button class="btn error" id="e2" onclick="roig2()"><i class="icon-remove"></i></button></a>	    	                                     
 	                                </div>
 	                                <div class="btn-toolbar" style="display:block;">
 	                                 	<a href="#" onClick="cargaScript('D2solucion3.txt'); return false;" target="#panelJmol"><button class="btn option" id="op3"><i class="icon-eye-open"></i></button></a>
-              							<button class="btn check" id="r3"><i class="icon-ok"></i></button>
-              							<button class="btn error" id="e3" onclick="roig3()"><i class="icon-remove"></i></button>             
+              							<a><button class="btn check" id="r3"><i class="icon-ok"></i></button></a>
+              							<a><button class="btn error" id="e3" onclick="roig3()"><i class="icon-remove"></i></button></a>	                
 	                                </div>
 	                                <div class="btn-toolbar" style="display:block;">
 	                                  	<a href="#" onClick="cargaScript('D2solucion4.txt'); return false;" target="#panelJmol"><button class="btn option" id="op4"><i class="icon-eye-open"></i></button></a>
-              							<button class="btn check" id="r4"><i class="icon-ok"></i></button>
-              							<button class="btn error" id="e4" onclick="roig4()"><i class="icon-remove"></i></button>      
+              							<a><button class="btn check" id="r4"><i class="icon-ok"></i></button></a>
+              							<a><button class="btn error" id="e4" onclick="roig4()"><i class="icon-remove"></i></button></a>	       
 	                                </div>  			                             	
                         </div>
                         <!--=============Animacions/Imatges=============-->
                         <div id="panelJmol" class="span5 image">
 							<script type="text/javascript">
-								jmolInitialize("..",true);;
-								jmolSetCallback("UseCommandThread","true");
-								jmolApplet(320);
+								Jmol.getApplet("myJmol", JmolInfo);
 							</script>
-							<applet name="jmolApplet0" id="jmolApplet0" code="JmolApplet" archive="JmolAppletSigned0.jar" codebase="./Jmol" width="320" height="320" mayscript="true">
-							  <param name="syncId" value="688451643101871">
-							  <param name="progressbar" value="true">
-							  <param name="progresscolor" value="blue">
-							  <param name="boxbgcolor" value="black">
-							  <param name="boxfgcolor" value="white">
-							  <param name="boxmessage" value="Downloading JmolApplet ...">
-							  <param name="UseCommandThread" value="true">
-							  <param name="script" value="select *">
-								<table bgcolor="yellow"><tbody><tr><td align="center" valign="middle" width="320" height="320"><font color="black">
-								You do not have the<br>
-								Java Runtime Environment<br>
-								installed for applet support.<br>
-								Visit <a href="http://www.java.com">www.java.com</a></font></td></tr></tbody></table>
-							</applet>
 							<table id="animCtrls">
 							<tbody><tr>
 							<td>Animation:</td>
 							<td>
-							<button onclick="jmolScript('animation pause')" title="pause"><img src="imatges/mano-stop.gif" alt="pause"></button>
-							<button onclick="jmolScript('animation fps 3;animation play')" title="slow"><img src="imatges/tortuga.gif" alt="slow"></button>
-							<button onclick="jmolScript('animation fps 15;animation play')" title="fast"><img src="imatges/liebre.gif" alt="fast"></button>
-							<button onclick="jmolScript('animation rewind;animation play')" title="repeat"><img src="imatges/repetir.gif" alt="repeat"></button>
+							<button onclick="Jmol.script(myJmol,'animation pause')" title="pause"><img src="imatges/mano-stop.gif" alt="pause"></button>
+							<button onclick="Jmol.script(myJmol,'animation fps 3;animation play')" title="slow"><img src="imatges/tortuga.gif" alt="slow"></button>
+							<button onclick="Jmol.script(myJmol,'animation fps 15;animation play')" title="fast"><img src="imatges/liebre.gif" alt="fast"></button>
+							<button onclick="Jmol.script(myJmol,'animation rewind;animation play')" title="repeat"><img src="imatges/repetir.gif" alt="repeat"></button>
 							</td>
 							</tr>
 							</tbody></table>
