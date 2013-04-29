@@ -60,11 +60,6 @@
 	display:inline-block;	
 }
 
-button[disabled].check:hover, button[disabled].check:active{
-	background:none;
-	background-image:none;
-}
-
 /*Per a que el modal funcioni be en IE */
 body {
      height:100%;    
@@ -97,6 +92,13 @@ div#context_answer2 {
 #resp2 {	
 	padding-left:2%;
 	padding-bottom:1%;	
+}
+
+div#resp button.btn[disabled]:hover,
+div#resp2 button.btn[disabled]:hover{
+	background:#e6e6e6;
+	-moz-background:#e6e6e6;
+	-webkit-background:#e6e6e6;
 }
 
 div#resp{
