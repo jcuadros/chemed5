@@ -165,3 +165,9 @@ function roigi3(){
 function roigi4(){
 	document.getElementById("ie4").style.background="#c71c1c";
 }
+
+/*Color verd en escollir opció*/
+
+$(".check").onclick=function(){
+	$(this).style.background="#1cad21";
+};
