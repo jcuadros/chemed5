@@ -58,116 +58,54 @@ document.getElementById("op4").onclick= function(){
 
 /* Deshabilitar tots els botons en escollir una resposta */
 
-document.getElementById("r1").onclick= function(){
-	var nodes = document.getElementById("resp").getElementsByTagName('*');
-	for(var i = 0; i < nodes.length; i++)
-	{
-	     nodes[i].disabled = true;
-	}
-	
-	document.getElementById("fb1").style.display="inline";
-};
+$(".check").click(function(){
+	$(this).css("background","#1cad21");
+	$("#resp .btn").attr("disabled","disabled");
+	$("#resp2 .btn").attr("disabled","disabled");
+});
 
+/* Color vermell en clicar opció error */
+
+$(".error").click(function(){
+	$(this).css("background","#c71c1c");
+});
+
+/*Feedbacks. Pantalla petita*/
 document.getElementById("r2").onclick= function(){
-	var nodes = document.getElementById("resp").getElementsByTagName('*');
-	for(var i = 0; i < nodes.length; i++)
-	{
-	     nodes[i].disabled = true;
-	}
 	
 	document.getElementById("fb2").style.display="inline";
 };
 
 document.getElementById("r3").onclick= function(){
-	var nodes = document.getElementById("resp").getElementsByTagName('*');
-	for(var i = 0; i < nodes.length; i++)
-	{
-	     nodes[i].disabled = true;
-	}
 	
 	document.getElementById("fb3").style.display="inline";
 };
 
 document.getElementById("r4").onclick= function(){
-	var nodes = document.getElementById("resp").getElementsByTagName('*');
-	for(var i = 0; i < nodes.length; i++)
-	{
-	     nodes[i].disabled = true;
-	}
-	
+
 	document.getElementById("fb4").style.display="inline";
 };
 
-/*dehabilitar botons. Pantalla gran*/
+/*Feedback. Pantalla gran*/
+
 document.getElementById("ir1").onclick= function(){
-	var nodes = document.getElementById("resp2").getElementsByTagName('*');
-	for(var i = 0; i < nodes.length; i++)
-	{
-	     nodes[i].disabled = true;
-	}
-	
+
 	document.getElementById("fb1").style.display="inline";
 };
 
 document.getElementById("ir2").onclick= function(){
-	var nodes = document.getElementById("resp2").getElementsByTagName('*');
-	for(var i = 0; i < nodes.length; i++)
-	{
-	     nodes[i].disabled = true;
-	}
 	
 	document.getElementById("fb2").style.display="inline";
 };
 
 document.getElementById("ir3").onclick= function(){
-	var nodes = document.getElementById("resp2").getElementsByTagName('*');
-	for(var i = 0; i < nodes.length; i++)
-	{
-	     nodes[i].disabled = true;
-	}
 	
 	document.getElementById("fb3").style.display="inline";
 };
 
 document.getElementById("ir4").onclick= function(){
-	var nodes = document.getElementById("resp2").getElementsByTagName('*');
-	for(var i = 0; i < nodes.length; i++)
-	{
-	     nodes[i].disabled = true;
-	}
 	
 	document.getElementById("fb4").style.display="inline";
 };
 
-/* Color vermell en clicar opció error */
-function roig(){
-	document.getElementById("e1").style.background="#c71c1c";
-}
-function roig2(){
-	document.getElementById("e2").style.background="#c71c1c";
-}
-function roig3(){
-	document.getElementById("e3").style.background="#c71c1c";
-}
-function roig4(){
-	document.getElementById("e4").style.background="#c71c1c";
-}
-/* Pantalles >979px */
-function roigi(){
-	document.getElementById("ie1").style.background="#c71c1c";
-}
-function roigi2(){
-	document.getElementById("ie2").style.background="#c71c1c";
-}
-function roigi3(){
-	document.getElementById("ie3").style.background="#c71c1c";
-}
-function roigi4(){
-	document.getElementById("ie4").style.background="#c71c1c";
-}
 
-/*Color verd en escollir opció*/
-
-$(".check").onclick=function(){
-	$(this).style.background="#1cad21";
-};

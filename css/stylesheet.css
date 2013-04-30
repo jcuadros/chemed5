@@ -14,6 +14,12 @@
 	margin-right:20px;
 }
 
+.btn-toolbar > .btn + .btn,
+.btn-toolbar > .btn-group + .btn,
+.btn-toolbar > .btn + .btn-group {
+  margin-left: 5px;
+}
+
 .correct{
 	font-weight:bold;
 	color:green;
@@ -56,7 +62,7 @@
 #navbar{
 	position: fixed;
 	margin:0 0;
-	width:100;
+	width:100%;
 	display:inline-block;	
 }
 
@@ -68,9 +74,8 @@ body {
      -webkit-scrolling:no;
 }
 
-div#context_answer,
-div#context_answer2 {
-	background-color: #f5f5f5;
+#context_answer,
+#context_answer2 {
   	-webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -81,7 +86,6 @@ div#context_answer2 {
 }
 
 #context_question{
-	background-color: #f5f5f5;
   	-webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -94,23 +98,23 @@ div#context_answer2 {
 	padding-bottom:1%;	
 }
 
-div#resp button.btn[disabled]:hover,
-div#resp2 button.btn[disabled]:hover{
+#resp button.btn[disabled]:hover,
+#resp2 button.btn[disabled]:hover{
 	background:#e6e6e6;
 	-moz-background:#e6e6e6;
 	-webkit-background:#e6e6e6;
 }
 
-div#resp{
+#resp{
 	padding-top:2%;
 	padding-left:10px;	
 }
 
-div#resp a, #resp2 a{
+#resp a, #resp2 a{
 	margin-right:3px;
 }
 
-div#resp .btn, #resp2 .btn {
+#resp .btn, #resp2 .btn {
 	-webkit-border-radius: 3px;
    	-moz-border-radius: 3px;
    	border-radius: 3px;
@@ -122,8 +126,7 @@ div#resp .btn, #resp2 .btn {
    	vertical-align: middle;   
 }
    
-div#resp .check:hover, div#resp .check:active, div#resp .check.active,
-div#resp2 .check:hover, div#resp2 .check:active, div#resp2 .check.active{
+#resp .check:hover, #resp2 .check:hover{
 	background: #1cad21;
    	background: -webkit-gradient(linear, left top, left bottom, from(#1cd622), to(#1cad21));
    	background: -webkit-linear-gradient(top, #1cd622, #1cad21);
@@ -132,8 +135,7 @@ div#resp2 .check:hover, div#resp2 .check:active, div#resp2 .check.active{
    	background: -o-linear-gradient(top, #1cd622, #1cad21);
 }
 
-div#resp .error:hover, div#resp .error.active, div#resp .error:active,
-div#resp2 .error:hover, div#resp2 .error.active, div#resp2 .error:active{
+#resp .error:hover, #resp2 .error:hover{
 	background: #c71c1c;
    	background: -webkit-gradient(linear, left top, left bottom, from(#f04343), to(#c71c1c));
    	background: -webkit-linear-gradient(top, #f04343, #c71c1c);
@@ -142,8 +144,8 @@ div#resp2 .error:hover, div#resp2 .error.active, div#resp2 .error:active{
    	background: -o-linear-gradient(top, #f04343, #c71c1c);
 }
    
-div#resp .btn.option:hover, 
-div#resp2 .btn.option:hover {
+#resp .btn.option:hover, 
+#resp2 .btn.option:hover {
 	-webkit-border-radius: 3px;
    	-moz-border-radius: 3px;
    	border-radius: 3px;
@@ -158,10 +160,10 @@ div#resp2 .btn.option:hover {
    	text-shadow: rgba(0,0,0,.4) 0 1px 0;
 }
 
-div#resp .btn.option.active,
-div#resp .btn.option:active,
-div#resp2 .btn.option.active,
-div#resp2 .btn.option:active {
+#resp .btn.option.active,
+#resp .btn.option:active,
+#resp2 .btn.option.active,
+#resp2 .btn.option:active {
 	border-top-color: #407aa1;
   	background: #407aa1;
   	background-image: none;
@@ -173,4 +175,9 @@ div#resp2 .btn.option:active {
 
 p {
 	text-align: left;	
+}
+
+ol li {
+	font-weight:700;
+	list-style-type:upper-alpha;	
 }
