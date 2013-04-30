@@ -63,31 +63,40 @@
             
             	<!--========= Per a mòbils i tablets amb resolució menor a 979px =====================-->
             <div class="row-fluid hidden-desktop" id="context_answer">
-	              <div id="resp" data-toggle="buttons-radio" style="display:inline-block;">	
-	              	<div class="btn-toolbar">
-              			<button class="btn option" id="op1" title="See option"><i class="icon-eye-open"></i></button>
-              			<button class="btn check" id="r1" title="Select option"><i class="icon-ok"></i></button>
-              			<button class="btn error" id="e1" onclick="roig()" title="Dismiss option"><i class="icon-remove"></i></button>
-	              	</div>
-	              	<div class="btn-toolbar">
-              			<button class="btn option" id="op2" title="See option"><i class="icon-eye-open"></i></button>
-              			<button class="btn check" id="r2" title="Select option"><i class="icon-ok"></i></button>
-              			<button class="btn error" id="e2" onclick="roig2()" title="Dismiss option"><i class="icon-remove"></i></button>
-	              	</div>
-	              	<div class="btn-toolbar">
-              			<button class="btn option" id="op3"  title="See option"><i class="icon-eye-open"></i></button>
-              			<button class="btn check" id="r3" title="Select option"><i class="icon-ok"></i></button>
-              			<button class="btn error" id="e3" onclick="roig3()" title="Dismiss option"><i class="icon-remove"></i></button>
-	              	</div>
-	              	<div class="btn-toolbar">
-              			<button class="btn option" id="op4"  title="See option"><i class="icon-eye-open"></i></button>
-              			<button class="btn check" id="r4" title="Select option"><i class="icon-ok"></i></button>
-              			<button class="btn error" id="e4" onclick="roig4()" title="Dismiss option"><i class="icon-remove"></i></button>	
-	              	</div>
-	              </div>    
-             					<!--=============Animacions/Imatges=============-->
+              	<div id="resp" data-toggle="buttons-radio" style="display:inline-block;">
+     				<ol>
+		              	<li>
+		              		<div class="btn-toolbar">
+	              			<button class="btn option active" id="op1" title="See option"><i class="icon-eye-open"></i></button>
+	              			<button class="btn check" id="r1" title="Select option"><i class="icon-ok"></i></button>
+	              			<button class="btn error" id="e1" onclick="roig()" title="Dismiss option"><i class="icon-remove"></i></button>
+		              		</div>
+		              	</li>
+		              	<li>
+		              		<div class="btn-toolbar">
+	              			<button class="btn option" id="op2" title="See option"><i class="icon-eye-open"></i></button>
+	              			<button class="btn check" id="r2" title="Select option"><i class="icon-ok"></i></button>
+	              			<button class="btn error" id="e2" onclick="roig2()" title="Dismiss option"><i class="icon-remove"></i></button>
+		              		</div>
+		              	</li>
+		              	<li>
+		              		<div  class="btn-toolbar">
+	              			<button class="btn option" id="op3"  title="See option"><i class="icon-eye-open"></i></button>
+	              			<button class="btn check" id="r3" title="Select option"><i class="icon-ok"></i></button>
+	              			<button class="btn error" id="e3" onclick="roig3()" title="Dismiss option"><i class="icon-remove"></i></button>
+		              		</div>
+		              	</li>
+		              	<li>
+		              		<div  class="btn-toolbar">
+	              			<button class="btn option" id="op4"  title="See option"><i class="icon-eye-open"></i></button>
+	              			<button class="btn check" id="r4" title="Select option"><i class="icon-ok"></i></button>
+	              			<button class="btn error" id="e4" onclick="roig4()" title="Dismiss option"><i class="icon-remove"></i></button>	
+		              		</div>
+		              	</li>
+	              	</ol>    
+           		</div>			<!--=============Animacions/Imatges=============-->
 	            <div id="anim" class="anim" style="display:inline;">
-	           		<img id="im1" src="imatges/disol/D1/D1-A.jpg" style="display:none;"/>
+	           		<img id="im1" src="imatges/disol/D1/D1-A.jpg" style="display:inline;"/>
 	           		<img id="im2" src="imatges/disol/D1/D1-B.jpg" style="display:none;"/>
 	           		<img id="im3" src="imatges/disol/D1/D1-C.jpg" style="display:none;"/>
 	           		<img id="im4" src="imatges/disol/D1/D1-D.jpg" style="display:none;"/>
@@ -97,7 +106,7 @@
           		<!--======= Per a pantalles de PC i tablets amb resolució major de 979px ===========-->
           	<div class="row-fluid visible-desktop" id="context_answer2">
            		<div id="resp2" data-toggle="buttons-radio">
-      				<div class="span3 image" >
+      				<div class="span3 image">
       					<button class="btn check" id="ir1" title="Select option"><i class="icon-ok"></i></button>
   						<button class="btn error" id="ie1" onclick="roigi()" title="Dismiss option"><i class="icon-remove"></i></button>
   						<img src="imatges/disol/D1/D1-A.jpg"/>
