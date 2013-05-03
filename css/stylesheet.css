@@ -35,6 +35,21 @@
 	vertical-align:middle;
 }
 
+.option.active,
+.option:active{
+	background-color:inherit;
+	-moz-box-shadow:inset 0px 0px 0px 4px #827979;
+	-webkit-box-shadow:inset 0px 0px 0px 4px #827979;
+	box-shadow:inset 0px 0px 0px 4px #827979;
+}
+
+.option:hover{
+	background-color:inherit;
+	-moz-box-shadow:inset 0px 0px 0px 2px #827979;
+	-webkit-box-shadow:inset 0px 0px 0px 2px #827979;
+	box-shadow:inset 0px 0px 0px 2px #827979;
+}
+
 .wrong{
 	font-weight:bold;
 	color:red;
@@ -103,6 +118,9 @@ body {
 	background:#e6e6e6;
 	-moz-background:#e6e6e6;
 	-webkit-background:#e6e6e6;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
 }
 
 #resp{
@@ -125,53 +143,22 @@ body {
    	text-decoration: none;
    	vertical-align: middle;   
 }
-   
-#resp .check:hover, #resp2 .check:hover{
-	background: #1cad21;
-   	background: -webkit-gradient(linear, left top, left bottom, from(#1cd622), to(#1cad21));
-   	background: -webkit-linear-gradient(top, #1cd622, #1cad21);
-   	background: -moz-linear-gradient(top, #1cd622, #1cad21);
-   	background: -ms-linear-gradient(top, #1cd622, #1cad21);
-   	background: -o-linear-gradient(top, #1cd622, #1cad21);
+
+.check:hover{
+	background-color:inherit;
+	-moz-box-shadow:inset 0px 0px 0px 4px #25bb20;
+	-webkit-box-shadow:inset 0px 0px 0px 4px #25bb20;
+	box-shadow:inset 0px 0px 0px 4px #25bb20;
 }
 
-#resp .error:hover, #resp2 .error:hover{
-	background: #c71c1c;
-   	background: -webkit-gradient(linear, left top, left bottom, from(#f04343), to(#c71c1c));
-   	background: -webkit-linear-gradient(top, #f04343, #c71c1c);
-   	background: -moz-linear-gradient(top, #f04343, #c71c1c);
-   	background: -ms-linear-gradient(top, #f04343, #c71c1c);
-   	background: -o-linear-gradient(top, #f04343, #c71c1c);
+.error:hover, .eclick{
+	background-color:inherit;
+	-moz-box-shadow:inset 0px 0px 0px 4px #f51010;
+	-webkit-box-shadow:inset 0px 0px 0px 4px #f51010;
+	box-shadow:inset 0px 0px 0px 4px #f51010;
 }
    
-#resp .btn.option:hover, 
-#resp2 .btn.option:hover {
-	-webkit-border-radius: 3px;
-   	-moz-border-radius: 3px;
-   	border-radius: 3px;
-   	background: #8793a1;
-   	background: -webkit-gradient(linear, left top, left bottom, from(#bdd5e6), to(#8793a1));
-   	background: -webkit-linear-gradient(top, #bdd5e6, #8793a1);
-   	background: -moz-linear-gradient(top, #bdd5e6, #8793a1);
-  	background: -ms-linear-gradient(top, #bdd5e6, #8793a1);
-   	background: -o-linear-gradient(top, #bdd5e6, #8793a1);
-   	box-shadow: rgba(0,0,0,1) 0 0 0;
-   	color: #ffffff;
-   	text-shadow: rgba(0,0,0,.4) 0 1px 0;
-}
 
-#resp .btn.option.active,
-#resp .btn.option:active,
-#resp2 .btn.option.active,
-#resp2 .btn.option:active {
-	border-top-color: #407aa1;
-  	background: #407aa1;
-  	background-image: none;
-  	outline: 0;
-  	-webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-     -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05);
-}
 
 p {
 	text-align: left;	

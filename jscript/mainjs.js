@@ -9,6 +9,71 @@ function overlay() {
 
 document.getElementById("hint").innerHTML='<i class="icon-question-sign"></i> Ayuda';
 
+/* Poder moure l'ajuda per la pantalla*/
+
+$(function(){
+	$("#ayuda").draggable();
+});
+
+/* deshabilitar botó check si s'ha marcat l'opció com a descartada*/
+$(function(){
+	$("#ie1").click(function(){
+		$("#ir1").toggle(function(){
+			$(this).attr("disabled");
+		});
+		return false;
+	});
+	
+	$("#ie2").click(function(){
+		$("#ir2").toggle(function(){
+			$(this).attr("disabled");
+		});
+		return false;
+	});
+	
+	$("#ie3").click(function(){
+		$("#ir3").toggle(function(){
+			$(this).attr("disabled");
+		});
+		return false;
+	});
+	
+	$("#ie4").click(function(){
+		$("#ir4").toggle(function(){
+			$(this).attr("disabled");
+		});
+		return false;
+	});
+	
+	$("#e1").click(function(){
+		$("#r1").toggle(function(){
+			$(this).attr("disabled");
+		});
+		return false;
+	});
+	
+	$("#e2").click(function(){
+		$("#r2").toggle(function(){
+			$(this).attr("disabled");
+		});
+		return false;
+	});
+	
+	$("#e3").click(function(){
+		$("#r3").toggle(function(){
+			$(this).attr("disabled");
+		});
+		return false;
+	});
+	
+	$("#e4").click(function(){
+		$("#r4").toggle(function(){
+			$(this).attr("disabled");
+		});
+		return false;
+	});
+});
+
 /* Deshabilitació dels botons de marcar per les opcions no visualitzades */
 
 document.getElementById("op1").onclick= function(){
@@ -59,18 +124,26 @@ document.getElementById("op4").onclick= function(){
 /* Deshabilitar tots els botons en escollir una resposta */
 
 $(".check").click(function(){
-	$(this).css("background","#1cad21");
 	$("#resp .btn").attr("disabled","disabled");
 	$("#resp2 .btn").attr("disabled","disabled");
+	$(this).css("box-shadow","inset 0px 0px 0px 4px #25bb20");
+	
 });
 
-/* Color vermell en clicar opció error */
-
-$(".error").click(function(){
-	$(this).css("background","#c71c1c");
+/* Toggle Color vermell/verd en clicar opció error/check */
+$(function(){
+	$(".error").click(function(){
+		$(this).toggleClass("eclick");
+		return false;
+	});
 });
 
 /*Feedbacks. Pantalla petita*/
+document.getElementById("r1").onclick= function(){
+	
+	document.getElementById("fb1").style.display="inline";
+};
+
 document.getElementById("r2").onclick= function(){
 	
 	document.getElementById("fb2").style.display="inline";
