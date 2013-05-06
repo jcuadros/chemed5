@@ -15,6 +15,20 @@ $(function(){
 	$("#ayuda").draggable();
 });
 
+/* alerta en pantalla <979px*/
+
+$(function(){
+	var cnt=0;
+	
+	if(cnt<1){
+		if($(document).width() < 979){
+		window.alert("En esta pantalla se muestra s\u00f3lo una de las im\u00e1genes de las respuestas." +
+				"Selecciona los botones de visualizaci\u00f3n para ver las diferentes opciones.");
+		cnt=2;
+		}
+	}
+});
+
 /* deshabilitar botó check si s'ha marcat l'opció com a descartada*/
 $(function(){
 	$("#ie1").click(function(){
@@ -124,8 +138,8 @@ document.getElementById("op4").onclick= function(){
 /* Deshabilitar tots els botons en escollir una resposta */
 
 $(".check").click(function(){
-	$("#resp .btn").attr("disabled","disabled");
-	$("#resp2 .btn").attr("disabled","disabled");
+	$(".check").attr("disabled","disabled");
+	$(".error").attr("disabled","disabled");
 	$(this).css("box-shadow","inset 0px 0px 0px 4px #25bb20");
 	
 });
