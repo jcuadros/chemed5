@@ -6,12 +6,32 @@
 
 .arrows{
 	float:right;
-	margin-left:5%;
 	margin-right:15%;
+	background-color: inherit;
+}
+
+.arrows > a:hover{
+	background-color:inherit;
+	-moz-box-shadow:inset 0px 0px 0px 2px grey;
+	-webkit-box-shadow:inset 0px 0px 0px 2px grey;
+	box-shadow:inset 0px 0px 0px 2px grey;
+	border-radius:2px;
+	padding-top:2px;
+	padding-bottom:2px;
 }
 
 .backward{
 	margin-right:20px;
+}
+
+.block{
+	display:block;
+}
+
+div.border:hover{
+	border:2px;
+	border-radius:2px;
+	border-color: grey;
 }
 
 .btn-toolbar > .btn + .btn,
@@ -20,9 +40,23 @@
   margin-left: 5px;
 }
 
+.check:hover{
+	background-color:inherit;
+	-moz-box-shadow:inset 0px 0px 0px 4px #25bb20;
+	-webkit-box-shadow:inset 0px 0px 0px 4px #25bb20;
+	box-shadow:inset 0px 0px 0px 4px #25bb20;
+}
+
 .correct{
 	font-weight:bold;
 	color:green;
+}
+
+.error:hover, .eclick{
+	background-color:inherit;
+	-moz-box-shadow:inset 0px 0px 0px 4px #f51010;
+	-webkit-box-shadow:inset 0px 0px 0px 4px #f51010;
+	box-shadow:inset 0px 0px 0px 4px #f51010;
 }
 
 .forward{
@@ -32,6 +66,11 @@
 .image{
 	display:table-cell;
 	text-align:center;
+	vertical-align:middle;
+}
+
+.nombre{
+	font-weight:bold;
 	vertical-align:middle;
 }
 
@@ -142,23 +181,7 @@ body {
    	padding: 8.5px 17px;
    	text-decoration: none;
    	vertical-align: middle;   
-}
-
-.check:hover{
-	background-color:inherit;
-	-moz-box-shadow:inset 0px 0px 0px 4px #25bb20;
-	-webkit-box-shadow:inset 0px 0px 0px 4px #25bb20;
-	box-shadow:inset 0px 0px 0px 4px #25bb20;
-}
-
-.error:hover, .eclick{
-	background-color:inherit;
-	-moz-box-shadow:inset 0px 0px 0px 4px #f51010;
-	-webkit-box-shadow:inset 0px 0px 0px 4px #f51010;
-	box-shadow:inset 0px 0px 0px 4px #f51010;
-}
-   
-
+}   
 
 p {
 	text-align: left;	
