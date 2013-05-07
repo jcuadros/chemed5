@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0">
 <meta charset="utf-8">
@@ -31,7 +31,7 @@
         <div class="container-fluid">
             <div class="row-fluid" id="context_question">
                    <div class="span7">
-	                    <h4>Disolución 1: </h4>
+	                    <h4>Disolución 1 </h4>
 	                    <p>La siguiente imagen representa una disolución de NaCl en agua. 
 	                    Observad la presencia de iones Cl<sup>-</sup> (esferas verdes) y iones Na<sup>+</sup> (esferas amarillas) junto con moléculas de agua.
 	                    Las siguientes figuras representan diversas disoluciones de NaCl en agua.</p> 
@@ -39,7 +39,7 @@
         			<!--========================Ayuda de la pregunta================================-->
                  		<div>
                         	<a href="#" onclick="overlay()"><button type="button" class="btn btn-link" id="hint"></button></a>
-							<div id="ayuda" class="modal fade in">
+								<div id="ayuda" class="modal fade in">
 						  		<div class="modal-header" style="text-align:left;">
 								   	<button type="button" class="close" onclick="overlay()">&times;</button>
 								    <h3 id="htitle"></h3>
@@ -71,29 +71,29 @@
 		              	<li>
 		              		<div class="btn-toolbar">
 	              			<button class="btn option active" id="op1" title="See option"><i class="icon-eye-open"></i></button>
-	              			<button class="btn check" id="r1" title="Select option"><i class="icon-ok"></i></button>
-	              			<button class="btn error" id="e1" onclick="roig()" title="Dismiss option"><i class="icon-remove"></i></button>
+	              			<a href="#" onclick="fback()"><button class="btn check" id="r1" title="Select option"><i class="icon-ok"></i></button></a>
+	              			<button class="btn error" id="e1" title="Dismiss option"><i class="icon-remove"></i></button>
 		              		</div>
 		              	</li>
 		              	<li>
 		              		<div class="btn-toolbar">
 	              			<button class="btn option" id="op2" title="See option"><i class="icon-eye-open"></i></button>
-	              			<button class="btn check" id="r2" title="Select option"><i class="icon-ok"></i></button>
-	              			<button class="btn error" id="e2" onclick="roig2()" title="Dismiss option"><i class="icon-remove"></i></button>
+	              			<a href="#" onclick="fback()"><button class="btn check" id="r2" title="Select option"><i class="icon-ok"></i></button></a>
+	              			<button class="btn error" id="e2" title="Dismiss option"><i class="icon-remove"></i></button>
 		              		</div>
 		              	</li>
 		              	<li>
 		              		<div  class="btn-toolbar">
 	              			<button class="btn option" id="op3"  title="See option"><i class="icon-eye-open"></i></button>
-	              			<button class="btn check" id="r3" title="Select option"><i class="icon-ok"></i></button>
-	              			<button class="btn error" id="e3" onclick="roig3()" title="Dismiss option"><i class="icon-remove"></i></button>
+	              			<a href="#" onclick="fback()"><button class="btn check" id="r3" title="Select option"><i class="icon-ok"></i></button></a>
+	              			<button class="btn error" id="e3" title="Dismiss option"><i class="icon-remove"></i></button>
 		              		</div>
 		              	</li>
 		              	<li>
 		              		<div  class="btn-toolbar">
 	              			<button class="btn option" id="op4"  title="See option"><i class="icon-eye-open"></i></button>
-	              			<button class="btn check" id="r4" title="Select option"><i class="icon-ok"></i></button>
-	              			<button class="btn error" id="e4" onclick="roig4()" title="Dismiss option"><i class="icon-remove"></i></button>	
+	              			<a href="#" onclick="fback()"><button class="btn check" id="r4" title="Select option"><i class="icon-ok"></i></button></a>
+	              			<button class="btn error" id="e4" title="Dismiss option"><i class="icon-remove"></i></button>	
 		              		</div>
 		              	</li>
 	              	</ol>    
@@ -111,32 +111,32 @@
            		<div id="resp2" data-toggle="buttons-radio">
       				<div class="span3 image">
       					<span class="nombre">A.&nbsp;</span>
-      					<button class="btn check" id="ir1" title="Select option"><i class="icon-ok"></i></button>
-  						<button class="btn error" id="ie1" onclick="roigi()" title="Dismiss option"><i class="icon-remove"></i></button>
+      					<a href="#" onclick="fback()"><button class="btn check" id="ir1"><i class="icon-ok"></i></button></a>
+  						<button class="btn error" id="ie1"><i class="icon-remove"></i></button>
   						<div class="block">
   							<img src="imatges/disol/D1/D1-A.jpg"/>
   						</div>
   					</div>
   					<div class="span3 image">
   						<span class="nombre">B.&nbsp;</span>
-  						<button class="btn check" id="ir2" title="Select option"><i class="icon-ok"></i></button>
-  						<button class="btn error" id="ie2" onclick="roigi2()" title="Dismiss option"><i class="icon-remove"></i></button>
+  						<a href="#" onclick="fback()"><button class="btn check" id="ir2"><i class="icon-ok"></i></button></a>
+  						<button class="btn error" id="ie2"><i class="icon-remove"></i></button>
   						<div class="block">
   							<img src="imatges/disol/D1/D1-B.jpg"/>
   						</div>
   					</div>
   					<div class="span3 image">
   						<span class="nombre">C.&nbsp;</span>
-  						<button class="btn check" id="ir3" title="Select option"><i class="icon-ok"></i></button>
-  						<button class="btn error" id="ie3" onclick="roigi3()" title="Dismiss option"><i class="icon-remove"></i></button>
+  						<a href="#" onclick="fback()"><button class="btn check" id="ir3"><i class="icon-ok"></i></button></a>
+  						<button class="btn error" id="ie3"><i class="icon-remove"></i></button>
 						<div class="block">
 							<img src="imatges/disol/D1/D1-C.jpg"/>
 						</div>
   					</div>
   					<div class="span3 image">
   						<span class="nombre">D.&nbsp;</span>
-  						<button class="btn check" id="ir4" title="Select option"><i class="icon-ok"></i></button>
-  						<button class="btn error" id="ie4" onclick="roigi4()" title="Dismiss option"><i class="icon-remove"></i></button>
+  						<a href="#" onclick="fback()"><button class="btn check" id="ir4"><i class="icon-ok"></i></button></a>
+  						<button class="btn error" id="ie4"><i class="icon-remove"></i></button>
 						<div class="block">
 							<img src="imatges/disol/D1/D1-D.jpg"/>
 						</div>
@@ -145,12 +145,20 @@
            </div>
                  	
          			<!--===============Feedbacks======================-->
-         	<div id="fb1" class="row-fluid" style="display:none;"><p class="correct">Esta opción es correcta.  La relación de soluto/disolvente, 5/10, es mayor que en la muestra modelo, 4/10.</p></div>	
-           	<div id="fb2" class="row-fluid" style="display:none;"><p class="wrong">Esta opción no es correcta.  La relación soluto/disolvente, 4/10, es igual a la de la muestra modelo.</p></div>
-           	<div id="fb3" class="row-fluid" style="display:none;"><p class="wrong">Esta opción no es correcta.  La relación soluto/disolvente, 3/9, es menor que la de la muestra modelo, 4/10.</p></div>
-           	<div id="fb4" class="row-fluid" style="display:none;"><p class="wrong">Esta opción no es correcta.  La relación soluto/disolvente, 5/13, es menor que la de la muestra modelo, 4/10.</p></div>
-            <p>&nbsp;</p>
-        </div>            
+				<div id="feedback" class="modal fade in feedback" style="visibility:hidden;">
+				  	<div class="modal-body">
+				    	<div id="fb1" class="row-fluid" style="display:none;"><img src="imatges/check.png"><p></p><p class="correct">Esta opción es correcta.  La relación de soluto/disolvente, 5/10, es mayor que en la muestra modelo, 4/10.</p></div>	
+           				<div id="fb2" class="row-fluid" style="display:none;"><img src="imatges/error.png"><p></p><p class="wrong">Esta opción no es correcta.  La relación soluto/disolvente, 4/10, es igual a la de la muestra modelo.</p></div>
+           				<div id="fb3" class="row-fluid" style="display:none;"><img src="imatges/error.png"><p></p><p class="wrong">Esta opción no es correcta.  La relación soluto/disolvente, 3/9, es menor que la de la muestra modelo, 4/10.</p></div>
+           				<div id="fb4" class="row-fluid" style="display:none;"><img src="imatges/error.png"><p></p><p class="wrong">Esta opción no es correcta.  La relación soluto/disolvente, 5/13, es menor que la de la muestra modelo, 4/10.</p></div>
+					</div>
+				  	<div class="modal-footer">
+				    	<a href="#"><i class="icon-backward backward"></i></a>
+	            		<a href="#"><i class="icon-arrow-up"></i></a>
+	       				<a href="disolucion2.html"><i class="icon-forward forward"></i></a>
+					</div>
+				</div>
+   </div>            
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
