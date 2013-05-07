@@ -5,12 +5,6 @@ function overlay() {
 	el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
 }
 
-/* text botó ajuda */
-
-document.getElementById("hint").innerHTML='<i class="icon-question-sign"></i> Ayuda';
-
-/* Poder moure l'ajuda per la pantalla*/
-
 $(function(){
 	$("#ayuda").draggable();
 });
