@@ -20,9 +20,9 @@
 	                <li><a href="#">Disoluciones</a>&gt;</li>
 	                <li class="active">Disolución 1</li> 
 	             	<li class="arrows">
-	            		<a href="#"><i class="icon-backward backward" title="backward"></i></a>
-	            		<a href="#"><i class="icon-arrow-up" title="upper level"></i></a>
-	       				<a href="disolucion2.html"><i class="icon-forward forward" title="forward"></i></a>
+	            		<a href="#"><i class="icon-backward backward"></i></a>
+	            		<a href="#"><i class="icon-arrow-up"></i></a>
+	       				<a href="disolucion2.html"><i class="icon-forward forward"></i></a>
 	           	   	</li>
     	   		</ul>                          
 	       </div>
@@ -42,13 +42,13 @@
 							<div id="ayuda" class="modal fade in">
 						  		<div class="modal-header" style="text-align:left;">
 								   	<button type="button" class="close" onclick="overlay()">&times;</button>
-								    <h3>Ayuda</h3>
+								    <h3 id="htitle"></h3>
 							  	</div>
 							  	<div class="modal-body">
 							    	<p>Texto de la ayuda</p>
 								</div>
 							  	<div class="modal-footer">
-							    	<a href="#" class="btn" onclick="overlay()">Cerrar</a>
+							    	<a id="close" href="#" class="btn" onclick="overlay()"></a>
 								</div>
 							</div>
                 		</div>
@@ -158,6 +158,7 @@
 <script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
 <script type="text/javascript" src="./jscript/page_context.js"></script>
 <script type="text/javascript" src="./jscript/mainjs.js"></script>
+<script type="text/javascript" src="./jscript/languages.js"></script>
 <script type="text/javascript" src="./jscript/util.js"></script>
 </body>
 
