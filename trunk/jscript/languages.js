@@ -13,6 +13,17 @@
 		 $(".check").attr("title","select option");
 		 $(".option").attr("title","see option"); 
 	 }
+	 else if(userLang=="ca"){
+		 $(".backward").attr("title","anterior");
+		 $(".forward").attr("title","seg\u00fcent");
+		 $(".icon-arrow-up").attr("title","nivell superior");
+		 $("#close").html("Tancar");
+		 $("#hint").html('<i class="icon-question-sign"></i> Ajuda');
+		 $("#htitle").html("Ajuda");
+		 $(".error").attr("title","descartar");
+		 $(".check").attr("title","seleccionar");
+		 $(".option").attr("title","veure opci\u00f3");
+	 }
 	 else{
 		 $(".backward").attr("title","atr\u00e1s");
 		 $(".forward").attr("title","siguiente");
