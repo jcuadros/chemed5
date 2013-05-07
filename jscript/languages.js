@@ -1,39 +1,42 @@
  $(document).ready(function(){
 	 
-	 var userLang = (navigator.language) ? navigator.language : navigator.userLanguage;
+	 var userLang = $("html").attr("lang");
 	 
 	 if(userLang == "en"){
-		 $(".backward").attr("title","backward");
-		 $(".forward").attr("title","forward");
-		 $(".icon-arrow-up").attr("title","upper level");
+		 $(".backward").attr("title","Backward");
+		 $(".forward").attr("title","Forward");
+		 $(".icon-arrow-up").attr("title","Upper level");
 		 $("#close").html("Close");
+		 $("#closefb").html("Close");
 		 $("#hint").html('<i class="icon-question-sign"></i> Help');
 		 $("#htitle").html("Help");
-		 $(".error").attr("title","dismiss option");
-		 $(".check").attr("title","select option");
-		 $(".option").attr("title","see option"); 
+		 $(".error").attr("title","Dismiss option");
+		 $(".check").attr("title","Select option");
+		 $(".option").attr("title","See option"); 
 	 }
 	 else if(userLang=="ca"){
-		 $(".backward").attr("title","anterior");
-		 $(".forward").attr("title","seg\u00fcent");
-		 $(".icon-arrow-up").attr("title","nivell superior");
+		 $(".backward").attr("title","Anterior");
+		 $(".forward").attr("title","Seg\u00fcent");
+		 $(".icon-arrow-up").attr("title","Nivell superior");
 		 $("#close").html("Tancar");
+		 $("#closefb").html("Tancar");
 		 $("#hint").html('<i class="icon-question-sign"></i> Ajuda');
 		 $("#htitle").html("Ajuda");
-		 $(".error").attr("title","descartar");
-		 $(".check").attr("title","seleccionar");
-		 $(".option").attr("title","veure opci\u00f3");
+		 $(".error").attr("title","Descartar");
+		 $(".check").attr("title","Seleccionar");
+		 $(".option").attr("title","Veure opci\u00f3");
 	 }
 	 else{
-		 $(".backward").attr("title","atr\u00e1s");
-		 $(".forward").attr("title","siguiente");
-		 $(".icon-arrow-up").attr("title","nivel superior");
+		 $(".backward").attr("title","Atr\u00e1s");
+		 $(".forward").attr("title","Siguiente");
+		 $(".icon-arrow-up").attr("title","Nivel superior");
 		 $("#close").html("Cerrar");
+		 $("#closefb").html("Cerrar");
 		 $("#hint").html('<i class="icon-question-sign"></i> Ayuda');
 		 $("#htitle").html("Ayuda");
-		 $(".error").attr("title","descartar");
-		 $(".check").attr("title","seleccionar");
-		 $(".option").attr("title","ver opci\u00f3n");
+		 $(".error").attr("title","Descartar");
+		 $(".check").attr("title","Seleccionar");
+		 $(".option").attr("title","Ver opci\u00f3n");
 	 }
  });
  

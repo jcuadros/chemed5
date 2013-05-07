@@ -5,8 +5,18 @@ function overlay() {
 	el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
 }
 
+/* Modal del feedback*/
+
+function fback() {
+	fb = document.getElementById("feedback");
+	fb.style.visibility ="visible";
+}
+
+/* Draggables de l'ajuda i el feedback*/
+
 $(function(){
-	$("#ayuda").draggable();
+	$("#ayuda").draggable({containment:"window"});
+	$("#feedback").draggable({containment:"window"});
 });
 
 /* alerta en pantalla <979px*/
@@ -16,7 +26,7 @@ $(function(){
 	
 	if(cnt<1){
 		if($(document).width() < 979){
-		window.alert("En esta pantalla se muestra s\u00f3lo una de las im\u00e1genes de las respuestas." +
+		window.alert("En esta pantalla se muestra s\u00f3lo una de las im\u00e1genes de las respuestas. " +
 				"Selecciona los botones de visualizaci\u00f3n para ver las diferentes opciones.");
 		cnt=2;
 		}
@@ -143,7 +153,7 @@ $(function(){
 	$(".error").click(function(){
 		$(this).toggleClass("eclick");
 		return false;
-	});
+	});	
 });
 
 /*Feedbacks. Pantalla petita*/

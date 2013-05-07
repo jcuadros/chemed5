@@ -14,6 +14,7 @@
 	background-color:inherit;
 	-moz-box-shadow:inset 0px 0px 0px 2px grey;
 	-webkit-box-shadow:inset 0px 0px 0px 2px grey;
+	-ms-box-shadow:inset 0px 0px 0px 2px grey;
 	box-shadow:inset 0px 0px 0px 2px grey;
 	border-radius:2px;
 	padding-top:2px;
@@ -44,6 +45,7 @@ div.border:hover{
 	background-color:inherit;
 	-moz-box-shadow:inset 0px 0px 0px 4px #25bb20;
 	-webkit-box-shadow:inset 0px 0px 0px 4px #25bb20;
+	-ms-box-shadow:inset 0px 0px 0px 4px #25bb20;
 	box-shadow:inset 0px 0px 0px 4px #25bb20;
 }
 
@@ -56,6 +58,7 @@ div.border:hover{
 	background-color:inherit;
 	-moz-box-shadow:inset 0px 0px 0px 4px #f51010;
 	-webkit-box-shadow:inset 0px 0px 0px 4px #f51010;
+	-ms-box-shadow:inset 0px 0px 0px 4px #f51010;
 	box-shadow:inset 0px 0px 0px 4px #f51010;
 }
 
@@ -68,7 +71,9 @@ div.border:hover{
 	text-align:center;
 	vertical-align:middle;
 }
-
+.modal.fade.in.feedback{
+	top:30%;
+}
 .nombre{
 	font-weight:bold;
 	vertical-align:middle;
@@ -118,6 +123,7 @@ div.border:hover{
 	margin:0 0;
 	width:100%;
 	display:inline-block;	
+	z-index:10;
 }
 
 /*Per a que el modal funcioni be en IE */
