@@ -10,29 +10,8 @@
 	background-color: inherit;
 }
 
-.arrows > a:hover{
-	background-color:inherit;
-	-moz-box-shadow:inset 0px 0px 0px 2px grey;
-	-webkit-box-shadow:inset 0px 0px 0px 2px grey;
-	-ms-box-shadow:inset 0px 0px 0px 2px grey;
-	box-shadow:inset 0px 0px 0px 2px grey;
-	border-radius:2px;
-	padding-top:2px;
-	padding-bottom:2px;
-}
-
-.backward{
-	margin-right:20px;
-}
-
 .block{
 	display:block;
-}
-
-div.border:hover{
-	border:2px;
-	border-radius:2px;
-	border-color: grey;
 }
 
 .btn-toolbar > .btn + .btn,
@@ -54,16 +33,20 @@ div.border:hover{
 	color:green;
 }
 
-.error:hover, .eclick{
+.error:hover{
+	background-color:inherit;
+	-moz-box-shadow:inset 0px 0px 0px 2px #f51010;
+	-webkit-box-shadow:inset 0px 0px 0px 2px #f51010;
+	-ms-box-shadow:inset 0px 0px 0px 2px #f51010;
+	box-shadow:inset 0px 0px 0px 2px #f51010;
+}
+ 
+.eclick{
 	background-color:inherit;
 	-moz-box-shadow:inset 0px 0px 0px 4px #f51010;
 	-webkit-box-shadow:inset 0px 0px 0px 4px #f51010;
 	-ms-box-shadow:inset 0px 0px 0px 4px #f51010;
 	box-shadow:inset 0px 0px 0px 4px #f51010;
-}
-
-.forward{
-	margin-left:20px;
 }
 
 .image{
@@ -92,6 +75,13 @@ div.border:hover{
 	-moz-box-shadow:inset 0px 0px 0px 2px #827979;
 	-webkit-box-shadow:inset 0px 0px 0px 2px #827979;
 	box-shadow:inset 0px 0px 0px 2px #827979;
+}
+
+.option.active:hover{
+	background-color:inherit;
+	-moz-box-shadow:inset 0px 0px 0px 3px #5359AF;
+	-webkit-box-shadow:inset 0px 0px 0px 3px #5359AF;
+	box-shadow:inset 0px 0px 0px 3px #5359AF;
 }
 
 .wrong{
@@ -187,7 +177,7 @@ body {
    	padding: 8.5px 17px;
    	text-decoration: none;
    	vertical-align: middle;   
-}   
+} 
 
 p {
 	text-align: left;	
@@ -196,4 +186,32 @@ p {
 ol li {
 	font-weight:700;
 	list-style-type:upper-alpha;	
+}
+
+ul.breadcrumb > li > a.btn,
+#feedback > div > a.btn{
+	-webkit-border-radius: 2px;
+   	-moz-border-radius: 2px;
+   	border-radius: 2px;
+	background-color:inherit;
+   	background-image:none;
+   	border:none;
+   	box-shadow:none;
+   	padding: 4px 12px;
+   	text-decoration: none;
+   	text-align:center;
+   	vertical-align: middle;
+   	
+}
+
+ul.breadcrumb > li > a.btn:hover,
+#feedback > div > a.btn:hover{
+	background-color:inherit;
+	-moz-box-shadow:inset 0px 0px 0px 2px grey;
+	-webkit-box-shadow:inset 0px 0px 0px 2px grey;
+	-ms-box-shadow:inset 0px 0px 0px 2px grey;
+	box-shadow:inset 0px 0px 0px 2px grey;
+	border-radius:2px;
+	padding:4px 12px;
+
 }

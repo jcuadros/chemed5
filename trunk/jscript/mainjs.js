@@ -16,10 +16,16 @@ function fback() {
 
 $(function(){
 	$("#ayuda").draggable({containment:"window"});
-	$("#feedback").draggable({containment:"window"});
+	
+	if($(document).width() < 540){
+		$("#feedback").draggable({axis:"y"});
+	}else{
+		$("#feedback").draggable({containment:"window"});
+	}
+	
 });
 
-/* alerta en pantalla <979px*/
+/* Alerta en pantalla <979px*/
 
 $(function(){
 	var cnt=0;
@@ -33,63 +39,41 @@ $(function(){
 	}
 });
 
-/* deshabilitar botó check si s'ha marcat l'opció com a descartada*/
+/* Deshabilitar botó check si s'ha marcat l'opció com a descartada
+ * Color vermell en descartar */
 $(function(){
-	$("#ie1").click(function(){
-		$("#ir1").toggle(function(){
-			$(this).attr("disabled");
+	$(".x1").click(function(){
+		$(".x1").toggleClass("eclick");
+		$(".c1").toggle(function(){
+			$(".c1").attr("disabled");		
 		});
 		return false;
 	});
 	
-	$("#ie2").click(function(){
-		$("#ir2").toggle(function(){
-			$(this).attr("disabled");
+	$(".x2").click(function(){
+		$(".x2").toggleClass("eclick");
+		$(".c2").toggle(function(){
+			$(".c2").attr("disabled");		
 		});
 		return false;
 	});
 	
-	$("#ie3").click(function(){
-		$("#ir3").toggle(function(){
-			$(this).attr("disabled");
+	$(".x3").click(function(){
+		$(".x3").toggleClass("eclick");
+		$(".c3").toggle(function(){
+			$(".c3").attr("disabled");		
 		});
 		return false;
 	});
 	
-	$("#ie4").click(function(){
-		$("#ir4").toggle(function(){
-			$(this).attr("disabled");
+	$(".x4").click(function(){
+		$(".x4").toggleClass("eclick");
+		$(".c4").toggle(function(){
+			$(".c4").attr("disabled");		
 		});
 		return false;
 	});
-	
-	$("#e1").click(function(){
-		$("#r1").toggle(function(){
-			$(this).attr("disabled");
-		});
-		return false;
-	});
-	
-	$("#e2").click(function(){
-		$("#r2").toggle(function(){
-			$(this).attr("disabled");
-		});
-		return false;
-	});
-	
-	$("#e3").click(function(){
-		$("#r3").toggle(function(){
-			$(this).attr("disabled");
-		});
-		return false;
-	});
-	
-	$("#e4").click(function(){
-		$("#r4").toggle(function(){
-			$(this).attr("disabled");
-		});
-		return false;
-	});
+
 });
 
 /* Deshabilitació dels botons de marcar per les opcions no visualitzades */
@@ -139,64 +123,35 @@ document.getElementById("op4").onclick= function(){
 	document.getElementById("im4").style.display="inline";
 };
 
-/* Deshabilitar tots els botons en escollir una resposta */
+/* Deshabilitar tots els botons en escollir una resposta, exepte els de visualitzar opcions
+ * Visualització del feedback*/
 
-$(".check").click(function(){
-	$(".check").attr("disabled","disabled");
-	$(".error").attr("disabled","disabled");
-	$(this).css("box-shadow","inset 0px 0px 0px 4px #25bb20");
-	
+$(".c1").click(function(){
+    $(".check").attr("disabled","disabled");
+    $(".error").attr("disabled","disabled");
+    $(".c1").css("box-shadow","inset 0px 0px 0px 4px #25bb20");
+    $("#fb1").css("display","inline");
 });
 
-/* Toggle Color vermell/verd en clicar opció error/check */
-$(function(){
-	$(".error").click(function(){
-		$(this).toggleClass("eclick");
-		return false;
-	});	
+$(".c2").click(function(){
+    $(".check").attr("disabled","disabled");
+    $(".error").attr("disabled","disabled");
+    $(".c2").css("box-shadow","inset 0px 0px 0px 4px #25bb20");
+    $("#fb2").css("display","inline");
 });
 
-/*Feedbacks. Pantalla petita*/
-document.getElementById("r1").onclick= function(){
-	
-	document.getElementById("fb1").style.display="inline";
-};
+$(".c3").click(function(){
+    $(".check").attr("disabled","disabled");
+    $(".error").attr("disabled","disabled");
+    $(".c3").css("box-shadow","inset 0px 0px 0px 4px #25bb20");
+    $("#fb3").css("display","inline");
+});
 
-document.getElementById("r2").onclick= function(){
-	
-	document.getElementById("fb2").style.display="inline";
-};
-
-document.getElementById("r3").onclick= function(){
-	
-	document.getElementById("fb3").style.display="inline";
-};
-
-document.getElementById("r4").onclick= function(){
-
-	document.getElementById("fb4").style.display="inline";
-};
-
-/*Feedback. Pantalla gran*/
-
-document.getElementById("ir1").onclick= function(){
-
-	document.getElementById("fb1").style.display="inline";
-};
-
-document.getElementById("ir2").onclick= function(){
-	
-	document.getElementById("fb2").style.display="inline";
-};
-
-document.getElementById("ir3").onclick= function(){
-	
-	document.getElementById("fb3").style.display="inline";
-};
-
-document.getElementById("ir4").onclick= function(){
-	
-	document.getElementById("fb4").style.display="inline";
-};
+$(".c4").click(function(){
+    $(".check").attr("disabled","disabled");
+    $(".error").attr("disabled","disabled");
+    $(".c4").css("box-shadow","inset 0px 0px 0px 4px #25bb20");
+    $("#fb4").css("display","inline");
+});
 
 
