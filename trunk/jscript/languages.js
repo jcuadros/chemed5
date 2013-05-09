@@ -13,6 +13,7 @@
 		 $(".error").attr("title","Dismiss option");
 		 $(".check").attr("title","Select option");
 		 $(".option").attr("title","See option"); 
+		 $("#controls").html("Controls: ");
 	 }
 	 else if(userLang=="ca"){
 		 $(".backward").attr("title","Anterior");
@@ -25,6 +26,7 @@
 		 $(".error").attr("title","Descartar");
 		 $(".check").attr("title","Seleccionar");
 		 $(".option").attr("title","Veure opci\u00f3");
+		 $("#controls").html("Controls: ");
 	 }
 	 else{
 		 $(".backward").attr("title","Atr\u00e1s");
@@ -37,6 +39,7 @@
 		 $(".error").attr("title","Descartar");
 		 $(".check").attr("title","Seleccionar");
 		 $(".option").attr("title","Ver opci\u00f3n");
+		 $("#controls").html("Controles: ");
 	 }
  });
  

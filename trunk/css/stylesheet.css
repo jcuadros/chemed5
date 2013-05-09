@@ -14,6 +14,22 @@
 	display:block;
 }
 
+.boton{
+	background:none;
+	box-shadow:none;
+	background-image:none;
+	border:none;
+	margin: 3px 0;
+	padding:4px 4px;
+}
+
+.boton:hover{
+	background-color:inherit;
+	-moz-box-shadow:inset 0px 0px 0px 2px #827979;
+	-webkit-box-shadow:inset 0px 0px 0px 2px #827979;
+	box-shadow:inset 0px 0px 0px 2px #827979;
+}
+
 .btn-toolbar > .btn + .btn,
 .btn-toolbar > .btn-group + .btn,
 .btn-toolbar > .btn + .btn-group {
@@ -97,6 +113,7 @@
     -webkit-transition: opacity 400ms ease-in;
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
+	z-index:101;
 }
 
 #ayuda p{
@@ -106,6 +123,11 @@
 #feedback{
 	text-align: center;
 	display:in-block;
+	z-index:100;
+}
+
+#panelJmol{
+	z-index:50;
 }
 
 #navbar{
@@ -200,8 +222,7 @@ ul.breadcrumb > li > a.btn,
    	padding: 4px 12px;
    	text-decoration: none;
    	text-align:center;
-   	vertical-align: middle;
-   	
+   	vertical-align: middle;  	
 }
 
 ul.breadcrumb > li > a.btn:hover,
@@ -213,5 +234,4 @@ ul.breadcrumb > li > a.btn:hover,
 	box-shadow:inset 0px 0px 0px 2px grey;
 	border-radius:2px;
 	padding:4px 12px;
-
 }
