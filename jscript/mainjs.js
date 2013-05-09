@@ -154,4 +154,6 @@ $(".c4").click(function(){
     $("#fb4").css("display","inline");
 });
 
+/*Funcions per als controls de les animacions Jmol*/
+
 

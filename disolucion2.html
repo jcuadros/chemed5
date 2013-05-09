@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,14 +13,14 @@
 <body>
             <div class="row-fluid" id="navbar">
                <ul class="breadcrumb">
-                 	<li><a href="#">Inicio</a>></li>
-                  	<li><a href="#">Bachiller</a>></li>
-                  	<li><a href="#">Disoluciones</a>></li>
+                 	<li><a href="#">Inicio</a>&gt;</li>
+                  	<li><a href="#">Bachiller</a>&gt;</li>
+                  	<li><a href="#">Disoluciones</a>&gt;</li>
                   	<li class="active">Disolución 2</li>
                  	<li class="arrows">
-   						<a href="index.html"><i class="icon-backward backward"></i></a>
-   						<a href="#"><i class="icon-arrow-up"></i></a>
-						<a href="disolucion3.html"><i class="icon-forward forward"></i></a>
+   						<a href="#" class="btn"><i class="icon-backward backward"></i></a>
+         				<a href="#" class="btn"><i class="icon-arrow-up"></i></a>
+    					<a href="disolucion3.html" class="btn"><i class="icon-forward forward"></i></a>
  	   				</li>
                </ul>    
             </div>
@@ -29,24 +29,24 @@
 			<div class="container-fluid">
                 <div class="row-fluid" id="context_question">
                         <div class="span7">
-                        	<h4>Disolución 2:</h4>
+                        	<h4>Disolución 2</h4>
                         	<p>The following figure represents a solute (red) dissolved in a solvent.
                         	Clicking on the following pictures will display four possible dynamics of this system. 
                             Watch them and think which one best represents a saturated solution.
                             After you have examined the four animations, choose the best answer:</p>
                             <!--====================Ayuda de la pregunta====================-->
-                           	<div>
+                           <div>
 	                        	<a href="#" onclick="overlay()"><button type="button" class="btn btn-link" id="hint"></button></a>
-								<div id="ayuda" class="modal fade in">
+									<div id="ayuda" class="modal fade in">
 							  		<div class="modal-header" style="text-align:left;">
 									   	<button type="button" class="close" onclick="overlay()">&times;</button>
-									    <h3>Ayuda</h3>
+									    <h3 id="htitle"></h3>
 								  	</div>
 								  	<div class="modal-body">
 								    	<p>Texto de la ayuda</p>
 									</div>
 								  	<div class="modal-footer">
-								    	<a href="#" class="btn" onclick="overlay()">Cerrar</a>
+								    	<a id="close" href="#" class="btn" onclick="overlay()"></a>
 									</div>
 								</div>
 	                		</div>
@@ -63,57 +63,67 @@
                         <div id="resp" class="span7" data-toggle="buttons-radio">        
 	                                <div class="btn-toolbar" style="display:block;">
                                  		<a href="#" onClick="cargaScript('D2solucion1.txt'); return false;" target="#panelJmol"><button class="btn option" id="op1"><i class="icon-eye-open"></i></button></a>
-              							<a><button class="btn check" id="r1"><i class="icon-ok"></i></button></a>
-              							<a><button class="btn error" id="e1" onclick="roig()"><i class="icon-remove"></i></button></a>   
+              							<a><button class="btn check c1" id="r1" onclick="fback()"><i class="icon-ok"></i></button></a>
+              							<a><button class="btn error x1" id="e1"><i class="icon-remove"></i></button></a>   
 	                                </div>
 	                                <div class="btn-toolbar" style="display:block;">
 	                                    <a href="#" onClick="cargaScript('D2solucion2.txt'); return false;" target="#panelJmol"><button class="btn option" id="op2"><i class="icon-eye-open"></i></button></a>
-              							<a><button class="btn check" id="r2"><i class="icon-ok"></i></button></a>
-              							<a><button class="btn error" id="e2" onclick="roig2()"><i class="icon-remove"></i></button></a>	    	                                     
+              							<a><button class="btn check c2" id="r2" onclick="fback()"><i class="icon-ok"></i></button></a>
+              							<a><button class="btn error x2" id="e2"><i class="icon-remove"></i></button></a>	    	                                     
 	                                </div>
 	                                <div class="btn-toolbar" style="display:block;">
 	                                 	<a href="#" onClick="cargaScript('D2solucion3.txt'); return false;" target="#panelJmol"><button class="btn option" id="op3"><i class="icon-eye-open"></i></button></a>
-              							<a><button class="btn check" id="r3"><i class="icon-ok"></i></button></a>
-              							<a><button class="btn error" id="e3" onclick="roig3()"><i class="icon-remove"></i></button></a>	                
+              							<a><button class="btn check c3" id="r3" onclick="fback()"><i class="icon-ok"></i></button></a>
+              							<a><button class="btn error x3" id="e3"><i class="icon-remove"></i></button></a>	                
 	                                </div>
 	                                <div class="btn-toolbar" style="display:block;">
 	                                  	<a href="#" onClick="cargaScript('D2solucion4.txt'); return false;" target="#panelJmol"><button class="btn option" id="op4"><i class="icon-eye-open"></i></button></a>
-              							<a><button class="btn check" id="r4"><i class="icon-ok"></i></button></a>
-              							<a><button class="btn error" id="e4" onclick="roig4()"><i class="icon-remove"></i></button></a>	       
-	                                </div>  			                             	
+              							<a><button class="btn check c4" id="r4" onclick="fback()"><i class="icon-ok"></i></button></a>
+              							<a><button class="btn error x4" id="e4"><i class="icon-remove"></i></button></a>	       
+	                                </div>
+	                                <br/>  			                             	
                         </div>
                         <!--=============Animacions/Imatges=============-->
-                        <div id="panelJmol" class="span5 image">
-							<script type="text/javascript">
-								Jmol.getApplet("myJmol", JmolInfo);
-							</script>
-							<table id="animCtrls">
-							<tbody><tr>
-							<td>Animation:</td>
-							<td>
-							<button onclick="Jmol.script(myJmol,'animation pause')" title="pause"><img src="imatges/mano-stop.gif" alt="pause"></button>
-							<button onclick="Jmol.script(myJmol,'animation fps 3;animation play')" title="slow"><img src="imatges/tortuga.gif" alt="slow"></button>
-							<button onclick="Jmol.script(myJmol,'animation fps 15;animation play')" title="fast"><img src="imatges/liebre.gif" alt="fast"></button>
-							<button onclick="Jmol.script(myJmol,'animation rewind;animation play')" title="repeat"><img src="imatges/repetir.gif" alt="repeat"></button>
-							</td>
-							</tr>
-							</tbody></table>
+                        <div id="panelJmol" class="span5 image">	
+	                        	<table id="animCtrls"><tbody>
+	                        		<tr>
+	                        			<td id="controls"></td>
+	                        			<td><button class="boton" onclick="Jmol.script(myJmol,'animation pause')" title="pause"><img src="imatges/mano-stop.gif" alt="pause"></button></td>
+										<td><button class="boton" onclick="Jmol.script(myJmol,'animation fps 3;animation play')" title="slow"><img src="imatges/tortuga.gif" alt="slow"></button></td>
+										<td><button class="boton" onclick="Jmol.script(myJmol,'animation fps 15;animation play')" title="fast"><img src="imatges/liebre.gif" alt="fast"></button></td>
+										<td><button class="boton" onclick="Jmol.script(myJmol,'animation rewind;animation play')" title="repeat"><img src="imatges/repetir.gif" alt="repeat"></button></td>
+									</tr>
+								</tbody></table>
+							
+								<script type="text/javascript" style="z-index:-50;">
+									Jmol.getApplet("myJmol", JmolInfo);
+								</script>							
 						</div>
                 </div>
-                <p>&nbsp;</p>
                 <!--===============Feedback======================-->
-                <div id="fb1" class="row-fluid" style="display:none;"><p class="wrong">Wrong. In this animation there is a net crystallization of solute molecules. The solution was oversaturated.</p></div>
-                <div id="fb2" class="row-fluid" style="display:none;"><p class="wrong">Wrong. In this animation there is a net solution of solute molecules. The solution was diluted.</p></div>    
-                <div id="fb3" class="row-fluid" style="display:none;"><p class="correct">Correct. This animation shows exchange of solute between solid and solution but the amount of solute in solution remains constant. This solution was saturated.</p></div>    
-                <div id="fb4" class="row-fluid" style="display:none;"><p class="wrong">Wrong. This animation does not show any exchange of solute molecules between the solid and the solution media. Ths situation is not real.</p></div>
+                <div id="feedback" class="modal fade in feedback" style="visibility:hidden;">
+				  	<div class="modal-body">
+				    	<div id="fb1" class="row-fluid" style="display:none;"><img src="imatges/error.png"><p></p><p class="wrong">Wrong. In this animation there is a net crystallization of solute molecules. The solution was oversaturated.</p></div>
+                		<div id="fb2" class="row-fluid" style="display:none;"><img src="imatges/error.png"><p></p><p class="wrong">Wrong. In this animation there is a net solution of solute molecules. The solution was diluted.</p></div>    
+                		<div id="fb3" class="row-fluid" style="display:none;"><img src="imatges/check.png"><p></p><p class="correct">Correct. This animation shows exchange of solute between solid and solution but the amount of solute in solution remains constant. This solution was saturated.</p></div>    
+                		<div id="fb4" class="row-fluid" style="display:none;"><img src="imatges/error.png"><p></p><p class="wrong">Wrong. This animation does not show any exchange of solute molecules between the solid and the solution media. Ths situation is not real.</p></div>	
+					</div>
+				  	<div class="modal-footer">
+				    	<a href="index.html" class="btn"><i class="icon-backward backward"></i></a>
+	            		<a href="#" class="btn"><i class="icon-arrow-up"></i></a>
+	       				<a href="disolucion3.html" class="btn"><i class="icon-forward forward"></i></a>
+					</div>
+				</div>
+                
          </div>               
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
 <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
-<script type="text/javascript" src="./jscript/mainjs.js"></script>
-<script type="text/javascript" src="./jscript/Jmol.js"></script>
 <script type="text/javascript" src="./jscript/page_context.js"></script>
+<script type="text/javascript" src="./jscript/mainjs.js"></script>
+<script type="text/javascript" src="./jscript/languages.js"></script>
 <script type="text/javascript" src="./jscript/util.js"></script>
 </body>
 </html>
