@@ -15,12 +15,12 @@ function fback() {
 /* Draggables de l'ajuda i el feedback*/
 
 $(function(){
-	$("#ayuda").draggable({containment:"window"});
+	$("#ayuda").draggable({containment:"window", handle:".modal-header, .modal-footer", cursor:"move"});
 	
 	if($(document).width() < 540){
-		$("#feedback").draggable({axis:"y"});
+		$("#feedback").draggable({axis:"y", handle:".modal-footer", cursor:"move"});
 	}else{
-		$("#feedback").draggable({containment:"window"});
+		$("#feedback").draggable({containment:"window", handle:".modal-footer", cursor:"move"});
 	}
 	
 });
@@ -32,9 +32,17 @@ $(function(){
 	
 	if(cnt<1){
 		if($(document).width() < 979){
-		window.alert("En esta pantalla se muestra s\u00f3lo una de las im\u00e1genes de las respuestas. " +
+			var userLang = $("html").attr("lang");
+			
+			if(userLang=="en"){
+				window.alert("This screen displays only one of the images of the answers." +
+						"Select the display buttons to see the different options.");
+			}
+			else{
+				window.alert("En esta pantalla se muestra s\u00f3lo una de las im\u00e1genes de las respuestas. " +
 				"Selecciona los botones de visualizaci\u00f3n para ver las diferentes opciones.");
-		cnt=2;
+			}
+			cnt=2;
 		}
 	}
 });
@@ -153,7 +161,4 @@ $(".c4").click(function(){
     $(".c4").css("box-shadow","inset 0px 0px 0px 4px #25bb20");
     $("#fb4").css("display","inline");
 });
-
-/*Funcions per als controls de les animacions Jmol*/
-
 
