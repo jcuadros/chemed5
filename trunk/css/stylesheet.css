@@ -70,9 +70,22 @@
 	text-align:center;
 	vertical-align:middle;
 }
+
 .modal.fade.in.feedback{
 	top:30%;
 }
+
+.modal-body {
+  position: relative;
+  max-height: 300px;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+.modal-header, .modal-footer{
+	cursor:move;
+}
+
 .nombre{
 	font-weight:bold;
 	vertical-align:middle;
@@ -116,15 +129,28 @@
 	z-index:101;
 }
 
+#ayuda ::-webkit-scrollbar{width:9px;height:9px;}
+#ayuda ::-webkit-scrollbar-button:start:decrement, #ayuda ::-webkit-scrollbar-button:end:increment{display:block;height:0;background-color:transparent;}
+#ayuda ::-webkit-scrollbar-track-piece{background-color:#FAFAFA;-webkit-border-radius:0;-webkit-border-bottom-right-radius:8px;-webkit-border-bottom-left-radius:8px;}
+#ayuda ::-webkit-scrollbar-thumb:vertical{height:50px;background-color:#999;-webkit-border-radius:8px;}
+#ayuda ::-webkit-scrollbar-thumb:horizontal{width:50px;background-color:#999;-webkit-border-radius:8px;}
+
 #ayuda p{
 	text-align:center;
 }
+
 
 #feedback{
 	text-align: center;
 	display:in-block;
 	z-index:100;
 }
+
+#feedback ::-webkit-scrollbar{width:9px;height:9px;}
+#feedback ::-webkit-scrollbar-button:start:decrement, #feedback ::-webkit-scrollbar-button:end:increment{display:block;height:0;background-color:transparent;}
+#feedback ::-webkit-scrollbar-track-piece{background-color:#FAFAFA;-webkit-border-radius:0;-webkit-border-bottom-right-radius:8px;-webkit-border-bottom-left-radius:8px;}
+#feedback ::-webkit-scrollbar-thumb:vertical{height:50px;background-color:#999;-webkit-border-radius:8px;}
+#feedback ::-webkit-scrollbar-thumb:horizontal{width:50px;background-color:#999;-webkit-border-radius:8px;}
 
 #panelJmol{
 	z-index:50;
