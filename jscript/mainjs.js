@@ -1,9 +1,15 @@
-/* Modal de l'ajuda */
+/* Modal de les ajudes */
 
 function overlay() {
 	el = document.getElementById("ayuda");
 	el.style.visibility = (el.style.visibility == "visible") ? "hidden" : "visible";
 }
+
+function cerrarmodal(){	
+	et = document.getElementById("ayudaNav");
+	et.style.visibility = (et.style.visibility == "visible") ? "hidden" : "visible";
+}
+
 
 /* Modal del feedback*/
 
@@ -16,6 +22,8 @@ function fback() {
 
 $(function(){
 	$("#ayuda").draggable({containment:"window", handle:".modal-header, .modal-footer", cursor:"move"});
+	
+	$("#ayudaNav").draggable({containment:"window", handle:".modal-header, .modal-footer", cursor:"move"});
 	
 	if($(document).width() < 540){
 		$("#feedback").draggable({axis:"y", handle:".modal-footer", cursor:"move"});
@@ -86,50 +94,52 @@ $(function(){
 
 /* Deshabilitació dels botons de marcar per les opcions no visualitzades */
 
-document.getElementById("op1").onclick= function(){
-	document.getElementById("r1").disabled=false;
-	document.getElementById("r2").disabled=true;
-	document.getElementById("r3").disabled=true;
-	document.getElementById("r4").disabled=true;
-	document.getElementById("im1").style.display="inline";
-	document.getElementById("im2").style.display="none";
-	document.getElementById("im3").style.display="none";
-	document.getElementById("im4").style.display="none";
-};
 
-document.getElementById("op2").onclick= function(){
-	document.getElementById("r1").disabled=true;
-	document.getElementById("r2").disabled=false;
-	document.getElementById("r3").disabled=true;
-	document.getElementById("r4").disabled=true;
-	document.getElementById("im1").style.display="none";
-	document.getElementById("im2").style.display="inline";
-	document.getElementById("im3").style.display="none";
-	document.getElementById("im4").style.display="none";
+	document.getElementById("op1").onclick= function(){
+		document.getElementById("r1").disabled=false;
+		document.getElementById("r2").disabled=true;
+		document.getElementById("r3").disabled=true;
+		document.getElementById("r4").disabled=true;
+		document.getElementById("im1").style.display="inline";
+		document.getElementById("im2").style.display="none";
+		document.getElementById("im3").style.display="none";
+		document.getElementById("im4").style.display="none";
+	};
 	
-};
+	document.getElementById("op2").onclick= function(){
+		document.getElementById("r1").disabled=true;
+		document.getElementById("r2").disabled=false;
+		document.getElementById("r3").disabled=true;
+		document.getElementById("r4").disabled=true;
+		document.getElementById("im1").style.display="none";
+		document.getElementById("im2").style.display="inline";
+		document.getElementById("im3").style.display="none";
+		document.getElementById("im4").style.display="none";
+		
+	};
+	
+	document.getElementById("op3").onclick= function(){
+		document.getElementById("r1").disabled=true;
+		document.getElementById("r2").disabled=true;
+		document.getElementById("r3").disabled=false;
+		document.getElementById("r4").disabled=true;
+		document.getElementById("im1").style.display="none";
+		document.getElementById("im2").style.display="none";
+		document.getElementById("im3").style.display="inline";
+		document.getElementById("im4").style.display="none";
+	};
+	
+	document.getElementById("op4").onclick= function(){
+		document.getElementById("r1").disabled=true;
+		document.getElementById("r2").disabled=true;
+		document.getElementById("r3").disabled=true;
+		document.getElementById("r4").disabled=false;
+		document.getElementById("im1").style.display="none";
+		document.getElementById("im2").style.display="none";
+		document.getElementById("im3").style.display="none";
+		document.getElementById("im4").style.display="inline";
+	};
 
-document.getElementById("op3").onclick= function(){
-	document.getElementById("r1").disabled=true;
-	document.getElementById("r2").disabled=true;
-	document.getElementById("r3").disabled=false;
-	document.getElementById("r4").disabled=true;
-	document.getElementById("im1").style.display="none";
-	document.getElementById("im2").style.display="none";
-	document.getElementById("im3").style.display="inline";
-	document.getElementById("im4").style.display="none";
-};
-
-document.getElementById("op4").onclick= function(){
-	document.getElementById("r1").disabled=true;
-	document.getElementById("r2").disabled=true;
-	document.getElementById("r3").disabled=true;
-	document.getElementById("r4").disabled=false;
-	document.getElementById("im1").style.display="none";
-	document.getElementById("im2").style.display="none";
-	document.getElementById("im3").style.display="none";
-	document.getElementById("im4").style.display="inline";
-};
 
 /* Deshabilitar tots els botons en escollir una resposta, exepte els de visualitzar opcions
  * Visualització del feedback*/
@@ -159,6 +169,6 @@ $(".c4").click(function(){
     $(".check").attr("disabled","disabled");
     $(".error").attr("disabled","disabled");
     $(".c4").css("box-shadow","inset 0px 0px 0px 4px #25bb20");
-    $("#fb4").css("display","inline");
+    $("#fb4").css("display","inline");    
 });
 
