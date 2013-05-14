@@ -9,6 +9,9 @@
 <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
 <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css"/>
 <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 <title>Disoluciones</title>
 </head>
 
@@ -23,11 +26,34 @@
          			<a href="#" class="btn"><i class="icon-backward backward"></i></a>
          			<a href="#" class="btn"><i class="icon-arrow-up"></i></a>
     				<a href="disolucion2.html" class="btn"><i class="icon-forward forward"></i></a>
+    				<a href="#" class="btn" onclick="cerrarmodal()"><i class="icon-question-sign navhelp"></i></a>
         	   	</li>
 	   		</ul>                          
 	    </div>
 	        <p>&nbsp;</p>
-	        <p>&nbsp;</p>  
+	        <p>&nbsp;</p> 
+	        <!--========================Ayuda de Navegación================================-->
+	        	<div id="ayudaNav" class="ayuda modal fade in">
+			  		<div class="modal-header" style="text-align:left;">
+					   	<button type="button" class="close" onclick="cerrarmodal()">&times;</button>
+					    <h3 id="helptitle"></h3>
+				  	</div>
+				  	<div class="modal-body">
+				    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum enim ut felis dignissim interdum. 
+	    				Etiam ipsum sapien, consequat non elementum volutpat, dictum bibendum sapien. Suspendisse vel nunc risus, in fringilla turpis. Etiam vel lacus at nibh pellentesque egestas sed vulputate purus. Suspendisse potenti. 
+			    		Aliquam erat volutpat. Nunc eget varius turpis. Integer vulputate convallis nibh congue semper. Duis nec augue eu nisl elementum malesuada. In est odio, convallis quis lacinia eu, porttitor eget enim. In a nulla ut erat auctor posuere. 
+			    		Aenean leo arcu, auctor vitae ornare eget, imperdiet sed eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;Integer nec nunc nibh, sed adipiscing tellus. Suspendisse potenti. 
+			    		Nullam a sapien eget eros gravida tincidunt vel porttitor orci. Aenean feugiat orci sed ante sollicitudin volutpat. Sed interdum accumsan nulla, ut tincidunt massa facilisis ac. Praesent commodo dolor sit amet mauris fringilla eget tempus mauris ornare. 
+			    		Proin tellus nibh, dignissim vel semper a, scelerisque id nibh. Fusce mattis risus fringilla ligula consectetur ac fringilla sapien feugiat. Quisque luctus convallis lectus, ut eleifend quam euismod et. 
+			    		Sed sollicitudin, neque at tristique congue, massa massa dapibus lorem, sit amet adipiscing erat mi nec dolor. Mauris eu fringilla lectus. Integer et quam porta mauris imperdiet eleifend. Nulla sit amet ullamcorper odio. 
+			    		Quisque ut arcu vel magna lacinia accumsan in quis erat. Morbi condimentum feugiat rutrum. Etiam luctus hendrerit purus nec porttitor.</p>
+					</div>
+				  	<div class="modal-footer">
+				    	<a id="helpclose" href="#" class="btn" onclick="cerrarmodal()"></a>
+					</div>
+				</div>
+	        
+	        
         <div class="container-fluid">
             <div class="row-fluid" id="context_question">
                    <div class="span7">
@@ -39,20 +65,20 @@
         				<!--========================Ayuda de la pregunta================================-->
 	                 		<div>
 	                        	<a href="#" onclick="overlay()"><button type="button" class="btn btn-link" id="hint"></button></a>
-									<div id="ayuda" class="modal fade in">
+									<div id="ayuda" class="ayuda modal fade in">
 							  		<div class="modal-header" style="text-align:left;">
 									   	<button type="button" class="close" onclick="overlay()">&times;</button>
 									    <h3 id="htitle"></h3>
 								  	</div>
 								  	<div class="modal-body">
 								    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vestibulum enim ut felis dignissim interdum. 
-					    		Etiam ipsum sapien, consequat non elementum volutpat, dictum bibendum sapien. Suspendisse vel nunc risus, in fringilla turpis. Etiam vel lacus at nibh pellentesque egestas sed vulputate purus. Suspendisse potenti. 
-					    		Aliquam erat volutpat. Nunc eget varius turpis. Integer vulputate convallis nibh congue semper. Duis nec augue eu nisl elementum malesuada. In est odio, convallis quis lacinia eu, porttitor eget enim. In a nulla ut erat auctor posuere. 
-					    		Aenean leo arcu, auctor vitae ornare eget, imperdiet sed eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;Integer nec nunc nibh, sed adipiscing tellus. Suspendisse potenti. 
-					    		Nullam a sapien eget eros gravida tincidunt vel porttitor orci. Aenean feugiat orci sed ante sollicitudin volutpat. Sed interdum accumsan nulla, ut tincidunt massa facilisis ac. Praesent commodo dolor sit amet mauris fringilla eget tempus mauris ornare. 
-					    		Proin tellus nibh, dignissim vel semper a, scelerisque id nibh. Fusce mattis risus fringilla ligula consectetur ac fringilla sapien feugiat. Quisque luctus convallis lectus, ut eleifend quam euismod et. 
-					    		Sed sollicitudin, neque at tristique congue, massa massa dapibus lorem, sit amet adipiscing erat mi nec dolor. Mauris eu fringilla lectus. Integer et quam porta mauris imperdiet eleifend. Nulla sit amet ullamcorper odio. 
-					    		Quisque ut arcu vel magna lacinia accumsan in quis erat. Morbi condimentum feugiat rutrum. Etiam luctus hendrerit purus nec porttitor.</p>
+					    				Etiam ipsum sapien, consequat non elementum volutpat, dictum bibendum sapien. Suspendisse vel nunc risus, in fringilla turpis. Etiam vel lacus at nibh pellentesque egestas sed vulputate purus. Suspendisse potenti. 
+							    		Aliquam erat volutpat. Nunc eget varius turpis. Integer vulputate convallis nibh congue semper. Duis nec augue eu nisl elementum malesuada. In est odio, convallis quis lacinia eu, porttitor eget enim. In a nulla ut erat auctor posuere. 
+							    		Aenean leo arcu, auctor vitae ornare eget, imperdiet sed eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;Integer nec nunc nibh, sed adipiscing tellus. Suspendisse potenti. 
+							    		Nullam a sapien eget eros gravida tincidunt vel porttitor orci. Aenean feugiat orci sed ante sollicitudin volutpat. Sed interdum accumsan nulla, ut tincidunt massa facilisis ac. Praesent commodo dolor sit amet mauris fringilla eget tempus mauris ornare. 
+							    		Proin tellus nibh, dignissim vel semper a, scelerisque id nibh. Fusce mattis risus fringilla ligula consectetur ac fringilla sapien feugiat. Quisque luctus convallis lectus, ut eleifend quam euismod et. 
+							    		Sed sollicitudin, neque at tristique congue, massa massa dapibus lorem, sit amet adipiscing erat mi nec dolor. Mauris eu fringilla lectus. Integer et quam porta mauris imperdiet eleifend. Nulla sit amet ullamcorper odio. 
+							    		Quisque ut arcu vel magna lacinia accumsan in quis erat. Morbi condimentum feugiat rutrum. Etiam luctus hendrerit purus nec porttitor.</p>
 									</div>
 								  	<div class="modal-footer">
 								    	<a id="close" href="#" class="btn" onclick="overlay()"></a>
