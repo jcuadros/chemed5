@@ -18,6 +18,23 @@ function fback() {
 	fb.style.visibility ="visible";
 }
 
+/* Posició dels modals*/
+
+$(document).ready(function(){
+	
+	var $amp=$(window).width();
+	var $rest= $amp -  $(".modal").width();
+	
+	$(".modal").css({"left":($rest/2)});
+	
+	$(window).on("resize", function(){
+		var $amp=$(window).width();
+		var $rest= $amp - $(".modal").width();
+		
+		$(".modal").css({"left":($rest/2)});	
+	});
+});
+
 /* Draggables de l'ajuda i el feedback*/
 
 $(function(){
@@ -25,12 +42,7 @@ $(function(){
 	
 	$("#ayudaNav").draggable({containment:"window", handle:".modal-header, .modal-footer", cursor:"move"});
 	
-	if($(document).width() < 540){
-		$("#feedback").draggable({axis:"y", handle:".modal-footer", cursor:"move"});
-	}else{
-		$("#feedback").draggable({containment:"window", handle:".modal-footer", cursor:"move"});
-	}
-	
+	$("#feedback").draggable({containment:"window", handle:".modal-footer", cursor:"move"});
 });
 
 /* Alerta en pantalla <979px*/
@@ -100,6 +112,10 @@ $(function(){
 		document.getElementById("r2").disabled=true;
 		document.getElementById("r3").disabled=true;
 		document.getElementById("r4").disabled=true;
+		document.getElementById("e1").disabled=false;
+		document.getElementById("e2").disabled=true;
+		document.getElementById("e3").disabled=true;
+		document.getElementById("e4").disabled=true;
 		document.getElementById("im1").style.display="inline";
 		document.getElementById("im2").style.display="none";
 		document.getElementById("im3").style.display="none";
@@ -111,6 +127,10 @@ $(function(){
 		document.getElementById("r2").disabled=false;
 		document.getElementById("r3").disabled=true;
 		document.getElementById("r4").disabled=true;
+		document.getElementById("e1").disabled=true;
+		document.getElementById("e2").disabled=false;
+		document.getElementById("e3").disabled=true;
+		document.getElementById("e4").disabled=true;
 		document.getElementById("im1").style.display="none";
 		document.getElementById("im2").style.display="inline";
 		document.getElementById("im3").style.display="none";
@@ -123,6 +143,10 @@ $(function(){
 		document.getElementById("r2").disabled=true;
 		document.getElementById("r3").disabled=false;
 		document.getElementById("r4").disabled=true;
+		document.getElementById("e1").disabled=true;
+		document.getElementById("e2").disabled=true;
+		document.getElementById("e3").disabled=false;
+		document.getElementById("e4").disabled=true;
 		document.getElementById("im1").style.display="none";
 		document.getElementById("im2").style.display="none";
 		document.getElementById("im3").style.display="inline";
@@ -134,40 +158,45 @@ $(function(){
 		document.getElementById("r2").disabled=true;
 		document.getElementById("r3").disabled=true;
 		document.getElementById("r4").disabled=false;
+		document.getElementById("e1").disabled=true;
+		document.getElementById("e2").disabled=true;
+		document.getElementById("e3").disabled=true;
+		document.getElementById("e4").disabled=false;
 		document.getElementById("im1").style.display="none";
 		document.getElementById("im2").style.display="none";
 		document.getElementById("im3").style.display="none";
 		document.getElementById("im4").style.display="inline";
 	};
 
+/* Opcions deshabilitades per defecte*/ 
+	
+$(document).ready(function(){
+	$("#r2, #r3, #r4, #e2, #e3, #e4").attr("disabled","true");
+});
 
 /* Deshabilitar tots els botons en escollir una resposta, exepte els de visualitzar opcions
  * Visualització del feedback*/
 
 $(".c1").click(function(){
-    $(".check").attr("disabled","disabled");
-    $(".error").attr("disabled","disabled");
+    $(".check, .error").attr("disabled","disabled");
     $(".c1").css("box-shadow","inset 0px 0px 0px 4px #25bb20");
     $("#fb1").css("display","inline");
 });
 
 $(".c2").click(function(){
-    $(".check").attr("disabled","disabled");
-    $(".error").attr("disabled","disabled");
+    $(".check, .error").attr("disabled","disabled");
     $(".c2").css("box-shadow","inset 0px 0px 0px 4px #25bb20");
     $("#fb2").css("display","inline");
 });
 
 $(".c3").click(function(){
-    $(".check").attr("disabled","disabled");
-    $(".error").attr("disabled","disabled");
+    $(".check, .error").attr("disabled","disabled");
     $(".c3").css("box-shadow","inset 0px 0px 0px 4px #25bb20");
     $("#fb3").css("display","inline");
 });
 
 $(".c4").click(function(){
-    $(".check").attr("disabled","disabled");
-    $(".error").attr("disabled","disabled");
+    $(".check, .error").attr("disabled","disabled");
     $(".c4").css("box-shadow","inset 0px 0px 0px 4px #25bb20");
     $("#fb4").css("display","inline");    
 });
