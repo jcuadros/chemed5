@@ -47,25 +47,30 @@ $(function(){
 
 /* Alerta en pantalla <979px*/
 
-$(function(){
-	var cnt=0;
-	
-	if(cnt<1){
-		if($(document).width() < 979){
-			var userLang = $("html").attr("lang");
-			
-			if(userLang=="en"){
-				window.alert("This screen displays only one of the images of the answers." +
-						"Select the display buttons to see the different options.");
-			}
-			else{
-				window.alert("En esta pantalla se muestra s\u00f3lo una de las im\u00e1genes de las respuestas. " +
-				"Selecciona los botones de visualizaci\u00f3n para ver las diferentes opciones.");
-			}
-			cnt=2;
-		}
+
+if($(document).width() < 979){
+	function GetCookie(name) {
+	  var arg=name+"=";
+	  var alen=arg.length;
+	  var clen=document.cookie.length;
+	  var i=0;
+	  while (i<clen) {
+	    var j=i+alen;
+	    if (document.cookie.substring(i,j)==arg)
+	      return "here";
+	    i=document.cookie.indexOf(" ",i)+1;
+	    if (i==0) break;
+	  }
+	  return null;
 	}
-});
+	var visit=GetCookie("alerta");
+	if (visit==null){
+	   alert("En esta pantalla se muestra s\u00f3lo una de las im\u00e1genes de las respuestas. " +
+				"Selecciona los botones de visualizaci\u00f3n para ver las diferentes opciones.");
+	   var expire=new Date();
+	   expire=new Date(expire.getTime()+30);
+	   document.cookie="alerta=here; expires="+expire;
+	}}
 
 /* Deshabilitar botó check si s'ha marcat l'opció com a descartada
  * Color vermell en descartar */
@@ -120,7 +125,7 @@ $(function(){
 		document.getElementById("im2").style.display="none";
 		document.getElementById("im3").style.display="none";
 		document.getElementById("im4").style.display="none";
-	};
+	}; 
 	
 	document.getElementById("op2").onclick= function(){
 		document.getElementById("r1").disabled=true;
@@ -167,6 +172,7 @@ $(function(){
 		document.getElementById("im3").style.display="none";
 		document.getElementById("im4").style.display="inline";
 	};
+
 
 /* Opcions deshabilitades per defecte*/ 
 	
