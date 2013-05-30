@@ -184,6 +184,31 @@
 <script type="text/javascript" src="./jscript/languages.js"></script>
 <script type="text/javascript" src="./jscript/util.js"></script>
 <script type="text/javascript" src="./jscript/modernizr.js"></script>
+<script type="text/javascript">
+window.onload=function(){
+if($(document).width() < 979){
+	function GetCookie(name) {
+	  var arg=name+"=";
+	  var alen=arg.length;
+	  var clen=document.cookie.length;
+	  var i=0;
+	  while (i<clen) {
+	    var j=i+alen;
+	    if (document.cookie.substring(i,j)==arg)
+	      return "here";
+	    i=document.cookie.indexOf(" ",i)+1;
+	    if (i==0) break;
+	  }
+	  return null;
+	}
+	var visit=GetCookie("alerta");
+	if (visit==null){
+	   alert("En esta pantalla se muestra s\u00f3lo una de las im\u00e1genes de las respuestas. " +
+				"Selecciona los botones de visualizaci\u00f3n para ver las diferentes opciones.");
+	   var expire=0;
+	   document.cookie="alerta=here; expires="+expire;
+	}}};
+</script>
 </body>
 
 </html>

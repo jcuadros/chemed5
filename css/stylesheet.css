@@ -119,6 +119,14 @@
 	box-shadow:inset 0px 0px 0px 4px #f51010;
 }
 
+.eclick[disabled]{
+	background-color:inherit;
+	-moz-box-shadow:inset 0px 0px 0px 4px #f51010;
+	-webkit-box-shadow:inset 0px 0px 0px 4px #f51010;
+	-ms-box-shadow:inset 0px 0px 0px 4px #f51010;
+	box-shadow:inset 0px 0px 0px 4px #f51010;
+}
+
 .fila{
 	margin-top: 10px;
  	margin-bottom: 10px;

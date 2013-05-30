@@ -45,32 +45,6 @@ $(function(){
 	$("#feedback").draggable({containment:"window", handle:".modal-footer", cursor:"move"});
 });
 
-/* Alerta en pantalla <979px*/
-
-
-if($(document).width() < 979){
-	function GetCookie(name) {
-	  var arg=name+"=";
-	  var alen=arg.length;
-	  var clen=document.cookie.length;
-	  var i=0;
-	  while (i<clen) {
-	    var j=i+alen;
-	    if (document.cookie.substring(i,j)==arg)
-	      return "here";
-	    i=document.cookie.indexOf(" ",i)+1;
-	    if (i==0) break;
-	  }
-	  return null;
-	}
-	var visit=GetCookie("alerta");
-	if (visit==null){
-	   alert("En esta pantalla se muestra s\u00f3lo una de las im\u00e1genes de las respuestas. " +
-				"Selecciona los botones de visualizaci\u00f3n para ver las diferentes opciones.");
-	   var expire=new Date();
-	   expire=new Date(expire.getTime()+30);
-	   document.cookie="alerta=here; expires="+expire;
-	}}
 
 /* Deshabilitar botó check si s'ha marcat l'opció com a descartada
  * Color vermell en descartar */
@@ -114,9 +88,9 @@ $(function(){
 
 	document.getElementById("op1").onclick= function(){
 		document.getElementById("r1").disabled=false;
-		document.getElementById("r2").disabled=true;
-		document.getElementById("r3").disabled=true;
-		document.getElementById("r4").disabled=true;
+		document.getElementById("r2").disabled="disabled";
+		document.getElementById("r3").disabled="disabled";
+		document.getElementById("r4").disabled="disabled";
 		document.getElementById("e1").disabled=false;
 		document.getElementById("e2").disabled=true;
 		document.getElementById("e3").disabled=true;
@@ -177,7 +151,13 @@ $(function(){
 /* Opcions deshabilitades per defecte*/ 
 	
 $(document).ready(function(){
-	$("#r2, #r3, #r4, #e2, #e3, #e4").attr("disabled","true");
+	document.getElementById("r2").disabled=true;
+	document.getElementById("r3").disabled=true;
+	document.getElementById("r4").disabled=true;
+	document.getElementById("e2").disabled=true;
+	document.getElementById("e3").disabled=true;
+	document.getElementById("e4").disabled=true;
+
 });
 
 /* Deshabilitar tots els botons en escollir una resposta, exepte els de visualitzar opcions
