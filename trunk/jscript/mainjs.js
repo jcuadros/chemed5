@@ -1,4 +1,4 @@
-/* Modal de les ajudes */
+/* Modal de las ayudas */
 
 function overlay() {
 	el = document.getElementById("ayuda");
@@ -18,7 +18,7 @@ function fback() {
 	fb.style.visibility ="visible";
 }
 
-/* Posició dels modals*/
+/* Posicionamiento de los modals*/
 
 $(document).ready(function(){
 	
@@ -35,7 +35,7 @@ $(document).ready(function(){
 	});
 });
 
-/* Draggables de l'ajuda i el feedback*/
+/* Draggables de las ayudas y feedback*/
 
 $(function(){
 	$("#ayuda").draggable({containment:"window", handle:".modal-header, .modal-footer", cursor:"move"});
@@ -46,8 +46,8 @@ $(function(){
 });
 
 
-/* Deshabilitar botó check si s'ha marcat l'opció com a descartada
- * Color vermell en descartar */
+/* Deshabilitar botón check si se ha marcado la opción como descartada
+ * Color rojo al descartar */
 $(function(){
 	$(".x1").click(function(){
 		$(".x1").toggleClass("eclick");
@@ -83,10 +83,15 @@ $(function(){
 
 });
 
-/* Deshabilitació dels botons de marcar per les opcions no visualitzades */
+/* Inhabilitación de los botones de marcado para las opciones no visualitzadas */
 
+$(".check").click(function(){
+	$(".check").attr("value","1");
+});
 
 	document.getElementById("op1").onclick= function(){
+		var val=$(".check").val();
+		if(val!="1"){
 		document.getElementById("r1").disabled=false;
 		document.getElementById("r2").disabled="disabled";
 		document.getElementById("r3").disabled="disabled";
@@ -99,9 +104,17 @@ $(function(){
 		document.getElementById("im2").style.display="none";
 		document.getElementById("im3").style.display="none";
 		document.getElementById("im4").style.display="none";
+		}else{
+			document.getElementById("im1").style.display="inline";
+			document.getElementById("im2").style.display="none";
+			document.getElementById("im3").style.display="none";
+			document.getElementById("im4").style.display="none";
+		}
 	}; 
 	
 	document.getElementById("op2").onclick= function(){
+		var val=$(".check").val();
+		if(val!="1"){
 		document.getElementById("r1").disabled=true;
 		document.getElementById("r2").disabled=false;
 		document.getElementById("r3").disabled=true;
@@ -114,10 +127,18 @@ $(function(){
 		document.getElementById("im2").style.display="inline";
 		document.getElementById("im3").style.display="none";
 		document.getElementById("im4").style.display="none";
-		
+		}else
+			{
+			document.getElementById("im1").style.display="none";
+			document.getElementById("im2").style.display="inline";
+			document.getElementById("im3").style.display="none";
+			document.getElementById("im4").style.display="none";
+			}
 	};
 	
 	document.getElementById("op3").onclick= function(){
+		var val=$(".check").val();
+		if(val!="1"){
 		document.getElementById("r1").disabled=true;
 		document.getElementById("r2").disabled=true;
 		document.getElementById("r3").disabled=false;
@@ -130,9 +151,17 @@ $(function(){
 		document.getElementById("im2").style.display="none";
 		document.getElementById("im3").style.display="inline";
 		document.getElementById("im4").style.display="none";
+		}else{
+			document.getElementById("im1").style.display="none";
+			document.getElementById("im2").style.display="none";
+			document.getElementById("im3").style.display="inline";
+			document.getElementById("im4").style.display="none";	
+		}
 	};
 	
 	document.getElementById("op4").onclick= function(){
+		var val=$(".check").val();
+		if(val!="1"){
 		document.getElementById("r1").disabled=true;
 		document.getElementById("r2").disabled=true;
 		document.getElementById("r3").disabled=true;
@@ -145,10 +174,16 @@ $(function(){
 		document.getElementById("im2").style.display="none";
 		document.getElementById("im3").style.display="none";
 		document.getElementById("im4").style.display="inline";
+		}else{
+			document.getElementById("im1").style.display="none";
+			document.getElementById("im2").style.display="none";
+			document.getElementById("im3").style.display="none";
+			document.getElementById("im4").style.display="inline";	
+		}
 	};
 
 
-/* Opcions deshabilitades per defecte*/ 
+/* Opciones inhabilitadas por defecto*/ 
 	
 $(document).ready(function(){
 	document.getElementById("r2").disabled=true;
@@ -160,8 +195,8 @@ $(document).ready(function(){
 
 });
 
-/* Deshabilitar tots els botons en escollir una resposta, exepte els de visualitzar opcions
- * Visualització del feedback*/
+/* Inhabilitar todos els botones al escojer una respuesta, excepto los de visualizar opciones
+ * Visualitzación del feedback*/
 
 $(".c1").click(function(){
     $(".check, .error").attr("disabled","disabled");
@@ -186,4 +221,5 @@ $(".c4").click(function(){
     $(".c4").css("box-shadow","inset 0px 0px 0px 4px #25bb20");
     $("#fb4").css("display","inline");    
 });
+
 
