@@ -300,6 +300,15 @@ body {
 	box-shadow:none;
 	-moz-box-shadow:none;
 	-webkit-box-shadow:none;
+} 
+
+#resp button.eclick[disabled]:hover,
+#resp2 button.eclick[disabled]:hover{
+	background-color:inherit;
+	-moz-box-shadow:inset 0px 0px 0px 4px #f51010;
+	-webkit-box-shadow:inset 0px 0px 0px 4px #f51010;
+	-ms-box-shadow:inset 0px 0px 0px 4px #f51010;
+	box-shadow:inset 0px 0px 0px 4px #f51010;
 }
 
 #resp{
