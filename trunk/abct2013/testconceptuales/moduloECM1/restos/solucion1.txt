@@ -1,0 +1,53 @@
+Set autobond off
+load files solucion1.pdb
+draw miplano1 fixed {-4  -0.5  -3} {-4  -0.5  3}  {13  -0.5  3} {13  -0.5  -3} 
+color $miplano1 grey 
+draw miplano2 fixed {-4  -1  -3} {-4  -1  3}  {-4  15  3} {-4  15  -3} 
+color $miplano2 grey 
+draw miplano3 fixed {13  -1  -3} {13  -1  3}  {13  15  3} {13  15  -3} 
+color $miplano3 grey 
+draw miplano4 fixed {-4  12  -3} {-4  12  3}  {13  12  3} {13  12  -3} 
+color $miplano4 blue translucent
+
+
+
+rotate x 2
+animation mode once
+//"animation mode palindrome " para ir de A a B
+
+#connect 0.9 1.1 (*) (*)
+
+ #Para unir todos los atomos en ese rango de distancias.
+
+
+spacefill 25%
+
+
+
+/*
+connect (atomno=1 and model>=1.135)(atomno=6 and model>=1.135) double
+*/
+ 
+
+
+
+select (atomno>=1)(atomno<=28)
+spacefill 20%
+color atoms white
+font label 10 sans bold
+label "D"
+set labeloffset 0 0 
+color label blue
+
+select (atomno>=29)(atomno<=59)
+spacefill 25%
+color atoms red
+font label 18 sans bold
+label "S"
+set labeloffset 0 0 
+color label white
+
+
+
+
+

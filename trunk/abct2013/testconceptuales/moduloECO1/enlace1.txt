@@ -1,0 +1,10 @@
+set autobond off
+load files enlace1.pdb;
+ 
+connect (atomno=10)(atomno=18)
+
+spacefill 25%
+
+moveto /* time, axisAngle */ 0 { -512 -812 -282 143.37} /* zoom, translation */116.14 0.0  0.0  /* center, rotationRadius */{11.58  0.5535 -22.68} 5.379 /* navigation center, translation, depth */{0.0 0.0 0.0} -11.010  -57.879  0.0;
+
+set measurementUnits pm;

@@ -1,0 +1,70 @@
+Set autobond off
+load files 8nh3.pdb
+
+
+rotate x 2
+animation mode once
+
+select atomno=4
+color atom [0,125,255]
+spacefill 15%
+font label 20 sans bold
+label "N"
+set labeloffset 0 0 
+color label white
+
+select atomno=1,atomno=2,atomno=3
+color atom white
+spacefill 20%
+font label 20 sans bold
+label "H"
+set labeloffset 0 0 
+color label red
+
+select atomno=7
+color atom black
+spacefill 1%
+font label 14 sans bold
+label "dipolo"
+set labeloffset 0 -5 
+color label red
+
+
+connect(atomno=4)(atomno=1)
+connect(atomno=4)(atomno=2)
+connect(atomno=4)(atomno=3)
+color bonds silver
+
+select atomno=5,atomno=6
+color atoms white
+spacefill 5%
+
+color echo white
+font echo 24
+set echo et1 10% 100%;
+set echo et1 center;
+echo N<sub>T</sub> = 8
+
+color echo white
+font echo 24
+set echo et2 85% 100%;
+set echo et2 center;
+echo N<sub>R</sub> = 0
+
+set defaultDrawArrowScale 0.25;
+draw arrow4 arrow scale 0.7 color red diameter 0.05 {6.124 -0.680 0.0} (atomno=4);
+
+
+select (atomno=4);lcaoCartoon scale 0.8 color translucent yellow create "sp3a"
+select (atomno=4);lcaoCartoon scale 0.8 color translucent yellow create "sp3b"
+select (atomno=4);lcaoCartoon scale 0.8 color translucent yellow create "sp3c"
+select (atomno=4);lcaoCartoon scale 1.0 color translucent yellow create "sp3d"
+
+select all
+wireframe 0.05
+
+
+
+moveto /* time, axisAngle */ 0 { 1000  0   0  2.0} /* zoom, translation */ 145.68  0.0  0.0  /* center, rotationRadius */{6.124  0.499 -0.284} 2.525 /* navigation center, translation, depth */{0.0 0.0 0.0}  -179.48  14.935 0.0;
+
+

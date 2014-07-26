@@ -1,0 +1,62 @@
+Set autobond off
+load files 7hccl3.pdb
+
+
+rotate x 2
+animation mode once
+//"animation mode palindrome " para ir de A a B
+
+#connect 0.9 1.1 (*) (*)
+
+ #Para unir todos los atomos en ese rango de distancias.
+
+
+
+
+
+/*connect(atomno=1)(atomno=2)
+connect(atomno=1)(atomno=3)
+connect(atomno=1)(atomno=4)*/
+connect(atomno=1)(atomno=5)
+
+ 
+
+
+
+select atomno=1
+
+spacefill 15%
+font label 15 sans bold
+label "C"
+set labeloffset 0 0 
+color label white
+
+select atomno=2,atomno=3,atomno=4
+
+spacefill 15%
+font label 15 sans bold
+label "Cl"
+set labeloffset 0 0 
+color label white
+
+select atomno=5
+spacefill 15%
+color atom pink
+font label 15 sans bold
+label "H"
+set labeloffset 0 0 
+color label red
+
+
+draw arrow1 arrow {-0.07 0.1 0.95} diameter 0.05 color yellow (atomno=2) offset {0 0 0};
+draw arrow2 arrow {-0.07 0.1 0.95} diameter 0.05 color yellow (atomno=3) offset {0 0 0};
+draw arrow3 arrow {-0.07 0.1 0.95} diameter 0.05 color yellow (atomno=4) offset {0 0 0};
+draw arrow4 arrow {-0.07 0.1 0.95} diameter 0.08 color red (atomno=6) offset {0 0 0};
+
+
+
+
+
+select all
+wireframe 0.05
+moveto /* time, axisAngle */ 0 { 976  219 -4  2.05} /* zoom, translation */ 169.23 -17.19  22.5  /* center, rotationRadius */{-0.95  -1.5 0.0} 4.39 /* navigation center, translation, depth */{0.0 0.0 0.0}  1.058  -6.286 0.0;

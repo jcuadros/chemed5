@@ -1,0 +1,41 @@
+Set autobond off
+load files 1co2.pdb
+
+
+rotate x 2
+animation mode once
+//"animation mode palindrome " para ir de A a B
+
+#connect 0.9 1.1 (*) (*)
+
+ #Para unir todos los atomos en ese rango de distancias.
+
+
+spacefill 25%
+
+
+
+ 
+
+
+
+select atomno=1
+spacefill 1%
+color atoms black
+font label 45 sans bold
+label "CO<sub>2</sub>"
+set labeloffset 10 0 
+color label white
+
+color echo white
+font echo 24
+set echo et6 10% 100%;
+set echo et6 center;
+echo N<sub>T</sub> = 16
+
+
+
+moveto /* time, axisAngle */ 0 { 1000  0  0  1.55} /* zoom, translation */ 100.0 -14.69 -0.94  /* center, rotationRadius */{0.0 0.0 0.0} 1.7 /* navigation center, translation, depth */{0.0 0.0 0.0} -14.687 -0.9375 0.0;
+
+
+

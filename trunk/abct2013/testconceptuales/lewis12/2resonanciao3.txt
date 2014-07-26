@@ -1,0 +1,67 @@
+Set autobond off
+load files 2resonanciao3.pdb
+
+
+rotate x 2
+animation mode loop
+//"animation mode palindrome " para ir de A a B
+
+#connect 0.9 1.1 (*) (*)
+
+ #Para unir todos los atomos en ese rango de distancias.
+
+
+
+
+
+
+select (atomno>=5)(atomno<=6)
+color atom red
+spacefill 25%
+font label 14 sans bold
+label "O<sub>1</sub>"
+set labeloffset 0 0 
+color label white
+
+select (atomno>=3)(atomno<=4)
+color atom red
+spacefill 25%
+font label 14 sans bold
+label "O<sub>2</sub>"
+set labeloffset 0 0 
+color label white
+
+
+
+select (atomno>=1)(atomno<=2)
+color atom red
+spacefill 25%
+font label 14 sans bold
+label "O"
+set labeloffset 0 0 
+color label white
+
+select (atomno>=7)(atomno<=34)
+spacefill 5%
+color atoms white
+
+
+
+
+
+
+connect(atomno=1)(atomno=5)
+connect(atomno=1)(atomno=3)
+connect(atomno=2)(atomno=4)
+connect(atomno=2)(atomno=6)
+
+
+
+
+
+select all
+wireframe 0.05
+
+
+moveto /* time, axisAngle */ 0 { 1000  0   0  2.0} /* zoom, translation */ 139.97 0.0  0.0  /* center, rotationRadius */{-1.147  3.20 1.24} 4.93 /* navigation center, translation, depth */{0.0 0.0 0.0}  15.34  42.17 0.0;
+

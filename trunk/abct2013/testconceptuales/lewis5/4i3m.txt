@@ -1,0 +1,54 @@
+Set autobond off
+load files 4i3m.pdb
+
+
+rotate x 2
+animation mode once
+//"animation mode palindrome " para ir de A a B
+
+#connect 0.9 1.1 (*) (*)
+
+ #Para unir todos los atomos en ese rango de distancias.
+
+
+
+
+
+connect(atomno=1)(atomno=2)
+connect(atomno=1)(atomno=3)
+
+ 
+
+
+
+select atomno=1,atomno=2,atomno=3
+
+spacefill 30%
+font label 20 sans bold
+label "I"
+set labeloffset 0 0 
+color label white
+
+select (atomno>=4)(atomno<=19)
+spacefill 7%
+color atoms white
+
+
+
+
+
+color echo white
+font echo 24
+set echo et1 10% 100%;
+set echo et1 center;
+echo N<sub>T</sub> = 22
+
+color echo white
+font echo 24
+set echo et2 85% 100%;
+set echo et2 center;
+echo N<sub>R</sub> = 2
+
+select all
+wireframe 0.05
+moveto /* time, axisAngle */ 0 { 976  219 -4  2.05} /* zoom, translation */ 92.27 -8.13  14.38  /* center, rotationRadius */{-0.95  -1.5 0.0} 4.39 /* navigation center, translation, depth */{0.0 0.0 0.0}  1.811  -1.302 0.0;

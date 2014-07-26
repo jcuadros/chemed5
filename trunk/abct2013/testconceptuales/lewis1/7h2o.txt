@@ -1,0 +1,82 @@
+set autobond off
+load files 7h2o.pdb
+
+rotate x 2
+animation mode once
+
+select atomno=1,atomno=2
+color atom white
+spacefill 20%
+font label 24 sans bold
+label "H"
+set labeloffset 0 0 
+color label red
+
+select atomno=9,atomno=10
+color atom white
+spacefill 20%
+font label 15 sans bold
+label "d+"
+set labeloffset 3 1 
+color label red
+
+select atomno=3
+color atom red
+spacefill 20%
+font label 24 sans bold
+label "O"
+set labeloffset 0 0 
+color label white
+
+select atomno=11
+color atom red
+spacefill 20%
+font label 15 sans bold
+label "d-"
+set labeloffset 5 1 
+color label white
+
+select (atomno>=4)(atomno<=7)
+spacefill 5%
+color atoms white
+
+select atomno=8
+color atom black
+spacefill 1%
+font label 24 sans bold
+label "dipolo"
+set labeloffset 0 0 
+color label red
+
+
+/*
+color echo red
+font echo 20
+set echo et3 48% 20%;
+set echo et3 center;
+echo dipolo
+
+connect(atomno=2)(atomno=3)
+connect(atomno=1)(atomno=3)
+*/
+
+select(atomno>=4)(atomno<=7)
+spacefill 0.05
+color atoms white
+
+select all
+wireframe 0.05
+/*select (atomno=3);lcaoCartoon scale 1.0 color translucent yellow create "sp3c"
+select (atomno=3);lcaoCartoon scale 1.0 color translucent yellow create "sp3d"*/
+
+set defaultDrawArrowScale 0.25
+draw arrow1 arrow scale 0.5 color yellow {atomno=1} (atomno=3);
+draw arrow2 arrow scale 0.5 color yellow {atomno=2} (atomno=3);
+
+draw arrow3 arrow scale 0.5 color red diameter 0.05 {0.0  -0.8  0.165} (atomno=3);
+
+
+moveto /* time, axisAngle */ 0 {230  -969  -94  27.79} /* zoom, translation */ 130.96 -1.25 -1.88  /* center, rotationRadius */{0.0 0.0 0.0} 1.7 /* navigation center, translation, depth */{0.0 0.0 0.0} -1.2525 -1.88 0.0;
+
+
+

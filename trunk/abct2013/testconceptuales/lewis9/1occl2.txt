@@ -1,0 +1,38 @@
+Set autobond off
+load files 1occl2.pdb
+
+
+rotate x 2
+animation mode once
+//"animation mode palindrome " para ir de A a B
+
+#connect 0.9 1.1 (*) (*)
+
+ #Para unir todos los atomos en ese rango de distancias.
+
+
+spacefill 25%
+
+
+
+ 
+
+
+
+select atomno=1
+spacefill 1%
+color atoms black
+font label 45 sans bold
+label "OCCl<sub>2</sub>"
+set labeloffset 0 0 
+color label white
+
+color echo white
+font echo 24
+set echo et6 10% 100%;
+set echo et6 center;
+echo N<sub>T</sub> = 24
+
+
+
+

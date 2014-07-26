@@ -1,0 +1,49 @@
+Set autobond off
+load files 1resonanciao3.pdb
+
+
+rotate x 2
+animation mode loop 0.1 0.1;
+//"animation mode palindrome " para ir de A a B
+
+#connect 0.9 1.1 (*) (*)
+
+ #Para unir todos los atomos en ese rango de distancias.
+
+
+select atomno=1,atomno=2,atomno=3
+color atom red
+spacefill 25%
+font label 28 sans bold
+label "O"
+set labeloffset 0 0 
+color label white
+select (atomno>=4)(atomno<=17)
+spacefill 5%
+color atoms white
+
+
+
+color echo white
+font echo 24
+set echo et1 10% 100%;
+set echo et1 center;
+echo N<sub>T</sub> = 18
+
+color echo white
+font echo 24
+set echo et2 85% 100%;
+set echo et2 center;
+echo N<sub>R</sub> = 0
+
+connect(atomno=1)(atomno=2)
+connect(atomno=1)(atomno=3)
+
+
+select all
+wireframe 0.05
+
+moveto /* time, axisAngle */ 0 { -733  608  305  3.48} /* zoom, translation */ 72.35 69.69 60.00  /* center, rotationRadius */{0.0 0.0 0.0} 1.7 /* navigation center, translation, depth */{0.0 0.0 0.0} 69.687 59.995 0.0;
+
+
+

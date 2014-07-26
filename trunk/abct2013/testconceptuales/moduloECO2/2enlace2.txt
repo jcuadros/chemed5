@@ -1,0 +1,49 @@
+set autobond off
+load files 2enlace2.pdb
+
+connect (atomno=1)(atomno=2) double
+connect (atomno=3)(atomno=4) double
+
+select _C
+font label 14 sans bold
+set labeloffset 0 0 
+color label white
+
+select atomno=1
+label "C<sub>1</sub>"
+
+select atomno=2
+label "C<sub>2</sub>"
+
+select atomno=3
+label "C<sub>3</sub>"
+
+select atomno=4
+label "C<sub>4</sub>"
+
+
+select all
+wireframe 0.05
+spacefill 25%
+
+select atomno=1;
+lcaoCartoon scale 1.0 color translucent yellow create "sp2a"
+lcaoCartoon scale 1.0 color translucent yellow create "sp2b"
+lcaoCartoon scale 1.0 color translucent yellow create "sp2c"
+
+select atomno=2;
+lcaoCartoon scale 1.0 color translucent yellow create "sp2a"
+lcaoCartoon scale 1.0 color translucent yellow create "sp2b"
+lcaoCartoon scale 1.0 color translucent yellow create "sp2c"
+
+select atomno=3;
+lcaoCartoon scale 1.0 color translucent yellow create "sp2a"
+lcaoCartoon scale 1.0 color translucent yellow create "sp2b"
+lcaoCartoon scale 1.0 color translucent yellow create "sp2c"
+
+select atomno=4;
+lcaoCartoon scale 1.0 color translucent yellow create "sp2a"
+lcaoCartoon scale 1.0 color translucent yellow create "sp2b"
+lcaoCartoon scale 1.0 color translucent yellow create "sp2c"
+
+select all

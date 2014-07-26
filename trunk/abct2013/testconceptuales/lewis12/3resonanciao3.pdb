@@ -1,0 +1,365 @@
+MODEL        1
+ATOM      1  O   MOL H   0       0.631   2.260   1.237  1.00  0.00           O0
+ATOM      2  O   MOL H   0       1.663   1.557   1.238  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -0.398   1.569   1.254  1.00  0.00           O0
+TER
+ENDMDL
+
+
+
+MODEL        2
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0      -0.606   1.586   2.073  1.00  0.00           T0
+ATOM      7  T   MOL H   0      -0.210   1.606   2.073  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+MODEL        3
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       0.430   2.251   2.073  1.00  0.00           T0
+ATOM      7  T   MOL H   0       0.826   2.271   2.073  1.00  0.00           T0
+TER
+ENDMDL
+
+
+MODEL        5
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       1.441   1.552   2.073  1.00  0.00           T0
+ATOM      7  T   MOL H   0       1.837   1.572   2.073  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+MODEL        7
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       1.504   1.552   0.538  1.00  0.00           T0
+ATOM      7  T   MOL H   0       1.900   1.572   0.538  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+MODEL        9
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       0.463   2.189   0.511  1.00  0.00           T0
+ATOM      7  T   MOL H   0       0.859   2.209   0.511  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+
+MODEL       11
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0      -0.561   1.516   0.466  1.00  0.00           T0
+ATOM      7  T   MOL H   0      -0.165   1.536   0.466  1.00  0.00           T0
+TER
+ENDMDL
+
+MODEL       12
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0      -0.606   1.586   2.073  1.00  0.00           T0
+ATOM      7  T   MOL H   0      -0.210   1.606   2.073  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+MODEL       13
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       0.430   2.251   2.073  1.00  0.00           T0
+ATOM      7  T   MOL H   0       0.826   2.271   2.073  1.00  0.00           T0
+TER
+ENDMDL
+
+
+MODEL       15
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       1.441   1.552   2.073  1.00  0.00           T0
+ATOM      7  T   MOL H   0       1.837   1.572   2.073  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+MODEL       17
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       1.504   1.552   0.538  1.00  0.00           T0
+ATOM      7  T   MOL H   0       1.900   1.572   0.538  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+MODEL       19
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       0.463   2.189   0.511  1.00  0.00           T0
+ATOM      7  T   MOL H   0       0.859   2.209   0.511  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+
+MODEL       20
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0      -0.561   1.516   0.466  1.00  0.00           T0
+ATOM      7  T   MOL H   0      -0.165   1.536   0.466  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+MODEL       21
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0      -0.606   1.586   2.073  1.00  0.00           T0
+ATOM      7  T   MOL H   0      -0.210   1.606   2.073  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+MODEL       23
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       0.430   2.251   2.073  1.00  0.00           T0
+ATOM      7  T   MOL H   0       0.826   2.271   2.073  1.00  0.00           T0
+TER
+ENDMDL
+
+
+MODEL       25
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       1.441   1.552   2.073  1.00  0.00           T0
+ATOM      7  T   MOL H   0       1.837   1.572   2.073  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+MODEL       27
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       1.504   1.552   0.538  1.00  0.00           T0
+ATOM      7  T   MOL H   0       1.900   1.572   0.538  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+MODEL       29
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       0.463   2.189   0.511  1.00  0.00           T0
+ATOM      7  T   MOL H   0       0.859   2.209   0.511  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+
+MODEL       30
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0      -0.561   1.516   0.466  1.00  0.00           T0
+ATOM      7  T   MOL H   0      -0.165   1.536   0.466  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+MODEL       31
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0      -0.606   1.586   2.073  1.00  0.00           T0
+ATOM      7  T   MOL H   0      -0.210   1.606   2.073  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+MODEL       33
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       0.430   2.251   2.073  1.00  0.00           T0
+ATOM      7  T   MOL H   0       0.826   2.271   2.073  1.00  0.00           T0
+TER
+ENDMDL
+
+
+MODEL       35
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       1.441   1.552   2.073  1.00  0.00           T0
+ATOM      7  T   MOL H   0       1.837   1.572   2.073  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+MODEL       37
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       1.504   1.552   0.538  1.00  0.00           T0
+ATOM      7  T   MOL H   0       1.900   1.572   0.538  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+MODEL       39
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       0.463   2.189   0.511  1.00  0.00           T0
+ATOM      7  T   MOL H   0       0.859   2.209   0.511  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+
+MODEL       40
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0      -0.561   1.516   0.466  1.00  0.00           T0
+ATOM      7  T   MOL H   0      -0.165   1.536   0.466  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+MODEL       41
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0      -0.606   1.586   2.073  1.00  0.00           T0
+ATOM      7  T   MOL H   0      -0.210   1.606   2.073  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+MODEL       43
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       0.430   2.251   2.073  1.00  0.00           T0
+ATOM      7  T   MOL H   0       0.826   2.271   2.073  1.00  0.00           T0
+TER
+ENDMDL
+
+
+MODEL       45
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       1.441   1.552   2.073  1.00  0.00           T0
+ATOM      7  T   MOL H   0       1.837   1.572   2.073  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+MODEL       47
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       1.504   1.552   0.538  1.00  0.00           T0
+ATOM      7  T   MOL H   0       1.900   1.572   0.538  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+MODEL       49
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       0.463   2.189   0.511  1.00  0.00           T0
+ATOM      7  T   MOL H   0       0.859   2.209   0.511  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+
+MODEL       50
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0      -0.561   1.516   0.466  1.00  0.00           T0
+ATOM      7  T   MOL H   0      -0.165   1.536   0.466  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+MODEL       51
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0      -0.606   1.586   2.073  1.00  0.00           T0
+ATOM      7  T   MOL H   0      -0.210   1.606   2.073  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+MODEL       53
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       0.430   2.251   2.073  1.00  0.00           T0
+ATOM      7  T   MOL H   0       0.826   2.271   2.073  1.00  0.00           T0
+TER
+ENDMDL
+
+
+MODEL       55
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       1.441   1.552   2.073  1.00  0.00           T0
+ATOM      7  T   MOL H   0       1.837   1.572   2.073  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+MODEL       57
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       1.504   1.552   0.538  1.00  0.00           T0
+ATOM      7  T   MOL H   0       1.900   1.572   0.538  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+MODEL       59
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0       0.463   2.189   0.511  1.00  0.00           T0
+ATOM      7  T   MOL H   0       0.859   2.209   0.511  1.00  0.00           T0
+TER
+ENDMDL
+
+
+
+
+MODEL       60
+ATOM      4  T   MOL H   0       0.849   2.958   1.224  1.00  0.00           T0
+ATOM      5  T   MOL H   0       0.457   2.957   1.224  1.00  0.00           T0
+ATOM      6  T   MOL H   0      -0.561   1.516   0.466  1.00  0.00           T0
+ATOM      7  T   MOL H   0      -0.165   1.536   0.466  1.00  0.00           T0
+TER
+ENDMDL
+

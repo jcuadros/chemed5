@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Disoluciones</title>
+<meta charset="iso-8859-1">
+<script src="../../jsmol/JSmol.min.js" type="text/javascript"></script>
+<script src="../util.js" type="text/javascript"></script>
+<script type="text/javascript">
+var startJmol = true;
+function respuesta(n) { showFeedback(n); } 
+</script>
+<link href="../modulos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="panelJmol">
+</div>
+
+<div id="panelConten">
+<h1>Equilibrio E1c 
+</h1>
+<p><a href="../moduloECM3/index.html"><img src="../atras.jpeg" align="left" width="45" height="20" border="0"></a>
+<a href="../moduloD2/index.html"><img src="../adelante.jpeg" align="right" width="45" height="20" border="0"></a></p>
+
+<p><p align="center"><a href="../index.html">&lArr; Al índice</a> </p>
+
+<p>&nbsp;</p>
+<p>Al pulsar en cada una de las siguientes figuras se observará una animación que describe una reacción
+entre átomos del elemento A (rojos) y del elemento B (blanco) para formar moléculas del compuesto AB.
+<p>&nbsp;</p>
+</p>
+
+<table class="propuestas">
+  <tr>
+  	<td><img src="0E1F.jpg" width="150" height="150" ></a></td>
+ 	<td><a href="#" onClick="multi('anima', '1equif1.txt');return false;"><img src="1E1F.jpg" width="150" height="150" ></a></td>
+ 	<td><a href="#" onClick="multi('anima', '2equif1.txt');return false;"><img src="2E1F.jpg" width="150" height="150" ></a></td>
+	<td><img src="3E1F.jpg" width="150" height="150" ></a></td>
+ 	
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p>Después de observar las dos animaciones indica cual de ellas representa mejor los cambios que tienen
+lugar en una reacción reversible.</p>
+<table class="respuestas">
+  <tr>
+	<td> <input type="button" value="1" onClick="respuesta(1)"> 
+	</td>
+    <td><div id="respu1"><FONT COLOR="green"><b>Correcto</b>. En esta animación se puede observar que se forman
+    moléculas AB (reacción directa) al mismo tiempo que tiene lugar la reacción inversa de disociación de moléculas para formar los 
+    átomos de partida.
+	</div>
+    </td>
+  </tr>
+  <tr>
+	<td> <input type="button" value="2" onClick="respuesta(2)">
+	</td>
+    <td><div id="respu2"><FONT COLOR="red">Incorrecto. La animación muestra solo la formación de moléculas
+    AB, (reacción directa), pero no la reacción inversa de disociación de moléculas AB para formar los 
+    átomos.
+    </div>
+    </td>
+  </tr>
+  
+</table>
+<p><a href="adicional.htm" target="coment">Leer m&aacute;s</a></p>
+<p>&nbsp;</p>
+<p><a href="../moduloECM3/index.html"><img src="../atras.jpeg" align="left" width="45" height="20" border="0"></a>
+<a href="../moduloD2/index.html"><img src="../adelante.jpeg" align="right" width="45" height="20" border="0"></a></p>
+
+</div>
+<div id="panelComent"></div>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-38611857-1', 'uv.es');
+	  ga('send', 'pageview');
+
+	</script>
+</body>
+</html>
+

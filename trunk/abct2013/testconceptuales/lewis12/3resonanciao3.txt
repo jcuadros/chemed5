@@ -1,0 +1,39 @@
+set autobond off
+load files 3resonanciao3.pdb
+
+set backgroundModel 1; //modelo con los átomos, se mantiene constante
+frame range 2 60; //modelos con los electrones, se animan
+animation mode loop 0.1 0.1;
+
+select atomno>=1 and atomno<=3
+color atom red
+spacefill 25%
+font label 14 sans bold
+label "O"
+set labeloffset 0 0 
+color label white
+
+select atomno=4,atomno=5
+spacefill 1%
+color atoms black
+select atomno=6,atomno=7
+spacefill 5%
+color atoms white
+
+connect(atomno=1)(atomno=2)
+connect(atomno=1)(atomno=3)
+
+select atomno=1
+lcaoCartoon scale 2.0 "pz"; lcaocartoon color translucent yellow;
+lcaoCartoon scale 2.0 "pz"; lcaocartoon color translucent yellow;
+
+select atomno=2
+lcaoCartoon scale 2.0 "pz"; lcaocartoon color translucent yellow;
+
+select atomno=3
+lcaoCartoon scale 2.0 "pz"; lcaocartoon color translucent yellow;
+
+select all
+wireframe 0.05
+
+moveto /* time, axisAngle */ 0 { 11  -707  707  178.98} /* zoom, translation */ 100.41  0.0  0.0  /* center, rotationRadius */{0.647  2.237 1.269} 2.94 /* navigation center, translation, depth */{0.0 0.0 0.0}  14.95  -26.955 0.0;

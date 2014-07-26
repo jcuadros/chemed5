@@ -1,0 +1,80 @@
+Set autobond off
+load files 8co2.pdb
+
+
+rotate x 2
+animation mode once
+//"animation mode palindrome " para ir de A a B
+
+#connect 0.9 1.1 (*) (*)
+
+ #Para unir todos los atomos en ese rango de distancias.
+
+
+
+
+
+
+ 
+
+
+
+select atomno=1
+color atom grey
+spacefill 20%
+font label 28 sans bold
+label "C"
+set labeloffset 0 0 
+color label white
+
+select atomno=2,atomno=3
+color atom red
+spacefill 20%
+font label 28 sans bold
+label "O"
+set labeloffset 0 0 
+color label white
+select (atomno>=7)(atomno<=15)
+spacefill 1%
+color atoms black
+
+
+
+
+
+color echo white
+font echo 24
+set echo et1 10% 100%;
+set echo et1 center;
+echo N<sub>T</sub> = 16
+
+color echo white
+font echo 24
+set echo et2 85% 100%;
+set echo et2 center;
+echo N<sub>R</sub> = 0
+
+connect(atomno=1)(atomno=2)
+connect(atomno=1)(atomno=3)
+
+
+select(atomno>=4)(atomno<=7)
+spacefill 1%
+color atoms grey
+draw arrow;
+select atomNo=1,atomNo=2;
+wireframe off;
+
+select all
+wireframe 0.05
+
+select (atomno=1);lcaoCartoon scale 0.8 color translucent yellow create "spa"
+select (atomno=1);lcaoCartoon scale 0.8 color translucent yellow create "spb"
+select (atomno=2);lcaoCartoon scale 0.8 color translucent yellow create "pz"
+select (atomno=3);lcaoCartoon scale 0.8 color translucent yellow create "pz"
+
+
+moveto /* time, axisAngle */ 0 { 1000  0  0  1.55} /* zoom, translation */ 73.83 -1.25 -1.88  /* center, rotationRadius */{0.0 0.0 0.0} 1.7 /* navigation center, translation, depth */{0.0 0.0 0.0} -1.2525 -1.877 0.0;
+
+
+

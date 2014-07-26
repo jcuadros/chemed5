@@ -1,0 +1,44 @@
+set autobond off
+load files nacl.pdb.gz;
+
+draw miplano1 fixed {-9 -0.5 -5} {-9 -0.5 10} {18 -0.5 10} {18 -0.5 -5}; 
+color $miplano1 grey;
+draw miplano2 fixed {-9 -1 -5} {-9 -1 10} {-9 25 10} {-9 25 -5}; 
+color $miplano2 translucent grey;
+draw miplano3 fixed {18 -1 -5} {18 -1 10} {18 25 10} {18 25 -5}; 
+color $miplano3 translucent grey;
+
+frame all;
+draw e1 (atomno=115) (atomno=116) (atomno=113)(atomno=114) fill;
+color $e1 blue translucent 0.2;
+frame rewind;
+
+animation mode once;
+
+connect 3.0 (_Cl)(atomno>=89 and atomno<=100);
+connect 2.48 (_Na)(atomno>=77 and atomno<=88);
+connect (model=1 and (_Na, _Cl))(*) delete; //evita enlaces en el primer fotograma
+
+spacefill 25%;
+set labeloffset 0 0;
+font label 14 sans bold;
+
+select _Cl;
+spacefill 45%;
+color green;
+label "-";
+color label white;
+ 
+select _Na;
+spacefill 35%;
+color white;
+label "+";
+color label red;
+
+select atomno>=77 and atomno<=112;
+spacefill 40%;
+color red;
+
+hide atomno>=113 and atomno<=117;
+
+moveto 0 {-999 17 -36 5} 254 0.83 -73.83 {4.5 34.9 2.5} 40.3 {0 0 0} -13.7 36.37 0;

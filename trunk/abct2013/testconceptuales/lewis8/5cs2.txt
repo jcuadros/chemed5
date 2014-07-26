@@ -1,0 +1,57 @@
+set autobond off
+load files 5cs2.pdb
+
+animation mode once
+
+set labeloffset 0 0 
+
+select atomno=1
+color atom grey
+spacefill 20%
+font label 28 sans bold
+label "C"
+color label white
+
+select atomno=2,atomno=3
+color atom yellow
+spacefill 25%
+font label 28 sans bold
+label "S"
+color label red
+
+select (atomno>=4)(atomno<=15)
+spacefill 5%
+color atoms white
+
+
+color echo white
+font echo 24
+
+set echo et1 10% 100%;
+set echo et1 center;
+echo N<sub>T</sub> = 16
+
+set echo et2 85% 100%;
+set echo et2 center;
+echo N<sub>R</sub> = 0
+
+set echo et3 50% 5%;
+set echo et3 center;
+echo Pulsar animación
+
+
+connect (atomno=1 and model<=1.32) ((atomno=2,atomno=3) and model<=1.32)
+connect (atomno=1 and model>=1.33) ((atomno=2,atomno=3) and model>=1.33) double;
+
+hide atomno=4 and model>=1.33;
+/*
+select(atomno=4 and model>=1.33)
+spacefill 1%
+color atoms grey
+*/
+
+select all
+wireframe 0.05
+
+moveto /* time, axisAngle */ 0 { 1000  0  0  1.55} /* zoom, translation */ 73.83 -1.25 -1.88  /* center, rotationRadius */{0.0 0.0 0.0} 1.7 /* navigation center, translation, depth */{0.0 0.0 0.0} -1.2525 -1.877 0.0;
+

@@ -1,0 +1,84 @@
+Set autobond off
+load files 5h2o.pdb
+
+
+rotate x 2
+animation mode once
+//"animation mode palindrome " para ir de A a B
+
+#connect 0.9 1.1 (*) (*)
+
+ #Para unir todos los atomos en ese rango de distancias.
+
+
+
+
+
+
+ 
+
+
+
+select atomno=3
+color atom red
+spacefill 25%
+font label 24 sans bold
+label "O"
+set labeloffset 0 0 
+color label white
+
+select atomno=1,atomno=2
+color atom white
+spacefill 25%
+font label 24 sans bold
+label "H"
+set labeloffset 0 0 
+color label red
+
+select atomno=8
+color atom white
+spacefill 25%
+font label 14 sans 
+label "N<sub>R</sub> = 0"
+set labeloffset 5 0 
+color label white
+
+
+
+color echo white
+font echo 24
+set echo et1 10% 100%;
+set echo et1 center;
+echo N<sub>T</sub> = 8
+
+/*color echo white
+font echo 24
+set echo et2 85% 100%;
+set echo et2 center;
+echo N<sub>R</sub> = 0*/
+
+color echo white
+font echo 14
+set echo et3 50% 5%;
+set echo et3 center;
+echo Pulsar animación
+
+
+connect(atomno=1)(atomno=3)
+connect(atomno=2)(atomno=3)
+
+
+
+select(atomno>=4) (atomno<=7) 
+spacefill 5%
+color atoms white
+select all
+wireframe 0.05
+select atomno=8
+spacefill 1%
+color atom black
+
+moveto /* time, axisAngle */ 0 { 1000  0  0  1.55} /* zoom, translation */ 73.83 -1.25 -1.88  /* center, rotationRadius */{0.0 0.0 0.0} 1.7 /* navigation center, translation, depth */{0.0 0.0 0.0} -1.2525 -1.877 0.0;
+
+
+

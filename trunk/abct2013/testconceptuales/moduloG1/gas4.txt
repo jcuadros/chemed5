@@ -1,0 +1,30 @@
+Set autobond off
+load files gas4.pdb 
+#draw miplano fixed {0 -5 5} {0 5 5}  {0 5 -5} {0 -5 -5}
+color $miplano white translucent
+rotate x 2
+animation mode LOOP
+//"animation mode palindrome " para ir de A a B
+
+spacefill 12%
+
+
+
+
+
+
+
+select (atomno>=1)(atomno<=30)
+color atoms red
+font label 14 sans bold
+label ""
+set labeloffset 0 0 
+color label white
+
+
+
+
+
+
+
+

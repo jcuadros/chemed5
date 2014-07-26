@@ -1,0 +1,213 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Estructuras de Lewis</title>
+<meta charset="iso-8859-1">
+<script src="../../jsmol/JSmol.min.js" type="text/javascript"></script>
+<script src="../util.js" type="text/javascript"></script>
+<script type="text/javascript"> 
+var startJmol = false;
+function respuesta(n) { cargaScript('');showFeedback(n,19); } 
+</script>
+<link href="../modulos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="panelJmol"></div>
+
+<div id="panelConten">
+<h1>9. Estructura de Lewis de OCCl<sub>2</sub>
+</h1>
+<p><a href="../lewis8/index.html"><img src="../atras.jpeg" align="left" width="45" height="20" border="0"></a>
+<a href="../lewis10/index.html"><img src="../adelante.jpeg" align="right" width="45" height="20" border="0"></a>
+</p>
+<p><p align="center"><a href="../index.html">&lArr; Al índice</a> </p>
+<p>&nbsp;</p>
+
+<p><b>1</b>. Cuenta el número total de electrones (N<sub>T</sub>) de la capa de valencia para los átomos de la molécula.</p>
+<table class="respuestas">
+  <tr>
+	<td> <input type="button" value="22" onClick="respuesta(1)"> 
+	</td>
+    <td><div id="respu1"><FONT COLOR="red"><b>No es correcto</b>. Revisa los electrones de valencia de C, O y Cl.
+    
+	</div>
+    </td>
+  </tr>
+  <tr>
+	<td> <input type="button" value="24" onClick="respuesta(2)"> 
+	</td>
+    <td><div id="respu2"><FONT COLOR="green"><b>Correcto</b>. 
+    <a href="javascript:void(0)" onClick="multi('Jmol','1occl2.txt')"><b>24 electrones</b></a>
+    </div>
+    </td>
+  </tr>
+  <tr>
+	<td> <input type="button" value="26" onClick="respuesta(3)"> 
+	</td>
+    <td><div id="respu3"><FONT COLOR="red"><b>No es correcto</b>. Revisa los electrones de valencia de C, O y Cl.
+    </div>
+    </td>
+  </tr>
+  </table>
+
+<p><b>2</b>. ¿Cual es el átomo central en esta molécula?
+<table class="respuestas">
+  <tr>
+	<td> <input type="button" value="O" onClick="respuesta(4)"> 
+	</td>
+    <td><div id="respu4"><FONT COLOR="red"><b>No es correcto</b>. El átomo central es siempre el menos electronegativo
+    
+	</div>
+    </td>
+  </tr>
+   
+  <tr>
+	<td> <input type="button" value="C" onClick="respuesta(5)"> 
+	</td>
+    <td><div id="respu5"><FONT COLOR="green"><b>Correcto</b>. El átomo de carbono, ya que es el menos electronegativo,
+    <a href="javascript:void(0)" onClick="multi('Jmol','2occl2.txt')"><b>C</b></a>
+    </div>
+    </td>
+  </tr>
+  </table>
+
+
+  <p><b>3</b>. Para completar formar enlaces sencillos entre C y los tres átomos se necesitan (electrones).  
+<table class="respuestas">
+  <tr>
+	<td> <input type="button" value="4" onClick="respuesta(9)"> 
+	</td>
+    <td><div id="respu9"><FONT COLOR="red"><b>No es correcto</b>. Tres enlaces sencillos requieren mas 
+    de 4 electrones.
+    
+	</div>
+    </td>
+  </tr>
+  <tr>
+	<td> <input type="button" value="6" onClick="respuesta(10)"> 
+	</td>
+    <td><div id="respu10"><FONT COLOR="green"><b>Correcto</b>. Cada átomo comparte dos electrones con el carbono.
+    Se requieren un total de
+    <a href="javascript:void(0)" onClick="multi('Jmol','3occl2.txt')"><b> 6 electrones</b>.</a>
+    
+    </div>
+    </td>
+  </tr>
+  <tr>
+	<td> <input type="button" value="8" onClick="respuesta(11)"> 
+	</td>
+    <td><div id="respu11"><FONT COLOR="red"><b>No es correcto</b>.  Tres enlaces sencillos requieren menos de
+    8 electrones.
+    </div>
+    </td>
+  </tr>
+  </table>
+  
+<p><b>4</b>. Para completar el octeto en los átomos terminales se necesitan.  
+<table class="respuestas">
+  <tr>
+	<td> <input type="button" value="18" onClick="respuesta(12)"> 
+	</td>
+    <td><div id="respu12"><FONT COLOR="green"><b>Correcto</b>. Cada átomo comparte dos electrones con el carbono.
+    Necesitará 6 electrones mas para completar el octeto. Total
+    <a href="javascript:void(0)" onClick="multi('Jmol','4occl2.txt')"><b> 18 electrones</b>.</a>
+	</div>
+    </td>
+  </tr>
+  <tr>
+	<td> <input type="button" value="21" onClick="respuesta(13)"> 
+	</td>
+    <td><div id="respu13"><FONT COLOR="red"><b>No es correcto</b>. Cada átomo comparte dos electrones con el carbono.
+    Siete electrones mas completan un entorno de 9 electrones.
+    
+    </div>
+    </td>
+  </tr>
+  <tr>
+	<td> <input type="button" value="24" onClick="respuesta(14)"> 
+	</td>
+    <td><div id="respu14"><FONT COLOR="red"><b>No es correcto</b>.  Cada átomo comparte dos electrones con el carbono.
+    Ocho electrones mas completan un entorno de 10 electrones. Oxígeno no es capaz de alojar tanto electrones.
+    </div>
+    </td>
+  </tr>
+  </table>
+  
+  
+<p>&nbsp;</p>
+
+<p><b>5</b>. No quedan más electrones por asignar y el átomo de carbono no ha completado el octeto. 
+¿Como se reorganizan los electrones?</p>
+<table class="respuestas">
+  <tr>
+	<td> <input type="button" value="1" onClick="respuesta(15)"> Queda con 6e.
+	</td>
+    <td><div id="respu15"><FONT COLOR="red"><b>No es correcto</b>. Carbono generalmente completa el octeto.
+	</div>
+    </td>
+  </tr>
+ 
+  <tr>
+	<td> <input type="button" value="2" onClick="respuesta(16)"> Un Cl transfiere dos electrones
+	</td>
+    <td><div id="respu16"><FONT COLOR="red"><b>No es correcto</b> La transferencia desde O es mas efectiva.
+    <a href="leer_mas.htm" target="coment">Leer más</a>
+     </div>
+    </td>
+  </tr>
+    <tr>
+	<td> <input type="button" value="3" onClick="respuesta(17)"> El O transfiere dos electrones
+	</td>
+    <td><div id="respu17"><FONT COLOR="green"><b>Correcto</b> Esa transferencia conduce a un 
+    <a href="javascript:void(0)" onClick="multi('anima','5occl2.txt')"><b>enlace C=O</b></a> en la molécula.
+    </div>
+    </td>
+  </tr>
+  </table>
+  <p><b>6</b>. ¿Cuál es la geometría de esta molécula?<a href="estructuras.htm" target="coment">Estructuras</a></p>
+<table class="respuestas">
+  <tr>
+	<td> <input type="button" value="forma T" onClick="respuesta(18)"> 
+	</td>
+    <td><div id="respu18"><FONT COLOR="red"><b>No es correcto</b>. Hay un total de tres enlaces sobre el átomo central. Consulta la tabla.
+   </div>
+    </td>
+  </tr>
+ <tr>
+	<td> <input type="button" value="Triangular plana" onClick="respuesta(19)"> 
+	</td>
+    <td><div id="respu19"><FONT COLOR="green"><b>Correcto</b>. El entorno es de tipo AX<sub>3</sub>.
+   
+     </div>
+    </td>
+  </tr>
+  <tr>
+	<td> <input type="button" value="Piramidal" onClick="respuesta(19)"> 
+	</td>
+    <td><div id="respu20"><FONT COLOR="red"><b>No es correcto</b>. Consulta la tabla.
+   
+     </div>
+    </td>
+  </tr>
+  </table>
+  
+<p>&nbsp;</p>
+<p><a href="../lewis8/index.html"><img src="../atras.jpeg" align="left" width="45" height="20" border="0"></a>
+<a href="../lewis10/index.html"><img src="../adelante.jpeg" align="right" width="45" height="20" border="0"></a>
+</p>
+</div>
+<div id="panelComent"></div>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-38611857-1', 'uv.es');
+	  ga('send', 'pageview');
+
+	</script>
+</body>
+</html>
+

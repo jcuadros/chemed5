@@ -1,0 +1,37 @@
+set autobond off;
+load files 8hccl3.pdb;
+
+connect (atomno=1)(atomno=2,atomno=3,atomno=4,atomno=5);
+
+hide atomno=6;
+
+font label 15 sans bold
+set labeloffset 0 0 
+
+select atomno=1
+label "C"
+color label white
+
+select atomno=2,atomno=3,atomno=4
+label "Cl"
+color label white
+
+select atomno=5
+color atom pink
+label "H"
+color label red
+
+
+select (atomno=1);
+lcaoCartoon scale 1.0 color translucent yellow create "sp3a";
+lcaoCartoon scale 1.0 color translucent yellow create "sp3b";
+lcaoCartoon scale 1.0 color translucent yellow create "sp3c";
+lcaoCartoon scale 1.0 color translucent yellow create "sp3d";
+
+
+select all
+spacefill 15%
+wireframe 0.05
+
+// moveto /* time, axisAngle */ 0 { 976  219 -4  2.05} /* zoom, translation */ 169.23 -17.19  22.5  /* center, rotationRadius */{-0.95  -1.5 0.0} 4.39 /* navigation center, translation, depth */{0.0 0.0 0.0}  1.058  -6.286 0.0;
+moveto 0 {976 219 -4 2.05} 152.31 0.0 0.0 {-0.073200025 -0.072399974 0.9120001} 3.7694378 {0.0 0.0 0.0} 1.2604475 -1.9874096 0.0;

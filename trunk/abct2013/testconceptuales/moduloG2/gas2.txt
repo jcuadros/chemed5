@@ -1,0 +1,68 @@
+Set autobond off
+load files gas2.pdb
+draw miplano1 fixed {-4  -0.5  -3} {-4  -0.5  3}  {13  -0.5  3} {13  -0.5  -3} 
+color $miplano1 white 
+draw miplano2 fixed {-4  -1  -3} {-4  -1  3}  {-4  15  3} {-4  15  -3} 
+color $miplano2 white translucent 
+draw miplano3 fixed {13  -1  -3} {13  -1  3}  {13  15  3} {13  15  -3} 
+color $miplano3 white translucent
+
+
+frame all
+draw e1 (atomno=55) (atomno=56) (atomno=57)(atomno=58) fill 
+color $e* white
+draw f1 (atomno=60) (atomno=61) (atomno=62)(atomno=63) fill 
+color $f* white 
+frame rewind
+
+rotate x 2
+animation mode once
+//"animation mode palindrome " para ir de A a B
+
+#connect 0.9 1.1 (*) (*)
+
+ #Para unir todos los atomos en ese rango de distancias.
+
+
+spacefill 35%
+
+
+
+
+ 
+
+select (atomno>=1)(atomno<=2)
+
+color atoms white
+font label 8 sans bold
+label "H"
+set labeloffset 0 0 
+color label red
+
+select atomno=37
+
+color atoms red
+font label 8 sans bold
+label "O"
+set labeloffset 0 0 
+color label white
+
+select atomno=64
+spacefill 1%
+color atoms black
+font label 20 sans bold
+label "FASE VAPOR"
+set labeloffset 5 0 
+color label white
+select (atomno>=55)(atomno<=65)
+spacefill 1%
+color atoms grey
+
+
+
+moveto /* time, axisAngle */ 0.0 { 989  151 -3  2.39} /* zoom, translation */ 129.36  0.0  4.6  /* center, rotationRadius */{4.5 6.042 0.0} 12.50 /* navigation center, translation, depth */{0.0 0.0 0.0}  -23.115  35.60 0.0;
+
+
+
+
+

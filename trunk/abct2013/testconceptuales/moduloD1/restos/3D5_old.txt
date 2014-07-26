@@ -1,0 +1,71 @@
+Set autobond off
+
+load files 3D5.pdb;
+
+draw miplano1 fixed {-9  -0.5  -5} {-9  -0.5  10}  {18  -0.5  10} {18  -0.5  -5} 
+color $miplano1 grey 
+draw miplano2 fixed {-9  -1  -5} {-9  -1  10}  {-9  25  10} {-9  25  -5} 
+color $miplano2 grey
+draw miplano3 fixed {18  -1  -5} {18  -1  10}  {18  25  10} {18  25  -5} 
+color $miplano3 grey 
+/*draw miplano4 fixed {-9  30  -5} {-9  30  10}  {18  30  10} {18  30  -5} 
+color $miplano4 blue translucent*/
+
+frame all
+draw e1 (atomno=97) (atomno=98) (atomno=99)(atomno=100) fill 
+color $e* blue translucent 0.2
+frame rewind
+
+
+
+rotate x 2
+animation mode once
+//"animation mode palindrome " para ir de A a B
+
+connect  1.43  1.46(*) (*)
+connect  1.51  1.53(*) (*)
+
+#Para unir todos los atomos en ese rango de distancias.
+
+spacefill 25%
+
+
+
+
+ 
+
+
+
+select (atomno>=1)(atomno<=12)
+spacefill 25%
+color atoms white
+font label 9 sans bold
+label "+"
+set labeloffset 0 0 
+color label red
+
+select (atomno>=73)(atomno<=90)
+spacefill 45%
+color atoms red
+
+select (atomno>=97)(atomno<=100)
+spacefill 1%
+color atoms grey
+
+select (atomno>=91)(atomno<=96)
+spacefill 35%
+color atoms yellow
+font label 9 sans bold
+label "="
+set labeloffset 0 0 
+color label red
+
+
+
+
+
+moveto /* time, axisAngle */ 0 { -1000 10 -23 8.02} /* zoom, translation */ 253.96 0.83 -73.83  /* center, rotationRadius */{4.5 34.948 2.5} 40.30284 /* navigation center, translation, depth */{0.0 0.0 0.0} -13.974 38.2898 50.0;
+
+
+
+

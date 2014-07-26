@@ -1,0 +1,37 @@
+Set autobond off
+load files 1i3m.pdb
+
+
+rotate x 2
+animation mode once
+//"animation mode palindrome " para ir de A a B
+
+#connect 0.9 1.1 (*) (*)
+
+ #Para unir todos los atomos en ese rango de distancias.
+
+
+spacefill 25%
+
+
+
+ 
+
+
+
+select atomno=1,atomno=2,atomno=3
+spacefill 30%
+
+font label 20 sans bold
+label "I"
+set labeloffset  0 0 
+color label white
+
+color echo white
+font echo 24
+set echo et6 10% 100%;
+set echo et6 center;
+echo N<sub>T</sub> = 22
+
+
+

@@ -1,0 +1,57 @@
+Set autobond off
+load files 6h2o.pdb
+
+
+rotate x 2
+animation mode once
+//"animation mode palindrome " para ir de A a B
+
+#connect 0.9 1.1 (*) (*)
+
+ #Para unir todos los atomos en ese rango de distancias.
+
+
+
+
+
+
+ 
+
+
+
+select atomno=1,atomno=2
+color atom white
+spacefill 25%
+font label 24 sans bold
+label "H"
+set labeloffset 0 0 
+color label red
+
+select atomno=3
+color atom red
+spacefill 25%
+font label 24 sans bold
+label "O"
+set labeloffset 0 0 
+color label white
+select (atomno>=4)(atomno<=7)
+spacefill 5%
+color atoms white
+
+
+
+connect(atomno=2)(atomno=3)
+connect(atomno=1)(atomno=3)
+
+
+select(atomno>=4)(atomno<=7)
+spacefill 0.05
+color atoms white
+
+select all
+wireframe 0.05
+
+moveto /* time, axisAngle */ 0 { 1000  0  0  1.55} /* zoom, translation */ 73.83 -1.25 -1.88  /* center, rotationRadius */{0.0 0.0 0.0} 1.7 /* navigation center, translation, depth */{0.0 0.0 0.0} -1.2525 -1.877 0.0;
+
+
+

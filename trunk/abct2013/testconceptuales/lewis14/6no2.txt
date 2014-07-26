@@ -1,0 +1,69 @@
+Set autobond off
+load files 6no2.pdb
+
+
+rotate x 2
+animation mode once
+//"animation mode palindrome " para ir de A a B
+
+#connect 0.9 1.1 (*) (*)
+
+ #Para unir todos los atomos en ese rango de distancias.
+
+
+
+
+
+
+ 
+
+
+
+select atomno=1
+color atom [1,125,255]
+spacefill 20%
+font label 28 sans bold
+label "N"
+set labeloffset 0 0 
+color label white
+
+select atomno=2,atomno=3
+color atom red
+spacefill 25%
+font label 28 sans bold
+label "O"
+set labeloffset 0 0 
+color label white
+
+select atomno=4
+color atom white
+spacefill 5%
+font label 28 sans bold
+
+/*
+color echo white
+font echo 24
+set echo et1 10% 100%;
+set echo et1 center;
+echo N<sub>T</sub> = 18
+
+color echo white
+font echo 24
+set echo et2 85% 100%;
+set echo et2 center;
+echo N<sub>R</sub> = 0
+*/
+connect(atomno=2)(atomno=1) aromatic 
+connect(atomno=3)(atomno=1) aromatic
+
+select atomno=1
+/*lcaoCartoon scale 1.0 "sp2c"; lcaocartoon color yellow;*/
+
+
+
+select (atomno=1);lcaoCartoon scale 1.2 color translucent yellow create "sp2c"
+select all
+wireframe 0.05
+
+
+
