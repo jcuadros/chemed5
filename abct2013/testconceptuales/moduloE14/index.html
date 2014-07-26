@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Equilibrio de fases</title>
+<meta charset="iso-8859-1">
+<script src="../../jsmol/JSmol.min.js" type="text/javascript"></script>
+<script src="../util.js" type="text/javascript"></script>
+<script type="text/javascript">
+var startJmol = true;
+function respuesta(n) { showFeedback(n); } 
+</script>
+<link href="../modulos.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.celdaRespuesta div { visibility:hidden; }
+td { text-align:left; }
+</style>
+</head>
+
+<body>
+<div id="panelJmol"></div>
+
+<div id="panelConten">
+<h1>E14. Equilibrio H<sub>2</sub>O(líquido)&#x21C4;H<sub>2</sub>O(vapor).
+</h1>
+
+
+<p><a href="../index.html">&lArr; Al índice</a> </p>
+<p>&nbsp;</p>
+<p>Partiendo de una situación de equilibrio H<sub>2</sub>O(l)&#x21C4;H<sub>2</sub>O(v) a una determinada temperatura
+</p> 
+<p>&nbsp;</p>
+<table border="0">
+  <tr>
+    <td><a href="#" onClick="multi('anima','14apv.txt');return false;"><img src="14apv.jpg" width="200" height="200"></a></td>
+    <td><a href="#" onClick="multi('anima','14bpv.txt');return false;"><img src="14bpv.jpg" width="200" height="200"></a></td>
+<p> 
+</table>
+
+<p>&nbsp;</p>
+<p>¿Cual de las siguientes animaciones describe correctamente lo que sucederá en este sistema, inicialmente en equilibrio,
+si se aumenta la cámara de vapor?</p></li>
+<p><a href="cambiosfase.htm" target="coment">Cambios de fase</a></p>
+<p>&nbsp;</p>
+<table>
+  <tr>
+	<td> <input type="button" value="1" onClick="respuesta(1)"> Animación A
+	</td>
+    <td class="celdaRespuesta"><div id="respu1"><FONT COLOR="red">INCORRECTO.  </div>
+    </td>
+  </tr>
+  <tr>
+	<td> <input type="button" value="2" onClick="respuesta(2)"> Animación B
+	</td>
+    <td class="celdaRespuesta"><div id="respu2"><FONT COLOR="green"><b>CORRECTO</b>.</div>
+    </td>
+  </tr>
+  <tr>
+	<td> <input type="button" value="3" onClick="respuesta(3)"> Ninguna de las dos
+	</td>
+    <td class="celdaRespuesta"><div id="respu3"><FONT COLOR="red">INCORRECTO.</div>
+    </td>
+  </tr>
+  
+</table>
+<p>&nbsp;</p>
+
+<p><a href="adicional.htm" target="coment">Texto adicional</a></p>
+<p>&nbsp;</p>
+<p><a href="../moduloE12/index.html"><img src="../atras.jpeg" align="left" width="45" height="20" border="0"></a>
+<a href="../moduloECO1/index.html"><img src="../adelante.jpeg" align="right" width="45" height="20" border="0"></a>
+</p>
+</div>
+<div id="panelComent"></div>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-38611857-1', 'uv.es');
+	  ga('send', 'pageview');
+
+	</script>
+</body>
+</html>
+

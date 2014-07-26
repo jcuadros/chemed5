@@ -1,0 +1,48 @@
+set autobond off
+load files 9co3m.pdb
+
+animation mode once
+ 
+connect (atomno=1) (atomno=2,atomno=3,atomno=4);
+connect ((atomno=1,atomno=4) and model=1.17) double;
+
+set labeloffset 0 0 
+
+select atomno=1
+color atom [0,125,255]
+spacefill 25%
+font label 28 sans bold
+label "C"
+color label white
+
+select atomno=2,atomno=3,atomno=4
+color atom red
+spacefill 25%
+font label 28 sans bold
+label "O"
+color label white
+
+
+color echo white
+font echo 20
+
+set echo et1 10% 100%;
+set echo et1 center;
+echo N<sub>T</sub> = 24
+
+set echo et2 90% 100%;
+set echo et2 center;
+echo N<sub>R</sub> = 0
+
+
+select (atomno=1);lcaoCartoon scale 1.2 color translucent yellow create "pz";
+select (atomno=2);lcaoCartoon scale 1.2 color translucent yellow create "pz";
+select (atomno=3);lcaoCartoon scale 1.2 color translucent yellow create "pz";
+select (atomno=4);lcaoCartoon scale 1.2 color translucent yellow create "pz";
+
+
+select all
+wireframe 0.05
+
+moveto /* time, axisAngle */ 0 { -977  -140   -158  66.07} /* zoom, translation */ 100.0  0.0  0.0  /* center, rotationRadius */{-0.957  -1.06 0.0} 3.329 /* navigation center, translation, depth */{0.0 0.0 0.0}  16.95  -5.53 0.0;
+

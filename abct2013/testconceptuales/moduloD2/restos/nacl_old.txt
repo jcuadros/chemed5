@@ -1,0 +1,82 @@
+Set autobond off
+set echo espere 50% 50%;
+set echo espere center;
+echo "wait a moment, loading...";
+refresh;
+load files nacl.pdb;
+
+
+
+draw miplano1 fixed {-9  -0.5  -5} {-9  -0.5  10}  {18  -0.5  10} {18  -0.5  -5} 
+color $miplano1 grey 
+draw miplano2 fixed {-9  -1  -5} {-9  -1  10}  {-9  25  10} {-9  25  -5} 
+color $miplano2 grey translucent
+draw miplano3 fixed {18  -1  -5} {18  -1  10}  {18  25  10} {18  25  -5} 
+color $miplano3 grey translucent
+
+
+frame all
+draw e1 (atomno=115) (atomno=116) (atomno=113)(atomno=114) fill 
+color $e* blue translucent 0.2
+frame rewind
+
+
+
+rotate x 2
+animation mode once
+//"animation mode palindrome " para ir de A a B
+
+connect  1.43  1.46(*) (*)
+connect  1.49  1.53(*) (*)
+
+#Para unir todos los atomos en ese rango de distancias.
+
+connect 2.48(atomno=1)(atomno>=89 and atomno<=94)
+connect 2.48(atomno=2)(atomno>=95 and atomno<=100)
+connect 2.48(atomno=75)(atomno>=77 and atomno<=82)
+connect 2.48(atomno=76)(atomno>=83 and atomno<=88)
+
+spacefill 25%
+
+
+
+select (atomno>=1)(atomno<=2)
+spacefill 45%
+color atoms green
+font label 12 sans bold
+label "-"
+set labeloffset 0 0 
+color label white
+ 
+
+
+
+select (atomno>=75)(atomno<=76)
+spacefill 35%
+color atoms white
+font label 12 sans bold
+label "+"
+set labeloffset 0 0 
+color label red
+
+
+
+select (atomno>=77)(atomno<=112)
+spacefill 40%
+color atoms red
+
+
+select (atomno>=113)(atomno<=117)
+spacefill 1%
+color atoms grey
+
+
+
+
+
+
+moveto /* time, axisAngle */ 0 { -1000 10 -23 8.02} /* zoom, translation */ 253.96 0.83 -73.83  /* center, rotationRadius */{4.5 34.948 2.5} 40.30284 /* navigation center, translation, depth */{0.0 0.0 0.0} -13.974 38.2898 50.0;
+
+
+
+

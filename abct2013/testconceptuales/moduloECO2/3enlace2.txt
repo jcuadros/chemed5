@@ -1,0 +1,32 @@
+set autobond off
+load files 3enlace2.pdb
+
+connect (atomno=1)(atomno=2) double
+connect (atomno=3)(atomno=4) double
+
+select _C
+font label 14 sans bold
+set labeloffset 0 0 
+color label white
+
+select atomno=1
+label "C<sub>1</sub>"
+
+select atomno=2
+label "C<sub>2</sub>"
+
+select atomno=3
+label "C<sub>3</sub>"
+
+select atomno=4
+label "C<sub>4</sub>"
+
+select all
+spacefill 25%
+wireframe 0.05
+
+select atomno=1; lcaoCartoon scale 1.8 color translucent yellow create "pz"
+select atomno=2; lcaoCartoon scale 1.8 color translucent yellow create "pz"
+select atomno=3; lcaoCartoon scale 1.8 color translucent yellow create "pz"
+select atomno=4; lcaoCartoon scale 1.8 color translucent yellow create "pz"
+select all;

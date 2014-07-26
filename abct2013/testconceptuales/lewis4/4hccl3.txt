@@ -1,0 +1,47 @@
+set autobond off
+load files 4hccl3.pdb
+
+
+animation mode once
+
+connect (atomno=1) (atomno>=2 and atomno<=5);
+
+set labeloffset 0 0 
+
+select atomno=1
+spacefill 25%
+font label 20 sans bold
+label "C"
+color label white
+
+select atomno=2,atomno=3,atomno=4
+spacefill 25%
+font label 24 sans bold
+label "Cl"
+color label white
+
+select atomno=5
+spacefill 25%
+color atom pink
+font label 24 sans bold
+label "H"
+color label red
+
+select atomno>=6 and atomno<=25
+spacefill 5%
+color atoms white
+
+color echo white
+font echo 24
+
+set echo et1 10% 100%;
+set echo et1 center;
+echo N<sub>T</sub> = 26
+
+set echo et2 85% 100%;
+set echo et2 center;
+echo N<sub>R</sub> = 0
+
+select all
+wireframe 0.05
+moveto /* time, axisAngle */ 0 { 976  219 -4  2.05} /* zoom, translation */ 169.23 -17.19  22.5  /* center, rotationRadius */{-0.95  -1.5 0.0} 4.39 /* navigation center, translation, depth */{0.0 0.0 0.0}  1.058  -6.286 0.0;

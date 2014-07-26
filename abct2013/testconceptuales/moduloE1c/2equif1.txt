@@ -1,0 +1,26 @@
+set autobond off
+load files 2equif1.pdb
+animation mode once
+
+
+
+select (atomno>=1)(atomno<=5)
+color atoms red
+spacefill 35%
+select (atomno>=6)(atomno<=10)
+color atoms white
+spacefill 35%
+
+color bonds silver
+
+moveto /* time, axisAngle */ 0 { 0  0   -1000  1.0} /* zoom, translation */ 121.9  0.0  0.0  /* center, rotationRadius */{7.566  -0.138 -6.063} 16.022 /* navigation center, translation, depth */{0.0 0.0 0.0}  -30.60  -1.093 0.0;
+
+
+
+
+
+
+
+
+
+

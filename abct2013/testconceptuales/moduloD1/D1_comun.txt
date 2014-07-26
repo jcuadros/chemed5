@@ -1,0 +1,35 @@
+draw miplano1 fixed {-9 -0.5 -5} {-9 -0.5 10}  {18 -0.5 10} {18 -0.5 -5};
+draw miplano2 fixed {-9 -1 -5} {-9 -1 10}  {-9 25 10} {-9  25 -5};
+draw miplano3 fixed {18 -1 -5} {18 -1 10}  {18 25 10} {18  25 -5};
+color $miplano* grey;
+
+frame all;
+draw e1 (atomno=97) (atomno=98) (atomno=99)(atomno=100) fill;
+color $e1 blue translucent 0.2;
+frame rewind;
+
+animation mode once;
+
+connect 1.43 1.53 (_S) (_O);
+
+spacefill 25%;
+set labeloffset 0 0;
+font label 9 sans bold;
+color label red;
+
+select atomno>=1 and atomno<=12;
+color white;
+label "+";
+
+select atomno>=73 and atomno<=90;
+spacefill 45%;
+color red;
+
+select atomno>=91 and atomno<=96;
+spacefill 35%;
+color yellow;
+label "=";
+
+hide atomno>=97 and atomno<=100;
+
+moveto 0 {-999 17 -36 5} 254 0.83 -73.83 {4.5 34.9 2.5} 40.3 {0 0 0} -13.69 36.23 0;

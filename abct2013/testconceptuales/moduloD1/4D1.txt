@@ -1,0 +1,3 @@
+set autobond off;
+load 4D1.pdb.gz;
+script D1_comun.txt;

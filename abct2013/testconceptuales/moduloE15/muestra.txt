@@ -1,0 +1,75 @@
+Set autobond off
+load files muestra.pdb
+/*draw miplano1 fixed {0  0  0} {30  0  0}  {30  0  20} {0  0  20} 
+color $miplano1 lime 
+draw miplano2 fixed {0  0  0} {0  26  0}  {0  26  20} {0  0  20} 
+color $miplano2 grey 
+draw miplano3 fixed {0 26 0} {30  26  0}  {30 26 20} {0 26 20} 
+color $miplano3 yellow
+draw miplano4 fixed {30  0  0} {30  26  0}  {30 26 20} {30  0  20}
+color $miplano4 grey*/
+
+
+/*draw miplano5 fixed {-4  5  -3} {-4  5  3}  {13  5  3} {13  5  -3} 
+color $miplano5 white*/
+
+
+frame all
+draw e1 (atomno=55) (atomno=62) (atomno=61)(atomno=56) fill 
+color $e* [40,130,190] translucent 
+frame rewind
+
+frame all
+draw e2 (atomno=57) (atomno=59) (atomno=60)(atomno=58) fill 
+color $e* [40,130,190] translucent 
+frame rewind
+
+frame all
+draw e3 (atomno=55) (atomno=57) (atomno=58)(atomno=56) fill 
+color $e* [40,130,190] translucent 
+frame rewind
+
+frame all
+draw e4 (atomno=62) (atomno=59) (atomno=60)(atomno=61) fill 
+color $e* [40,130,190] translucent 
+frame rewind
+
+rotate x 2
+animation mode once
+//"animation mode palindrome " para ir de A a B
+
+#connect 0.9 1.1 (*) (*)
+
+ #Para unir todos los atomos en ese rango de distancias.
+
+
+spacefill 25%
+
+
+
+
+ 
+
+select (atomno>=1)(atomno<=18)
+spacefill 45%
+color atoms blue
+
+select (atomno>=19)(atomno<=54)
+spacefill 40%
+color atoms red
+
+select (atomno>=55)(atomno<=62)
+spacefill 1%
+color atoms grey
+
+
+
+
+
+
+
+
+
+
+
+

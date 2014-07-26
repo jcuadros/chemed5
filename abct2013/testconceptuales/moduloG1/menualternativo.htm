@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Modulo 1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+
+
+<script src="../Jmol.js" type="text/javascript"></script>
+<script type="text/javascript"> 
+function cargaMol(x) { 
+  jmolScript('load '+x);
+}
+function cargaScript(x) { 
+  jmolScript('script '+x);
+}
+function respuesta(n,x) {
+  for (i=1;i<=4;i++) {
+    gid('respu'+i).style.visibility='hidden';
+  }
+  cargaScript(x);
+  gid('respu'+n).style.visibility='visible';
+}
+
+function gid(x) { return document.getElementById(x); }
+</script>
+<style type="text/css">
+body , td { font-size:80%; font-family:Verdana, Arial, Helvetica, sans-serif; }
+h1 { font-size:100%; }
+h2 { font-size:100%; margin-bottom:0.3em; padding-bottom:0; }
+p { margin-top:0.2em; margin-bottom:0.2em; }
+ul , ol { margin-top:0; margin-bottom:0; }
+li { margin-top:0.3em; margin-bottom:0.3em; }
+#filaRespuestas td div { visibility:hidden; }
+td { text-align:center; }
+</style>
+</head>
+
+<body>
+<p>
+<script type="text/javascript">
+jmolInitialize("..")</script>
+<h1><font size="+1" face="Verdana, Arial, Helvetica, sans-serif">Modulo 1. Gases </font>
+</h1>
+
+<p>&nbsp;
+</script>
+
+<p><a href="../../index.htm" target="_parent">Al Indice </a></p>
+
+<p>
+<p>
+<p>
+<li>En la siguiente figura se ha representado a escala molecular una porción de gas Ne. 
+Si pulsamos sobre la figura abriremos una animación que describe el movimiento de estas moléculas a temperatura ambiente (25&deg;C).</p></li> 
+<p>&nbsp;</p>
+<table border="5">
+  <tr>
+    <td><a href="pelicula.htm?pelicula=gasRT" target="texto"><img src="gas1.jpg" width="160" height="150"></a></td>
+
+</table>
+<p>&nbsp;</p>
+
+¿Que sucederá si disminuimos la temperatura
+de la muestra geseosa a -25&deg;C? ¿Cual de las siguientes representaciones describirá mejor el resultado?</p></li>
+
+<p>
+
+<p>Pulsad sobre la figura que consideres que mejor describe el comportamiento del gas a -25&deg;C.</p>
+<p>&nbsp;</p>
+<p><font size="+1" face="Verdana, Arial, Helvetica, sans-serif"></font></p>
+<p>
+
+<p>
+
+
+<table width="95%" border="0">
+  <tr id="filaRespuestas">
+    <td><div id="respu1">Incorrecta</div>
+    </td>
+    <td><div id="respu2"><b>Correcta</b></div>
+    </td>
+    <td><div id="respu3">Incorrecta etc. etc. etc. </div>
+    </td>
+    <td><div id="respu4">Incorrecta</div>
+    </td>
+  </tr>
+  <tr>
+	<td width="20%"><a href="nuevo.htm" target="texto" onClick="respuesta(1,'zap.txt')"><img src="gas2.jpg" width="150" height="150"></a></td></p>
+ 	<td width="20%"><a href="pelicula.htm?pelicula=gasBT" target="texto" onClick="respuesta(2,'zap.txt')"><img src="gas3.jpg" width="150" height="150"></a></td></p>
+	<td width="20%"><a href="../enblanco.htm" target="texto" onClick="respuesta(3,'caester.txt')"><img src="gas4.jpg" width="150" height="150"></a></td></p>
+	<td width="20%"><a href="../enblanco.htm" target="texto" onClick="respuesta(4,'caester.txt')"><img src="gas5.jpg" width="150" height="150"></a></td></p>
+
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a href="../2molecularesO/index.htm" target="_parent"><img src="../atras.jpeg" align="left" width="45" height="20" border="0"></a>
+<a href="../4solidos2D/index.htm" target="_parent"><img src="../adelante.jpeg" align="right" width="45" height="20" border="0"></a>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-38611857-1', 'uv.es');
+	  ga('send', 'pageview');
+
+	</script>
+</body>
+</html>

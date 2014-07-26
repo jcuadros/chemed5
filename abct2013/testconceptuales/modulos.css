@@ -1,0 +1,50 @@
+body { font-family:Verdana, Arial, Helvetica, sans-serif; font-size:85%; }
+td { text-align:center; }
+h1 { font-size:120%; }
+h2 { font-size:100%; margin-bottom:0.3em; padding-bottom:0; }
+p { margin-top:0.2em; margin-bottom:0.2em; }
+ul , ol { margin-top:0; margin-bottom:0; }
+li { margin-top:0.3em; margin-bottom:0.3em; }
+a img { border:none; }
+.nobr { white-space:nowrap; }
+
+.propuestas { width:100%; border-collapse:collapse; }
+.propuestas td { width:24%; padding:0 0.5%; text-align:left; }
+.propuestas td img { width:99%; height:auto; }
+
+.respuestas td { text-align:left; }
+.respuestas td div { visibility:hidden; }
+.filaRespuestas td div { visibility:hidden; }
+.celdaRespuesta div { visibility:hidden; }
+.en3columnas {
+	-moz-column-count:3; -webkit-column-count:3; column-count:3; 
+	-moz-column-gap:4ex; -webkit-column-gap:4ex; column-gap:4ex; 
+}
+.noRomperLinea { white-space:nowrap; }
+
+/* PANELES */
+html , body { height:100%; margin:0; }
+body { margin-right:330px; }
+
+#panelConten { padding:10px; }
+
+#panelJmol { 
+	position:absolute; position:fixed; top:0; right:0;
+	padding:5px;
+	width:330px; height:360px; 
+	overflow:hidden;	
+	background-color:#EEF4FA;
+	text-align:center; 
+}
+#panelJmol #animCtrls table { width:100%; border-collapse:collapse; display:none; }
+#panelJmol #animCtrls td { padding:0; text-align:center; }
+#panelJmol #animCtrls button{ padding:0; }
+
+#panelComent { 
+	position:absolute; position:fixed; bottom:0; right:0; top:370px;
+	width:330px;
+}
+#panelComent iframe {
+	border:none; border-left:2px solid #EEF4FA;
+	height:99%; width:99%;
+}

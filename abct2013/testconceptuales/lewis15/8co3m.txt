@@ -1,0 +1,46 @@
+set autobond off
+load files 8co3m.pdb
+
+animation mode once
+ 
+connect (atomno=1) (atomno=2,atomno=3,atomno=4);
+connect ((atomno=1,atomno=4) and model=1.17) double;
+
+set labeloffset 0 0 
+
+select atomno=1
+color atom [0,125,255]
+spacefill 25%
+font label 28 sans bold
+label "C"
+color label white
+
+select atomno=2,atomno=3,atomno=4
+color atom red
+spacefill 25%
+font label 28 sans bold
+label "O"
+color label white
+
+
+color echo white
+font echo 20
+
+set echo et1 10% 100%;
+set echo et1 center;
+echo N<sub>T</sub> = 24
+
+set echo et2 90% 100%;
+set echo et2 center;
+echo N<sub>R</sub> = 0
+
+
+select (atomno=1);
+lcaoCartoon scale 1.0 color translucent yellow create "sp2a";
+lcaoCartoon scale 1.0 color translucent yellow create "sp2b";
+lcaoCartoon scale 1.0 color translucent yellow create "sp2c";
+
+
+select all
+wireframe 0.05
+

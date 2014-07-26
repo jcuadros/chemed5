@@ -1,0 +1,427 @@
+MODEL        1
+ATOM      1  N   MOL H   0      -3.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+MODEL        2
+ATOM      1  N   MOL H   0      -2.885   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL        3
+ATOM      1  N   MOL H   0      -2.769   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL        4
+ATOM      1  N   MOL H   0      -2.654   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL        5
+ATOM      1  N   MOL H   0      -2.538   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL        6
+ATOM      1  N   MOL H   0      -2.423   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL        7
+ATOM      1  N   MOL H   0      -2.308   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL        8
+ATOM      1  N   MOL H   0      -2.192   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL        9
+ATOM      1  N   MOL H   0      -2.077   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       10
+ATOM      1  N   MOL H   0      -1.962   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       11
+ATOM      1  N   MOL H   0      -1.846   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       12
+ATOM      1  N   MOL H   0      -1.731   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       13
+ATOM      1  N   MOL H   0      -1.615   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       14
+ATOM      1  N   MOL H   0      -1.500   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       15
+ATOM      1  N   MOL H   0      -1.385   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       16
+ATOM      1  N   MOL H   0      -1.269   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       17
+ATOM      1  N   MOL H   0      -1.154   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       18
+ATOM      1  N   MOL H   0      -1.038   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       19
+ATOM      1  N   MOL H   0      -0.923   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       20
+ATOM      1  N   MOL H   0      -0.808   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       21
+ATOM      1  N   MOL H   0      -0.692   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       22
+ATOM      1  N   MOL H   0      -0.577   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       23
+ATOM      1  N   MOL H   0      -0.462   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       24
+ATOM      1  N   MOL H   0      -0.346   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       25
+ATOM      1  N   MOL H   0      -0.231   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       26
+ATOM      1  N   MOL H   0      -0.115   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       27
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -3.000  -1.500   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -3.000  -3.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+MODEL       28
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -2.927  -1.442   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -2.842  -2.885   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       29
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -2.854  -1.385   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -2.685  -2.769   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       30
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -2.781  -1.327   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -2.527  -2.654   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       31
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -2.708  -1.269   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -2.369  -2.538   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       32
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -2.635  -1.212   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -2.212  -2.423   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       33
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -2.562  -1.154   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -2.054  -2.308   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       34
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -2.488  -1.096   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -1.896  -2.192   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       35
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -2.415  -1.038   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -1.738  -2.077   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       36
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -2.342  -0.981   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -1.581  -1.962   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       37
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -2.269  -0.923   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -1.423  -1.846   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       38
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -2.196  -0.865   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -1.265  -1.731   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       39
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -2.123  -0.808   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -1.108  -1.615   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       40
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -2.050  -0.750   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -0.950  -1.500   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       41
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -1.977  -0.692   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -0.792  -1.385   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       42
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -1.904  -0.635   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -0.635  -1.269   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       43
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -1.831  -0.577   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -0.477  -1.154   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       44
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -1.758  -0.519   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -0.319  -1.038   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       45
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -1.685  -0.462   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -0.162  -0.923   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       46
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -1.612  -0.404   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0      -0.004  -0.808   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       47
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -1.538  -0.346   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0       0.154  -0.692   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       48
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -1.465  -0.288   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0       0.312  -0.577   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       49
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -1.392  -0.231   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0       0.469  -0.462   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       50
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -1.319  -0.173   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0       0.627  -0.346   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       51
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -1.246  -0.115   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0       0.785  -0.231   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       52
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -1.173  -0.058   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0       0.942  -0.115   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+
+MODEL       53
+ATOM      1  N   MOL H   0       0.000   0.000   0.000  1.00  0.00           N0
+ATOM      2  O   MOL H   0      -1.100   0.000   0.000  1.00  0.00           O0
+ATOM      3  O   MOL H   0       1.100   0.000   0.000  1.00  0.00           O0
+TER
+ENDMDL
+
+MODEL       54
+ATOM      1  N   MOL H   0      -0.957  -1.343   0.000  1.00  0.00           N0 
+ATOM      2  O   MOL H   0      -2.057  -1.343   0.000  1.00  0.00           O0 
+ATOM      3  O   MOL H   0       0.143  -1.343   0.000  1.00  0.00           O0 
+TER
+ENDMDL

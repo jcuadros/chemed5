@@ -1,0 +1,39 @@
+set autobond off
+load files 7hccl3.pdb
+
+animation mode once
+
+connect(atomno=1)(atomno=5)
+
+set labeloffset 0 0 
+
+select atomno=1
+spacefill 15%
+font label 15 sans bold
+label "C"
+color label white
+
+select atomno=2,atomno=3,atomno=4
+spacefill 15%
+font label 15 sans bold
+label "Cl"
+color label white
+
+select atomno=5
+spacefill 15%
+color atom pink
+font label 15 sans bold
+label "H"
+color label red
+
+
+draw arrow1 arrow diameter 0.05 scale 0.8 color yellow {-0.07 0.1 0.95} (atomno=2);
+draw arrow2 arrow diameter 0.05 scale 0.8 color yellow {-0.07 0.1 0.95} (atomno=3);
+draw arrow3 arrow diameter 0.05 scale 0.8 color yellow {-0.07 0.1 0.95} (atomno=4);
+draw arrow4 arrow diameter 0.08 scale 0.8 color red {-0.07 0.1 0.95} (atomno=6);
+
+
+
+select all
+wireframe 0.05
+moveto /* time, axisAngle */ 0 { 976  219 -4  2.05} /* zoom, translation */ 169.23 -17.19  22.5  /* center, rotationRadius */{-0.95  -1.5 0.0} 4.39 /* navigation center, translation, depth */{0.0 0.0 0.0}  1.058  -6.286 0.0;

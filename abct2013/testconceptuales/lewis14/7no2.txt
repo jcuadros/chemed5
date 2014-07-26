@@ -1,0 +1,71 @@
+Set autobond off
+load files 7no2.pdb
+
+
+rotate x 2
+animation mode once
+//"animation mode palindrome " para ir de A a B
+
+#connect 0.9 1.1 (*) (*)
+
+ #Para unir todos los atomos en ese rango de distancias.
+
+
+
+
+
+
+ 
+
+
+
+select atomno=1
+color atom [1,125,255]
+spacefill 25%
+font label 20 sans bold
+label "N"
+set labeloffset 0 0 
+color label white
+
+select atomno=2
+color atom [1,125,255]
+spacefill 25%
+font label 20 sans bold
+label "N"
+set labeloffset 0 0 
+color label white
+
+
+select atomno=3,atomno=4,atomno=5,atomno=6
+color atom red
+spacefill 25%
+font label 20 sans bold
+label "O"
+set labeloffset 0 0 
+color label white
+
+select atomno=7,atomno=8
+color atom white
+spacefill 5%
+font label 28 sans bold
+
+color echo white
+font echo 24
+set echo et1 60% 5%;
+set echo et1 center;
+echo Pulsar animación
+
+
+connect 1.6(atomno=2)(atomno=1) 
+
+connect (atomno=3)(atomno=1) aromatic
+connect (atomno=1)(atomno=6) aromatic
+connect (atomno=4)(atomno=2) aromatic
+connect (atomno=2)(atomno=5) aromatic
+
+select all
+wireframe 0.05
+
+moveto /* time, axisAngle */ 0 { 555 -15 -832  3.61} /* zoom, translation */ 148.59 0.0  0.0  /* center, rotationRadius */{-0.608  5.29 1.24} 6.29 /* navigation center, translation, depth */{0.0 0.0 0.0}  3.72  59.02 0.0;
+
+
