@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="viewport" content="width=device-width,height=device-height, initial-scale=1.0">
+<meta charset="utf-8">
+<meta HTTP-EQUIV="cache-control" CONTENT="no-cache, no-store, max-age=0, must-revalidate">
+<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<meta HTTP-EQUIV="Expires" CONTENT="0">
+<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+<link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css"/>
+<link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+<title>Disoluciones</title>
+</head>
+
+<body>
+        <div class="row-fluid" id="navbar"> 
+          	<ul class="breadcrumb">
+          		<li><a href="#">Inicio</a>&gt;</li>
+             	<li><a href="#">Bachiller</a>&gt;</li>
+             	<li><a href="#">Disoluciones</a>&gt;</li>
+             	<li class="active">Disolución 1</li> 
+          		<li class="arrows">
+         			<a href="#"><i class="icon-backward backward"></i></a>
+         			<a href="#"><i class="icon-arrow-up"></i></a>
+    				<a href="disolucion2.html"><i class="icon-forward forward"></i></a>
+        	   	</li>
+	   		</ul>                          
+	    </div>
+	        <p>&nbsp;</p>
+	        <p>&nbsp;</p>  
+        <div class="container-fluid">
+            <div class="row-fluid" id="context_question">
+                   <div class="span7">
+	                    <h4>Disolución 1 </h4>
+	                    <p>La siguiente imagen representa una disolución de NaCl en agua. 
+	                    Observad la presencia de iones Cl<sup>-</sup> (esferas verdes) y iones Na<sup>+</sup> (esferas amarillas) junto con moléculas de agua.
+	                    Las siguientes figuras representan diversas disoluciones de NaCl en agua.</p> 
+	                    <p>Pulsa sobre los botones para visualizar las opciones y escoge la que representa una disolución más concentrada que la mostrada arriba.</p>
+        				<!--========================Ayuda de la pregunta================================-->
+	                 		<div>
+	                        	<a href="#" onclick="overlay()"><button type="button" class="btn btn-link" id="hint"></button></a>
+									<div id="ayuda" class="modal fade in">
+							  		<div class="modal-header" style="text-align:left;">
+									   	<button type="button" class="close" onclick="overlay()">&times;</button>
+									    <h3 id="htitle"></h3>
+								  	</div>
+								  	<div class="modal-body">
+								    	<p>Texto de la ayuda</p>
+									</div>
+								  	<div class="modal-footer">
+								    	<a id="close" href="#" class="btn" onclick="overlay()"></a>
+									</div>
+								</div>
+	                		</div>
+                   </div>
+                   <!--==========================Animación de la pregunta ========================-->                  
+	                  <div class="span5 image visible-desktop">
+	                  	<img src="imatges/disol/D1/D1.jpg" />
+	                  </div>
+	                  <div class="anim hidden-desktop">
+	                  	<img src="imatges/disol/D1/D1.jpg" />
+	                  </div>
+            </div>
+            <!--==================================Espacio de la respuesta =========================-->
+            
+            	<!--========= Per a mòbils i tablets amb resolució menor a 979px =====================-->
+            <div class="row-fluid hidden-desktop" id="context_answer">
+              	<div id="resp" data-toggle="buttons-radio" style="display:inline-block;">
+     				<ol>
+		              	<li>
+		              		<div class="btn-toolbar">
+	              			<button class="btn option active" id="op1"><i class="icon-eye-open"></i></button>
+	              			<a href="#" onclick="fback()"><button class="btn check c1" id="r1"><i class="icon-ok"></i></button></a>
+	              			<button class="btn error x1" id="e1"><i class="icon-remove"></i></button>
+		              		</div>
+		              	</li>
+		              	<li>
+		              		<div class="btn-toolbar">
+	              			<button class="btn option" id="op2"><i class="icon-eye-open"></i></button>
+	              			<a href="#" onclick="fback()"><button class="btn check c2" id="r2"><i class="icon-ok"></i></button></a>
+	              			<button class="btn error x2" id="e2"><i class="icon-remove"></i></button>
+		              		</div>
+		              	</li>
+		              	<li>
+		              		<div  class="btn-toolbar">
+	              			<button class="btn option" id="op3"><i class="icon-eye-open"></i></button>
+	              			<a href="#" onclick="fback()"><button class="btn check c3" id="r3"><i class="icon-ok"></i></button></a>
+	              			<button class="btn error x3" id="e3"><i class="icon-remove"></i></button>
+		              		</div>
+		              	</li>
+		              	<li>
+		              		<div  class="btn-toolbar">
+	              			<button class="btn option" id="op4"  title="See option"><i class="icon-eye-open"></i></button>
+	              			<a href="#" onclick="fback()"><button class="btn check c4" id="r4"><i class="icon-ok"></i></button></a>
+	              			<button class="btn error x4" id="e4"><i class="icon-remove"></i></button>	
+		              		</div>
+		              	</li>
+	              	</ol>    
+           		</div>	
+           				<!--=============Animacions/Imatges=============-->
+	            <div id="anim" class="anim" style="display:inline;">
+	           		<img id="im1" src="imatges/disol/D1/D1-A.jpg" style="display:inline;"/>
+	           		<img id="im2" src="imatges/disol/D1/D1-B.jpg" style="display:none;"/>
+	           		<img id="im3" src="imatges/disol/D1/D1-C.jpg" style="display:none;"/>
+	           		<img id="im4" src="imatges/disol/D1/D1-D.jpg" style="display:none;"/>
+	            </div>    
+          	</div>
+          	
+          		<!--======= Per a pantalles de PC i tablets amb resolució major de 979px ===========-->
+          	<div class="row-fluid visible-desktop" id="context_answer2">
+           		<div id="resp2" data-toggle="buttons-radio">
+      				<div class="span3 image">
+      					<span class="nombre">A.&nbsp;</span>
+      					<a href="#" onclick="fback()"><button class="btn check c1" id="ir1"><i class="icon-ok"></i></button></a>
+  						<button class="btn error x1" id="ie1"><i class="icon-remove"></i></button>
+  						<div class="block">
+  							<img src="imatges/disol/D1/D1-A.jpg"/>
+  						</div>
+  					</div>
+  					<div class="span3 image">
+  						<span class="nombre">B.&nbsp;</span>
+  						<a href="#" onclick="fback()"><button class="btn check c2" id="ir2"><i class="icon-ok"></i></button></a>
+  						<button class="btn error x2" id="ie2"><i class="icon-remove"></i></button>
+  						<div class="block">
+  							<img src="imatges/disol/D1/D1-B.jpg"/>
+  						</div>
+  					</div>
+  					<div class="span3 image">
+  						<span class="nombre">C.&nbsp;</span>
+  						<a href="#" onclick="fback()"><button class="btn check c3" id="ir3"><i class="icon-ok"></i></button></a>
+  						<button class="btn error x3" id="ie3"><i class="icon-remove"></i></button>
+						<div class="block">
+							<img src="imatges/disol/D1/D1-C.jpg"/>
+						</div>
+  					</div>
+  					<div class="span3 image">
+  						<span class="nombre">D.&nbsp;</span>
+  						<a href="#" onclick="fback()"><button class="btn check c4" id="ir4"><i class="icon-ok"></i></button></a>
+  						<button class="btn error x4" id="ie4"><i class="icon-remove"></i></button>
+						<div class="block">
+							<img src="imatges/disol/D1/D1-D.jpg"/>
+						</div>
+  					</div>	
+           		</div>
+           </div>              	
+         			<!--===============Feedbacks======================-->
+				<div id="feedback" class="modal fade in feedback" style="visibility:hidden;">
+				  	<div class="modal-body">
+				    	<div id="fb1" class="row-fluid" style="display:none;"><img src="imatges/check.png"><p></p><p class="correct">Esta opción es correcta.  La relación de soluto/disolvente, 5/10, es mayor que en la muestra modelo, 4/10.</p></div>	
+           				<div id="fb2" class="row-fluid" style="display:none;"><img src="imatges/error.png"><p></p><p class="wrong">Esta opción no es correcta.  La relación soluto/disolvente, 4/10, es igual a la de la muestra modelo.</p></div>
+           				<div id="fb3" class="row-fluid" style="display:none;"><img src="imatges/error.png"><p></p><p class="wrong">Esta opción no es correcta.  La relación soluto/disolvente, 3/9, es menor que la de la muestra modelo, 4/10.</p></div>
+           				<div id="fb4" class="row-fluid" style="display:none;"><img src="imatges/error.png"><p></p><p class="wrong">Esta opción no es correcta.  La relación soluto/disolvente, 5/13, es menor que la de la muestra modelo, 4/10.</p></div>
+					</div>
+				  	<div class="modal-footer">
+				    	<a href="#"><i class="icon-backward backward"></i></a>
+	            		<a href="#"><i class="icon-arrow-up"></i></a>
+	       				<a href="disolucion2.html"><i class="icon-forward forward"></i></a>
+					</div>
+				</div>
+   </div>            
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="./jscript/page_context.js"></script>
+<script type="text/javascript" src="./jscript/mainjs.js"></script>
+<script type="text/javascript" src="./jscript/languages.js"></script>
+<script type="text/javascript" src="./jscript/util.js"></script>
+</body>
+
+</html>
+
